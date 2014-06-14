@@ -7,6 +7,7 @@ end
 
 p word_capitalize('in-reply-to')
 p word_capitalize('X-MAILER')
+
 =begin
 def word_capitalize(str)
 	nstr=str.gsub(/^.?/) do |matched|
