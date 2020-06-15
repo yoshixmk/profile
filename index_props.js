@@ -1,4 +1,4 @@
-import Ga from '/profile/_ga.js';
+import Ga from '/_ga.js';
 export default {
     'config': {
         "srcDir": ".",
@@ -21,7 +21,7 @@ export default {
             {},
             {}
         ],
-        "base": "/profile/",
+        "base": "/",
         "theme": "docs",
         "plugins": [
             null,
@@ -86,12 +86,12 @@ export default {
     'outputPath': "index.html",
     'title': "Profile",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="profile">Profile <a class="header-anchor" href="#profile">§</a></h1>\n<p>Top page</p>\n<h2 id="build">Build <a class="header-anchor" href="#build">§</a></h2>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>unstable <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>read <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>pagic<span class="token variable">@0</span><span class="token punctuation">.</span><span class="token number">7.6</span><span class="token operator">/</span>mod<span class="token punctuation">.</span>ts build <span class="token operator">-</span><span class="token operator">-</span>serve <span class="token operator">-</span><span class="token operator">-</span>watch\n</code></pre>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n'
+            __html: '<h1 id="profile">Profile <a class="header-anchor" href="#profile">§</a></h1>\n<p>Top page</p>\n<h2 id="build">Build <a class="header-anchor" href="#build">§</a></h2>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>unstable <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>read <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>pagic<span class="token variable">@0</span><span class="token punctuation">.</span><span class="token number">7.7</span><span class="token operator">/</span>mod<span class="token punctuation">.</span>ts build <span class="token operator">-</span><span class="token operator">-</span>serve <span class="token operator">-</span><span class="token operator">-</span>watch\n</code></pre>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/main.js", type: "module" })),
+        React.createElement("script", { src: "/main.js", type: "module" })),
     'sidebar': [
         {
             "text": "Profile",
