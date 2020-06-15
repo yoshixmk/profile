@@ -1,4 +1,5 @@
 export default {
+  base: '/profile/',
   srcDir: '.',
   ignore: [/\/public\//, /\/\./, /\/LICENSE/],
   theme: 'docs',
