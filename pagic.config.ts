@@ -1,5 +1,5 @@
 export default {
-  base: (window.Deno === undefined) ? '/profile/' : '/',
+  base: '/profile/',
   srcDir: '.',
   ignore: [/\/public\//, /\/\./, /\/LICENSE/],
   theme: 'docs',
