@@ -94,18 +94,18 @@ export default {
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
     'sidebar': [
         {
-            "text": "Profile",
+            "text": "@yoshixmk / Yoshihiro Ueki",
             "link": "index.html"
         },
         {
             "link": "articles/index.html",
             "children": [
                 {
-                    "text": "(1) TBD",
+                    "text": "社内勉強会でDenoを発表しました",
                     "link": "articles/001-install-and-hello-world.html"
                 },
                 {
-                    "text": "(2) TBD",
+                    "text": "Denoのサードパーティモジュールを公開しました",
                     "link": "articles/002-awesome-deno-cn.html"
                 }
             ],

@@ -84,9 +84,9 @@ export default {
     'pagePath': "articles/001-install-and-hello-world.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/001-install-and-hello-world.html",
-    'title': "(1) TBD",
+    'title': "社内勉強会でDenoを発表しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="(1)-tbd">(1) TBD <a class="header-anchor" href="#(1)-tbd">§</a></h1>\n<p>Hello world</p>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n<p>TBD2</p>\n'
+            __html: '<h1 id="%E7%A4%BE%E5%86%85%E5%8B%89%E5%BC%B7%E4%BC%9A%E3%81%A7deno%E3%82%92%E7%99%BA%E8%A1%A8%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">社内勉強会でDenoを発表しました <a class="header-anchor" href="#%E7%A4%BE%E5%86%85%E5%8B%89%E5%BC%B7%E4%BC%9A%E3%81%A7deno%E3%82%92%E7%99%BA%E8%A1%A8%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">§</a></h1>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n<p>TBD</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
@@ -94,18 +94,18 @@ export default {
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
     'sidebar': [
         {
-            "text": "Profile",
+            "text": "@yoshixmk / Yoshihiro Ueki",
             "link": "index.html"
         },
         {
             "link": "articles/index.html",
             "children": [
                 {
-                    "text": "(1) TBD",
+                    "text": "社内勉強会でDenoを発表しました",
                     "link": "articles/001-install-and-hello-world.html"
                 },
                 {
-                    "text": "(2) TBD",
+                    "text": "Denoのサードパーティモジュールを公開しました",
                     "link": "articles/002-awesome-deno-cn.html"
                 }
             ],
