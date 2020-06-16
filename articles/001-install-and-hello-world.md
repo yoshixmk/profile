@@ -1,5 +1,4 @@
-# (1) TBD
-Hello world
+# 社内勉強会でDenoを発表しました
 
 ## TBD
-TBD2
+TBD

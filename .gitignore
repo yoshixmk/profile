@@ -1,2 +1,4 @@
 .DS_Store
-public
+/public
+!/public/assets/usagi.jpg
+!/public/assets/yoshixmk.jpg
