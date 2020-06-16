@@ -2,8 +2,8 @@
 植木 善弘  
 Web Engineer / Web Developer
 
-![Github icon](./assets/usagi.jpg)
-![Facebbok's face](./assets/yoshixmk.jpg)  
+![Github icon](./static/images/usagi.jpg)
+![Facebbok's face](./static/images/yoshixmk.jpg)  
 
 ## About
 プログラミングは、テクノロジーです。  
