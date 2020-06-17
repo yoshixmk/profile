@@ -1,6 +1,6 @@
 # @yoshixmk / Yoshihiro Ueki
 植木 善弘  
-Web Engineer / Web Developer
+Web Engineer / Web Developer  
 
 ![Github icon](/static/images/usagi.jpg)
 ![Facebbok's face](/static/images/yoshixmk.jpg)  
@@ -27,7 +27,7 @@ yoshixmkはテクノロジーを通じて、
 
 バックエンドエンジニア、SREエンジニアとしてキャリアをスタートし、現在はバックエンドを中心にフルスタックに活躍。
 
-## このサイトに関して
+## このサイトに関して ![gh-pages](https://github.com/yoshixmk/profile/workflows/gh-pages/badge.svg)
 
 ### ブログ
 プログラミングや技術情報に関することを掲載します。
