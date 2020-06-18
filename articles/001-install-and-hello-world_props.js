@@ -86,12 +86,15 @@ export default {
     'outputPath': "articles/001-install-and-hello-world.html",
     'title': "社内勉強会でDenoを発表しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="%E7%A4%BE%E5%86%85%E5%8B%89%E5%BC%B7%E4%BC%9A%E3%81%A7deno%E3%82%92%E7%99%BA%E8%A1%A8%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">社内勉強会でDenoを発表しました <a class="header-anchor" href="#%E7%A4%BE%E5%86%85%E5%8B%89%E5%BC%B7%E4%BC%9A%E3%81%A7deno%E3%82%92%E7%99%BA%E8%A1%A8%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">§</a></h1>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n<p>TBD</p>\n'
+            __html: '<h1>社内勉強会でDenoを発表しました</h1>\n<h2 id="tbd">TBD<a class="anchor" href="#tbd">§</a></h2>\n<p>TBD</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#tbd">TBD</a></li></ol></nav>'
+        } }),
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",

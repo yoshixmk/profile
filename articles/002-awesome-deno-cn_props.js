@@ -86,12 +86,15 @@ export default {
     'outputPath': "articles/002-awesome-deno-cn.html",
     'title': "Denoのサードパーティモジュールを公開しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="deno%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">Denoのサードパーティモジュールを公開しました <a class="header-anchor" href="#deno%E3%81%AE%E3%82%B5%E3%83%BC%E3%83%89%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F">§</a></h1>\n<h2 id="tbd">TBD <a class="header-anchor" href="#tbd">§</a></h2>\n'
+            __html: '<h1>Denoのサードパーティモジュールを公開しました</h1>\n<h2 id="tbd">TBD<a class="anchor" href="#tbd">§</a></h2>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#tbd">TBD</a></li></ol></nav>'
+        } }),
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",

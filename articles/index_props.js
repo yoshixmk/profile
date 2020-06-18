@@ -86,12 +86,15 @@ export default {
     'outputPath': "articles/index.html",
     'title': "ブログ",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1 id="%E3%83%96%E3%83%AD%E3%82%B0">ブログ <a class="header-anchor" href="#%E3%83%96%E3%83%AD%E3%82%B0">§</a></h1>\n<p>TBD</p>\n'
+            __html: '<h1>ブログ</h1>\n<p>TBD</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol></ol></nav>'
+        } }),
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
