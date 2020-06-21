@@ -82,19 +82,19 @@ export default {
             "id": "UA-149348992-2"
         }
     },
-    'pagePath': "translations/README.md",
+    'pagePath': "articles/001-deno-introduction-in-my-company.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "translations/index.html",
-    'title': "翻訳",
+    'outputPath': "articles/001-deno-introduction-in-my-company.html",
+    'title': "社内勉強会でDenoを発表しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>翻訳</h1>\n<p>TBD</p>\n'
+            __html: '<h1>社内勉強会でDenoを発表しました</h1>\n<h2 id="tbd">TBD<a class="anchor" href="#tbd">§</a></h2>\n<p>TBD</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol></ol></nav>'
+            __html: '<nav class="toc"><ol><li><a href="#tbd">TBD</a></li></ol></nav>'
         } }),
     'sidebar': [
         {

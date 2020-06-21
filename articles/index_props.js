@@ -42,16 +42,17 @@ export default {
             {
                 "link": "articles/README.md",
                 "children": [
-                    "articles/001-install-and-hello-world.md",
-                    "articles/002-awesome-deno-cn.md"
+                    "articles/001-deno-introduction-in-my-company.md",
+                    "articles/002-news-published-third-party-module.md",
+                    "articles/003-deno-introduction-at-ts-study-meeting.md"
                 ]
             },
             {
                 "link": "translations/README.md",
                 "children": [
-                    "translations/001-the-deno-handbook.md",
-                    "translations/002-deno-chat-app.md",
-                    "translations/003-from-node-to-deno.md"
+                    "translations/001-perfomance-aspect-of-deno-vs-node-js.md",
+                    "translations/002-what-is-the-best-deno-web-framework.md",
+                    "translations/003-registration-form-mongodb.md"
                 ]
             }
         ],
@@ -105,11 +106,14 @@ export default {
             "children": [
                 {
                     "text": "社内勉強会でDenoを発表しました",
-                    "link": "articles/001-install-and-hello-world.html"
+                    "link": "articles/001-deno-introduction-in-my-company.html"
                 },
                 {
                     "text": "Denoのサードパーティモジュールを公開しました",
-                    "link": "articles/002-awesome-deno-cn.html"
+                    "link": "articles/002-news-published-third-party-module.html"
+                },
+                {
+                    "link": "articles/003-deno-introduction-at-ts-study-meeting.html"
                 }
             ],
             "text": "ブログ"
@@ -118,16 +122,16 @@ export default {
             "link": "translations/index.html",
             "children": [
                 {
-                    "text": "TBD",
-                    "link": "translations/001-the-deno-handbook.html"
+                    "text": "Performance aspect of Deno vs. Node",
+                    "link": "translations/001-perfomance-aspect-of-deno-vs-node-js.html"
                 },
                 {
-                    "text": "TBD",
-                    "link": "translations/002-deno-chat-app.html"
+                    "text": "What Is The Best Deno Web Framework?",
+                    "link": "translations/002-what-is-the-best-deno-web-framework.html"
                 },
                 {
-                    "text": "TBD",
-                    "link": "translations/003-from-node-to-deno.html"
+                    "text": "Creating Registration Form In Deno : MongoDB Setup, Saving Data",
+                    "link": "translations/003-registration-form-mongodb.html"
                 }
             ],
             "text": "翻訳"
