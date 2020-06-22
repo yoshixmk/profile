@@ -113,6 +113,7 @@ export default {
                     "link": "articles/002-news-published-third-party-module.html"
                 },
                 {
+                    "text": "Tegebu TS勉強会で登壇しました",
                     "link": "articles/003-deno-introduction-at-ts-study-meeting.html"
                 }
             ],

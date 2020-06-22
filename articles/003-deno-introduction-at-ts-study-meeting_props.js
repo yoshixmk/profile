@@ -85,16 +85,16 @@ export default {
     'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",
-    'title': undefined,
+    'title': "Tegebu TS勉強会で登壇しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: ''
+            __html: '<h1>Tegebu TS勉強会で登壇しました</h1>\n<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<h2 id="10-things-i-regret-about-node.js">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-node.js">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"></nav>'
+            __html: '<nav class="toc"><ol><li><a href="#10-things-i-regret-about-node.js">10 Things I Regret About Node.js</a></li><li><a href="#%E7%B6%9A%E3%81%8D%E3%81%AF">続きは</a></li></ol></nav>'
         } }),
     'sidebar': [
         {
@@ -113,6 +113,7 @@ export default {
                     "link": "articles/002-news-published-third-party-module.html"
                 },
                 {
+                    "text": "Tegebu TS勉強会で登壇しました",
                     "link": "articles/003-deno-introduction-at-ts-study-meeting.html"
                 }
             ],
