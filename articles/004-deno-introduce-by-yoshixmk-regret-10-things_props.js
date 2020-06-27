@@ -1,21 +1,19 @@
 import projectConfig from '/profile/pagic.config.js';
+import DenoIntro from './004-deno-introduce-by-yoshixmk-regret-10-things_content.js';
 import Ga from '/profile/_ga.js';
 export default {
     config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
-    'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
+    'pagePath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",
-    'title': "Tegebu TS勉強会で登壇しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Tegebu TS勉強会で登壇しました</h1>\n<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<h2 id="10-things-i-regret-about-node.js">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-node.js">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>\n'
-        } }),
+    'outputPath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html",
+    'title': "Deno 発表資料",
+    'content': React.createElement(DenoIntro, null),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#10-things-i-regret-about-node.js">10 Things I Regret About Node.js</a></li><li><a href="#%E7%B6%9A%E3%81%8D%E3%81%AF">続きは</a></li></ol></nav>'
-        } }),
+    'author': "yoshixmk",
+    'published': "2020-06-27",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",

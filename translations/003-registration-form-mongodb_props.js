@@ -1,87 +1,7 @@
+import projectConfig from '/profile/pagic.config.js';
 import Ga from '/profile/_ga.js';
 export default {
-    'config': {
-        "srcDir": ".",
-        "publicDir": "public",
-        "ignore": [
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {},
-            {}
-        ],
-        "base": "/profile/",
-        "theme": "docs",
-        "plugins": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        "watch": false,
-        "serve": false,
-        "port": 8000,
-        "title": "yoshixmk Profile",
-        "sidebar": [
-            "README.md",
-            {
-                "link": "articles/README.md",
-                "children": [
-                    "articles/001-deno-introduction-in-my-company.md",
-                    "articles/002-news-published-third-party-module.md",
-                    "articles/003-deno-introduction-at-ts-study-meeting.md"
-                ]
-            },
-            {
-                "link": "translations/README.md",
-                "children": [
-                    "translations/001-perfomance-aspect-of-deno-vs-node-js.md",
-                    "translations/002-what-is-the-best-deno-web-framework.md",
-                    "translations/003-registration-form-mongodb.md"
-                ]
-            }
-        ],
-        "nav": [
-            {
-                "text": "Tegebu",
-                "link": "https://www.tegebu.com/"
-            },
-            {
-                "text": "Deno Third Party Modules Ranking",
-                "link": "https://deno.land/x/ranking"
-            },
-            {
-                "text": "Github",
-                "link": "https://github.com/yoshixmk"
-            },
-            {
-                "text": "Twitter",
-                "link": "https://twitter.com/yoshixmk"
-            },
-            {
-                "text": "Qiita",
-                "link": "https://qiita.com/yoshixmk"
-            }
-        ],
-        "ga": {
-            "id": "UA-149348992-2"
-        }
-    },
+    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
     'pagePath': "translations/003-registration-form-mongodb.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/003-registration-form-mongodb.html",
@@ -115,6 +35,10 @@ export default {
                 {
                     "text": "Tegebu TS勉強会で登壇しました",
                     "link": "articles/003-deno-introduction-at-ts-study-meeting.html"
+                },
+                {
+                    "text": "Deno 発表資料",
+                    "link": "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html"
                 }
             ],
             "text": "ブログ"
