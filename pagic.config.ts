@@ -31,8 +31,8 @@ export default {
       link: "https://www.tegebu.com/",
     },
     {
-      text: "Deno Third Party Modules Ranking",
-      link: "https://deno.land/x/ranking",
+      text: "Deno X Ranking",
+      link: "https://yoshixmk.github.io/deno-x-ranking/",
     },
     {
       text: "Github",
