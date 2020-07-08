@@ -2,19 +2,19 @@ import projectConfig from '/profile/pagic.config.js';
 import Ga from '/profile/_ga.js';
 export default {
     config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
-    'pagePath': "articles/001-deno-introduction-in-my-company.md",
+    'pagePath': "translations/004-guide-to-porting-node-modules-to-deno.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/001-deno-introduction-in-my-company.html",
-    'title': "社内勉強会でDenoを発表しました",
+    'outputPath': "translations/004-guide-to-porting-node-modules-to-deno.html",
+    'title': "Guide To Porting Node Modules To Deno",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>社内勉強会でDenoを発表しました</h1>\n<p><img src="../static/images/deno.png" alt="Deno"></p>\n<h2 id="deno%E3%81%A8%E3%81%AF">Denoとは<a class="anchor" href="#deno%E3%81%A8%E3%81%AF">§</a></h2>\n<p>JavaScriptおよびTypeScriptのセキュアなランタイム\n→ V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。</p>\n<p>スター数 60kという驚くべき関心の高さ（ちなみにNode.jsはスター数70kです）</p>\n<p>ライアン・ダール自身、Node.jsとは全く別の新しいランタイムである、というのを繰り返しIssuesの回答に書いていて、npmライブラリの資産を使い回す意思はないというのが伝わってきます。</p>\n'
+            __html: '<h1>Guide To Porting Node Modules To Deno</h1>\n<p>TBD <a href="https://dev.to/craigmorten/guide-to-porting-node-modules-to-deno-41cd">Guide To Porting Node Modules To Deno</a></p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/main.js", type: "module" })),
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#deno%E3%81%A8%E3%81%AF">Denoとは</a></li></ol></nav>'
+            __html: '<nav class="toc"><ol></ol></nav>'
         } }),
     'sidebar': [
         {

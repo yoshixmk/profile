@@ -23,6 +23,7 @@ export default {
                 "translations/001-perfomance-aspect-of-deno-vs-node-js.md",
                 "translations/002-what-is-the-best-deno-web-framework.md",
                 "translations/003-registration-form-mongodb.md",
+                "translations/004-guide-to-porting-node-modules-to-deno.md",
             ],
         },
     ],

@@ -59,6 +59,10 @@ export default {
                 {
                     "text": "Creating Registration Form In Deno : MongoDB Setup, Saving Data",
                     "link": "translations/003-registration-form-mongodb.html"
+                },
+                {
+                    "text": "Guide To Porting Node Modules To Deno",
+                    "link": "translations/004-guide-to-porting-node-modules-to-deno.html"
                 }
             ],
             "text": "翻訳"
