@@ -14,6 +14,7 @@ export default {
                 "articles/002-news-published-third-party-module.md",
                 "articles/003-deno-introduction-at-ts-study-meeting.md",
                 "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
+                "articles/005-deno-react-chat.md",
             ],
         },
         {

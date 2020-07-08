@@ -37,6 +37,10 @@ export default {
                 {
                     "text": "Deno 発表資料",
                     "link": "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html"
+                },
+                {
+                    "text": "deno-react-chatを公開しました",
+                    "link": "articles/005-deno-react-chat.html"
                 }
             ],
             "text": "ブログ"

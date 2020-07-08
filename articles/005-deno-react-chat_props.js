@@ -2,12 +2,12 @@ import projectConfig from '/profile/pagic.config.js';
 import Ga from '/profile/_ga.js';
 export default {
     config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
-    'pagePath': "translations/002-what-is-the-best-deno-web-framework.md",
+    'pagePath': "articles/005-deno-react-chat.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "translations/002-what-is-the-best-deno-web-framework.html",
-    'title': "What Is The Best Deno Web Framework?",
+    'outputPath': "articles/005-deno-react-chat.html",
+    'title': "deno-react-chatを公開しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>What Is The Best Deno Web Framework?</h1>\n<p>TBD <a href="https://dev.to/craigmorten/what-is-the-best-deno-web-framework-2k69">What Is The Best Deno Web Framework?</a></p>\n'
+            __html: '<h1>deno-react-chatを公開しました</h1>\n<p>React, deno-react-base-server, Websocketを使用して、チャットを作成しました。<br>\nリポジトリはこちら<br>\nhttps://github.com/yoshixmk/deno-react-chat<br>\n（ IssueやPRをお待ちしてます ）\n<img src="../static/images/screenshot.png" alt="deno-react-chatのスクリーンショット"></p>\n<p>React.FunctionComponent (React.FC) を使用しています<br>\nまた、Typescriptファイルのみで構成してみました。</p>\n<p>サーバは、<a href="https://github.com/asos-craigmorten/deno-react-base-server">deno-react-base-server</a>を使用しており、背後で<a href="https://github.com/asos-craigmorten/opine">Opine</a>という、ExpressJSから移植されたDeno用の高速でシンプルなWebフレームワークが動作します。<br>\n<img src="../static/images/typescript100.png" alt="typescript only image"></p>\n<p>Opineを使用して、1から作成したい場合は一度<a href="https://github.com/asos-craigmorten/opine/tree/main/examples/react">Example</a>を見てみるのがおすすめです。</p>\n<p>Denoのランタイムで動作する、http server フレームワークは活動的で、ひしめいています。選定する際には、<a href="https://dev.to/craigmorten/what-is-the-best-deno-web-framework-2k69">What Is The Best Deno Web Framework?</a> が参考になります。<br>\nこちらは翻訳予定ですので、完了したらまた記事を書こうと思います。</p>\n'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
