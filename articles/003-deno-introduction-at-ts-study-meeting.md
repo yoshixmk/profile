@@ -2,6 +2,10 @@
 Typescriptのセキュアなランタイム、**Deno**について話をしました   
 ![ts](../static/images/ts.png)
 
+<div style="text-align: right;">
+Publication date： 2020-06-23
+</div>
+
 ## 10 Things I Regret About Node.js
 JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。  
 日本語にすると、「Node.jsについて後悔する10のこと」。  

@@ -25,5 +25,5 @@ export default DenoIntro;
 export const frontMatter = {
   title: "Deno 発表資料",
   author: "yoshixmk",
-  published: "2020-06-27",
+  published: "2020-07-08",
 };

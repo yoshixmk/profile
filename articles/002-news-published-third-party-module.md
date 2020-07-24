@@ -1,5 +1,10 @@
 # Denoのサードパーティモジュールを公開しました
-I have published a third party module.  
+
+<div style="text-align: right;">
+Publication date： 2020-06-23
+</div>
+
+## I have published a third party module.  
 
 ## deno-x-ranking
 🦕 Deno Third Party Modules Ranking 👑  

@@ -1,5 +1,9 @@
 # deno-react-chatを公開しました
 
+<div style="text-align: right;">
+  Publication date： 2020-07-08
+</div>
+
 React, deno-react-base-server, Websocketを使用して、チャットを作成しました。  
 リポジトリはこちら  
 https://github.com/yoshixmk/deno-react-chat  

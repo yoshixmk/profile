@@ -1,6 +1,10 @@
 # 社内勉強会でDenoを発表しました
 ![Deno](../static/images/deno.png)
 
+<div style="text-align: right;">
+Publication date： 2020-06-23
+</div>
+
 ## Denoとは
 JavaScriptおよびTypeScriptのセキュアなランタイム
 → V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。  
