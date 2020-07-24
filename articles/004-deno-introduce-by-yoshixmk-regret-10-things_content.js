@@ -1,6 +1,3 @@
-// @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
-
-// @deno-types="https://github.com/svenanders/react-iframe/raw/v1.8.0/types.d.ts"
 import Iframe from "https://cdn.pika.dev/react-iframe@1.8.0";
 // @ts-ignore
 const headerLine = React.createElement("h1", null, "Deno \u767A\u8868\u8CC7\u6599");
@@ -11,5 +8,5 @@ export default DenoIntro;
 export const frontMatter = {
     title: "Deno 発表資料",
     author: "yoshixmk",
-    published: "2020-06-27",
+    published: "2020-07-08",
 };
