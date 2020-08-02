@@ -34,8 +34,6 @@ Tailwindは高度にカスタマイズ可能な低レベルなアーキテクチ
 詳しくは[マニュアル](https://tailwindcss.com/docs/utility-first)を見てください。  
 `Bootstrap 5`が間も無く出ますが、[Poll: Tailwind or Bootstrap?](https://dev.to/zolidev/poll-tailwind-or-bootstrap-1153)にもある通り、`Tailwind CSS`の人気は今後も上がっていくと思います。  
 
-ではまた。
-
 ## Github
 [https://github.com/yoshixmk/tegebu-next](https://github.com/yoshixmk/tegebu-next)  
 
