@@ -15,6 +15,7 @@ export default {
                 "articles/003-deno-introduction-at-ts-study-meeting.md",
                 "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
                 "articles/005-deno-react-chat.md",
+                "articles/006-tege-next-introduction.md",
             ],
         },
         {

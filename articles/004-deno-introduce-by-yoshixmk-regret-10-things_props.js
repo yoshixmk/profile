@@ -36,6 +36,11 @@ export default {
                     "text": "deno-react-chatを公開しました",
                     "link": "articles/005-deno-react-chat.html",
                     "pagePath": "articles/005-deno-react-chat.md"
+                },
+                {
+                    "text": "てげぶのサイトを新たに作成しました",
+                    "link": "articles/006-tege-next-introduction.html",
+                    "pagePath": "articles/006-tege-next-introduction.md"
                 }
             ],
             "text": "ブログ",
