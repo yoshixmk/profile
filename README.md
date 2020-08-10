@@ -5,6 +5,8 @@ Web Engineer / Web Developer
 ![Github icon](./static/images/usagi.jpg)
 ![Facebbok's face](./static/images/yoshixmk.jpg)  
 
+[![yoshixmk's github stats](https://github-readme-stats.vercel.app/api?username=yoshixmk&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+
 ## About
 プログラミングは、テクノロジーです。  
 
