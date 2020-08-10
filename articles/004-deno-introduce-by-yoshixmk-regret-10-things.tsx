@@ -1,4 +1,4 @@
-// @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
+// @deno-types="https://deno.land/x/pagic@v0.8.4/src/types/react/v16.13.1/react.d.ts"
 import React from "https://dev.jspm.io/react@16.13.1";
 // @deno-types="https://github.com/svenanders/react-iframe/raw/v1.8.0/types.d.ts"
 import Iframe from "https://cdn.pika.dev/react-iframe@1.8.0";
