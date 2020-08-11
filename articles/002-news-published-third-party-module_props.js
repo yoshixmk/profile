@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "articles/002-news-published-third-party-module.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/002-news-published-third-party-module.html",

@@ -74,7 +74,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html",
@@ -84,6 +84,7 @@ export default {
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'toc': null,
     'author': "yoshixmk",
     'published': "2020-07-08"
 };

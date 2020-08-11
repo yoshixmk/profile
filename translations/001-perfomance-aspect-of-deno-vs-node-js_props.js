@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "translations/001-perfomance-aspect-of-deno-vs-node-js.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/001-perfomance-aspect-of-deno-vs-node-js.html",

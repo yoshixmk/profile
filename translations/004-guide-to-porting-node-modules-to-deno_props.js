@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "translations/004-guide-to-porting-node-modules-to-deno.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/004-guide-to-porting-node-modules-to-deno.html",

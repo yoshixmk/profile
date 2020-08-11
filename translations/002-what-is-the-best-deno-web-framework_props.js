@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "translations/002-what-is-the-best-deno-web-framework.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/002-what-is-the-best-deno-web-framework.html",

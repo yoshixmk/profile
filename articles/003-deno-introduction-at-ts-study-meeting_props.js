@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",

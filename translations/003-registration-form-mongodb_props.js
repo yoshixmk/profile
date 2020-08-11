@@ -73,7 +73,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "srcDir": "src", "publicDir": "public", "base": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig },
     'pagePath': "translations/003-registration-form-mongodb.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "translations/003-registration-form-mongodb.html",
