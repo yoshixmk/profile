@@ -5,6 +5,7 @@ export default {
     theme: "docs",
     plugins: ["sidebar", "script", "ga"],
     title: "yoshixmk Profile",
+    github: "https://github.com/yoshixmk",
     sidebar: {
         "/": [
             "README.md",
@@ -37,7 +38,7 @@ export default {
         },
         {
             text: "Deno X Ranking",
-            link: "https://yoshixmk.github.io/deno-x-ranking/",
+            link: "/../deno-x-ranking/",
         },
         {
             text: "Github",
