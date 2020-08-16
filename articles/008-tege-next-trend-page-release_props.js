@@ -84,18 +84,18 @@ export default {
         }
     ],
     config: { "root": "/", ...projectConfig },
-    'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
+    'pagePath': "articles/008-tege-next-trend-page-release.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",
-    'title': "Tegebu TS勉強会で登壇しました",
+    'outputPath': "articles/008-tege-next-trend-page-release.html",
+    'title': "てげぶにトレンドページを作成しました",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Tegebu TS勉強会で登壇しました</h1>\n<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="10-things-i-regret-about-node.js">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-node.js">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>'
+            __html: '<h1>てげぶにトレンドページを作成しました</h1>\n<div style="text-align: right;">\nPublication date： 2020-08-17\n</div>\n<h2 id="%E6%A6%82%E8%A6%81">概要<a class="anchor" href="#%E6%A6%82%E8%A6%81">§</a></h2>\n<p>先日紹介した、新しいてげぶのサイト<a href="https://tegebu.netlify.app/">Tegebu next</a>に、<a href="https://tegebu.netlify.app/trend/">トレンドページ</a>を作成しました</p>\n<h2 id="%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素<a class="anchor" href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">§</a></h2>\n<ul>\n<li>(New!!) Firestore</li>\n<li>(New!!) <a href="http://bgg-json.azurewebsites.net/">BoardGameGeek JSON APIs</a></li>\n<li>Gatsby</li>\n<li>Typescript</li>\n<li>Tailwind CSS</li>\n<li>PostCSS<br>\nなど</li>\n</ul>\n<p>今回データストアとして、<code>Firestore</code>を使いました。<br>\nGatsbyがビルドする際に、取りに行きGraphQLで扱えるようにしています。\n（<code>Firestore</code>へは、バッチ処理を別途作成してます）</p>\n<h2 id="%E6%89%80%E6%84%9F">所感<a class="anchor" href="#%E6%89%80%E6%84%9F">§</a></h2>\n<p><code>Firestore</code>接続には暗号化ファイルを用いたため、パスワードの管理について学びがありました。Github Actionsで<code>Secret</code>設定の際は機密性はもちろんありますが、Netlifyでの<a href="https://docs.netlify.com/configure-builds/environment-variables/#sensitive-variable-policy">環境変数設定</a>では話が少し違います。信頼できるデプロイかどうかに応じて「承認が必要」/「機密変数なしで扱う」/「制限なし」の中から選ぶ形でした。</p>\n<p><a href="http://bgg-json.azurewebsites.net/">BoardGameGeek JSON APIs</a>の内容を基に、注目度の高いテーブルゲームを抽出しています。APIに関して使用した感想は、ドキュメントにもある通り<em>本番品質のコードではない</em>こともあり、エラーレスポンスの発生確率が高いことから、バッチ処理の際にエラーハンドリングを工夫し、なんとかしました。英語のコンテンツのため詳細表示で、日本語にする方法は、別の機会にまた考えてみようかと思います。</p>'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#10-things-i-regret-about-node.js">10 Things I Regret About Node.js</a></li><li><a href="#%E7%B6%9A%E3%81%8D%E3%81%AF">続きは</a></li></ol></nav>'
+            __html: '<nav class="toc"><ol><li><a href="#%E6%A6%82%E8%A6%81">概要</a></li><li><a href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素</a></li><li><a href="#%E6%89%80%E6%84%9F">所感</a></li></ol></nav>'
         } })
 };

@@ -18,6 +18,8 @@ export default {
                     "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
                     "articles/005-deno-react-chat.md",
                     "articles/006-tege-next-introduction.md",
+                    "articles/007-deno-ja-manual-introduction.md",
+                    "articles/008-tege-next-trend-page-release.md",
                 ],
             },
             {

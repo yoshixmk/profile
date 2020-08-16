@@ -41,6 +41,16 @@ export default {
                     "text": "てげぶのサイトを新たに作成しました",
                     "link": "articles/006-tege-next-introduction.html",
                     "pagePath": "articles/006-tege-next-introduction.md"
+                },
+                {
+                    "text": "Deno 日本語マニュアルを公開しました",
+                    "link": "articles/007-deno-ja-manual-introduction.html",
+                    "pagePath": "articles/007-deno-ja-manual-introduction.md"
+                },
+                {
+                    "text": "てげぶにトレンドページを作成しました",
+                    "link": "articles/008-tege-next-trend-page-release.html",
+                    "pagePath": "articles/008-tege-next-trend-page-release.md"
                 }
             ],
             "text": "ブログ",
