@@ -1,7 +1,7 @@
 # てげメンバーの部員紹介ページを作成し、リリースしました
 
 <div style="text-align: right;">
-Publication date： 2020-08-17
+Publication date： 2020-09-21
 </div>
 
 ![member page](../static/images/member.png)
