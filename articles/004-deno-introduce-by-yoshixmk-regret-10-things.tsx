@@ -1,7 +1,7 @@
 // @deno-types="https://deno.land/x/gagic@0.9.3/src/types/react/v16.13.1/react.d.ts"
 import React from "https://dev.jspm.io/react@16.13.1";
 // @deno-types="https://github.com/svenanders/react-iframe/raw/v1.8.0/types.d.ts"
-import Iframe from "https://cdn.pika.dev/react-iframe@1.8.0";
+import Iframe from "https://cdn.skypack.dev/react-iframe@1.8.0";
 
 // @ts-ignore
 const headerLine = <h1>Deno 発表資料</h1>;
