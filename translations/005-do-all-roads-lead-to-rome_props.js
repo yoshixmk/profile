@@ -109,12 +109,12 @@ export default {
         }
     ],
     config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/README.md",
+    'pagePath': "translations/005-do-all-roads-lead-to-rome.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/index.html",
-    'title': "ブログ",
+    'outputPath': "translations/005-do-all-roads-lead-to-rome.html",
+    'title': "Do all roads lead to Rome?",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>ブログ</h1>\n<p>TBD</p>'
+            __html: '<h1>Do all roads lead to Rome?</h1>\n<p>TBD <a href="https://dev.to/aralroca/do-all-roads-lead-to-rome-3154">Do all roads lead to Rome?</a></p>'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),

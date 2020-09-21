@@ -93,6 +93,16 @@ export default {
                     "text": "Guide To Porting Node Modules To Deno",
                     "link": "translations/004-guide-to-porting-node-modules-to-deno.html",
                     "pagePath": "translations/004-guide-to-porting-node-modules-to-deno.md"
+                },
+                {
+                    "text": "Do all roads lead to Rome?",
+                    "link": "translations/005-do-all-roads-lead-to-rome.html",
+                    "pagePath": "translations/005-do-all-roads-lead-to-rome.md"
+                },
+                {
+                    "text": "The wait is over, Mandarine 2.0.0 is here.",
+                    "link": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.html",
+                    "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
             "text": "翻訳",

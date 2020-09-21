@@ -109,12 +109,12 @@ export default {
         }
     ],
     config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/README.md",
+    'pagePath': "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/index.html",
-    'title': "ブログ",
+    'outputPath': "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.html",
+    'title': "The wait is over, Mandarine 2.0.0 is here.",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>ブログ</h1>\n<p>TBD</p>'
+            __html: '<h1>The wait is over, Mandarine 2.0.0 is here.</h1>\n<p>TBD <a href="https://dev.to/andreespirela/the-wait-is-over-mandarine-2-0-0-is-here-3g2e">The wait is over, Mandarine 2.0.0 is here.</a></p>'
         } }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
