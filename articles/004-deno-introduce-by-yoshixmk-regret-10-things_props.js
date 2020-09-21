@@ -63,9 +63,9 @@ export default {
                     "pagePath": "articles/010-introduction-f3.md"
                 },
                 {
-                    "text": "てげメンバーの部員紹介ページを作成し、リリースしました",
-                    "link": "articles/009-tege-domains-release.html",
-                    "pagePath": "articles/009-tege-domains-release.md"
+                    "text": "Gagicの紹介",
+                    "link": "articles/011-introduction-gagic.html",
+                    "pagePath": "articles/011-introduction-gagic.md"
                 }
             ],
             "text": "ブログ",
