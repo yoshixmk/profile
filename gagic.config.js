@@ -20,6 +20,9 @@ export default {
                     "articles/006-tege-next-introduction.md",
                     "articles/007-deno-ja-manual-introduction.md",
                     "articles/008-tege-next-trend-page-release.md",
+                    "articles/009-tege-domains-release.md",
+                    "articles/010-introduction-f3.md",
+                    "articles/009-tege-domains-release.md",
                 ],
             },
             {

@@ -51,6 +51,21 @@ export default {
                     "text": "てげぶにトレンドページを作成しました",
                     "link": "articles/008-tege-next-trend-page-release.html",
                     "pagePath": "articles/008-tege-next-trend-page-release.md"
+                },
+                {
+                    "text": "てげメンバーの部員紹介ページを作成し、リリースしました",
+                    "link": "articles/009-tege-domains-release.html",
+                    "pagePath": "articles/009-tege-domains-release.md"
+                },
+                {
+                    "text": "f3の紹介",
+                    "link": "articles/010-introduction-f3.html",
+                    "pagePath": "articles/010-introduction-f3.md"
+                },
+                {
+                    "text": "てげメンバーの部員紹介ページを作成し、リリースしました",
+                    "link": "articles/009-tege-domains-release.html",
+                    "pagePath": "articles/009-tege-domains-release.md"
                 }
             ],
             "text": "ブログ",
