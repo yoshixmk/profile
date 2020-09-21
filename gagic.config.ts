@@ -22,7 +22,7 @@ export default {
           "articles/008-tege-next-trend-page-release.md",
           "articles/009-tege-domains-release.md",
           "articles/010-introduction-f3.md",
-          "articles/009-tege-domains-release.md",
+          "articles/011-introduction-gagic.md",
         ],
       },
       {
