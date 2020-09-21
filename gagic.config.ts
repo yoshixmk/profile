@@ -32,6 +32,8 @@ export default {
           "translations/002-what-is-the-best-deno-web-framework.md",
           "translations/003-registration-form-mongodb.md",
           "translations/004-guide-to-porting-node-modules-to-deno.md",
+          "translations/005-do-all-roads-lead-to-rome.md",
+          "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md",
         ],
       },
     ],
