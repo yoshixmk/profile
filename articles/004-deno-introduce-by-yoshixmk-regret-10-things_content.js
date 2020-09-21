@@ -1,4 +1,7 @@
-import Iframe from "https://cdn.pika.dev/react-iframe@1.8.0";
+// @deno-types="https://deno.land/x/gagic@0.9.3/src/types/react/v16.13.1/react.d.ts"
+import React from "https://dev.jspm.io/react@16.13.1";
+// @deno-types="https://github.com/svenanders/react-iframe/raw/v1.8.0/types.d.ts"
+import Iframe from "https://cdn.skypack.dev/react-iframe@1.8.0";
 // @ts-ignore
 const headerLine = React.createElement("h1", null, "Deno \u767A\u8868\u8CC7\u6599");
 const DenoIntro = () => React.createElement(React.Fragment, null,

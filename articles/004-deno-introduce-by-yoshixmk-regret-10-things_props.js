@@ -1,8 +1,8 @@
-import Ga from '/profile/_ga.js';
-import projectConfig from '/profile/pagic.config.js';
+import projectConfig from '/profile/gagic.config.js';
 import DenoIntro from './004-deno-introduce-by-yoshixmk-regret-10-things_content.js';
+var _a, _b;
 export default {
-    'ga': React.createElement(Ga, { id: "UA-149348992-2" }),
+    'head': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -84,7 +84,7 @@ export default {
             "pagePath": "translations/README.md"
         }
     ],
-    config: { "root": "/", ...projectConfig },
+    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
     'pagePath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
     'layoutPath': "_layout.tsx",
     'outputPath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html",
