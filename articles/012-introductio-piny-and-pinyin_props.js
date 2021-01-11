@@ -1,119 +1,35 @@
 import projectConfig from '/profile/pagic.config.js';
-import DenoIntro from './004-deno-introduce-by-yoshixmk-regret-10-things_content.js';
 import Ga from '/profile/_ga.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx",
+    'pagePath': "articles/012-introductio-piny-and-pinyin.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html",
-    'title': "Deno 発表資料",
-    'content': React.createElement(DenoIntro, { author: "yoshixmk", config: {
-            branch: 'master',
-            exclude: [
-                '**/.*',
-                '**/package.json',
-                '**/package-lock.json',
-                '**/node_modules',
-                'pagic.config.ts',
-                'pagic.config.tsx',
-                '**/config.gypi',
-                '**/CVS',
-                '**/npm-debug.log',
-                'dist'
-            ],
-            ga: {
-                id: 'UA-149348992-2'
-            },
-            github: 'https://github.com/yoshixmk',
-            ignore: [
-                /\/public\//,
-                /\/\./,
-                /\/LICENSE/
-            ],
-            include: undefined,
-            nav: [
-                {
-                    link: 'https://www.tegebu.com/',
-                    text: 'Tegebu'
-                },
-                {
-                    link: '/../deno-x-ranking/',
-                    text: 'Deno X Ranking'
-                },
-                {
-                    link: 'https://github.com/yoshixmk',
-                    text: 'Github'
-                },
-                {
-                    link: 'https://twitter.com/yoshixmk',
-                    text: 'Twitter'
-                },
-                {
-                    link: 'https://qiita.com/yoshixmk',
-                    text: 'Qiita'
-                }
-            ],
-            outDir: 'dist',
-            plugins: [
-                'clean',
-                'init',
-                'md',
-                'tsx',
-                'script',
-                'layout',
-                'out',
-                'sidebar',
-                'ga'
-            ],
-            port: 8000,
-            root: '/profile/',
-            serve: false,
-            sidebar: {
-                '/': [
-                    'README.md',
-                    {
-                        children: [
-                            'articles/001-deno-introduction-in-my-company.md',
-                            'articles/002-news-published-third-party-module.md',
-                            'articles/003-deno-introduction-at-ts-study-meeting.md',
-                            'articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx',
-                            'articles/005-deno-react-chat.md',
-                            'articles/006-tege-next-introduction.md',
-                            'articles/007-deno-ja-manual-introduction.md',
-                            'articles/008-tege-next-trend-page-release.md',
-                            'articles/009-tege-domains-release.md',
-                            'articles/010-introduction-f3.md',
-                            'articles/011-introduction-gagic.md',
-                            'articles/012-introductio-piny-and-pinyin.md'
-                        ],
-                        link: 'articles/README.md'
-                    },
-                    {
-                        children: [
-                            'translations/001-perfomance-aspect-of-deno-vs-node-js.md',
-                            'translations/002-what-is-the-best-deno-web-framework.md',
-                            'translations/003-registration-form-mongodb.md',
-                            'translations/004-guide-to-porting-node-modules-to-deno.md',
-                            'translations/005-do-all-roads-lead-to-rome.md',
-                            'translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md'
-                        ],
-                        link: 'translations/README.md'
-                    }
-                ]
-            },
-            srcDir: '.',
-            theme: 'docs',
-            title: 'yoshixmk Profile',
-            watch: false
-        }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html", pagePath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx", published: "2020-07-08", script: null, title: "Deno \u767A\u8868\u8CC7\u6599" }),
+    'outputPath': "articles/012-introductio-piny-and-pinyin.html",
+    'title': "PinyとPinyinの紹介",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>PinyとPinyinの紹介</h1>\n<div style="text-align: right;">\nPublication date： 2021-01-11\n</div>\n<h2 id="piny%E3%81%A8%E3%81%AF">Pinyとは<a class="anchor" href="#piny%E3%81%A8%E3%81%AF">§</a></h2>\n<p>HSK (漢語水平考試)の単語覚えのために開発しました。<br>\n<a href="https://github.com/yoshixmk/piny">https://github.com/yoshixmk/piny</a><br>\nCLIでピンインの確認テスト、Web UIでの単語の暗記、カスタマイズ可能なディクショナリ（初期セットはHSK3~6）とツールを用意しています。<br>\nまた、ピンインの確認テストでは、一度間違えたものをやり直せるように、集中対策モードをつけました<br>\nこだわったのは単純な単語の羅列にしないことで、一度見て覚えるのは難しいので、関連する画像を合わせて表示してイメージを膨らませながら取り組むことができるようにしました</p>\n<h2 id="pinyin%E3%81%A8%E3%81%AF">Pinyinとは<a class="anchor" href="#pinyin%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoのサードパーティモジュールとして公開（<a href="https://deno.land/x/pinyin">https://deno.land/x/pinyin</a>）し、Pinyの内部モジュールとして使用しました<br>\nnpmで同様の<a href="https://www.npmjs.com/package/pinyin">pinyin</a>モジュールがあるのでラップして実装しました。</p>\n<h2 id="%E4%BB%8A%E5%BE%8C">今後<a class="anchor" href="#%E4%BB%8A%E5%BE%8C">§</a></h2>\n<p>HSKのみならず中国語の学習する上で、これあったらいいな、と思ったものがあれば追加していきます。<br>\n希望の機能や不具合があればIssueをください</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p>それぞれ<code>README</code>をご覧ください。<br>\n<a href="https://github.com/yoshixmk/pinyin">https://github.com/yoshixmk/pinyin</a><br>\n<a href="hhttps://github.com/yoshixmk/piny">hhttps://github.com/yoshixmk/piny</a></p>'
+        } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement(Ga, { id: "UA-149348992-2" })),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Piny\u3068Pinyin\u306E\u7D39\u4ECB"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\nPublication date： 2021-01-11\n</div>\n<h2 id="piny%E3%81%A8%E3%81%AF">Pinyとは<a class="anchor" href="#piny%E3%81%A8%E3%81%AF">§</a></h2>\n<p>HSK (漢語水平考試)の単語覚えのために開発しました。<br>\n<a href="https://github.com/yoshixmk/piny">https://github.com/yoshixmk/piny</a><br>\nCLIでピンインの確認テスト、Web UIでの単語の暗記、カスタマイズ可能なディクショナリ（初期セットはHSK3~6）とツールを用意しています。<br>\nまた、ピンインの確認テストでは、一度間違えたものをやり直せるように、集中対策モードをつけました<br>\nこだわったのは単純な単語の羅列にしないことで、一度見て覚えるのは難しいので、関連する画像を合わせて表示してイメージを膨らませながら取り組むことができるようにしました</p>\n<h2 id="pinyin%E3%81%A8%E3%81%AF">Pinyinとは<a class="anchor" href="#pinyin%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoのサードパーティモジュールとして公開（<a href="https://deno.land/x/pinyin">https://deno.land/x/pinyin</a>）し、Pinyの内部モジュールとして使用しました<br>\nnpmで同様の<a href="https://www.npmjs.com/package/pinyin">pinyin</a>モジュールがあるのでラップして実装しました。</p>\n<h2 id="%E4%BB%8A%E5%BE%8C">今後<a class="anchor" href="#%E4%BB%8A%E5%BE%8C">§</a></h2>\n<p>HSKのみならず中国語の学習する上で、これあったらいいな、と思ったものがあれば追加していきます。<br>\n希望の機能や不具合があればIssueをください</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p>それぞれ<code>README</code>をご覧ください。<br>\n<a href="https://github.com/yoshixmk/pinyin">https://github.com/yoshixmk/pinyin</a><br>\n<a href="hhttps://github.com/yoshixmk/piny">hhttps://github.com/yoshixmk/piny</a></p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#piny%E3%81%A8%E3%81%AF">Pinyとは</a></li><li><a href="#pinyin%E3%81%A8%E3%81%AF">Pinyinとは</a></li><li><a href="#%E4%BB%8A%E5%BE%8C">今後</a></li><li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li></ol></nav>'
+        } }),
     'author': "yoshixmk",
-    'published': "2020-07-08",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2021-01-11 Pinyとは HSK (漢語水平考試)の単語覚えのために開発しました。 https://github.com/yoshixmk/piny CLIでピンインの確認テスト、Web UIでの単語の暗記、カスタマイズ可能なディクショナリ（初期...",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",

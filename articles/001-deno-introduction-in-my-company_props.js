@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/001-deno-introduction-in-my-company.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/001-deno-introduction-in-my-company.html",
+    'title': "社内勉強会でDenoを発表しました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>社内勉強会でDenoを発表しました</h1>\n<p><img src="../static/images/deno.png" alt="Deno"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="deno%E3%81%A8%E3%81%AF">Denoとは<a class="anchor" href="#deno%E3%81%A8%E3%81%AF">§</a></h2>\n<p>JavaScriptおよびTypeScriptのセキュアなランタイム\n→ V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。</p>\n<p>スター数 60kという驚くべき関心の高さ（ちなみにNode.jsはスター数70kです）</p>\n<p>ライアン・ダール自身、Node.jsとは全く別の新しいランタイムである、というのを繰り返しIssuesの回答に書いていて、npmライブラリの資産を使い回す意思はないというのが伝わってきます。</p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "\u793E\u5185\u52C9\u5F37\u4F1A\u3067Deno\u3092\u767A\u8868\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<p><img src="../static/images/deno.png" alt="Deno"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="deno%E3%81%A8%E3%81%AF">Denoとは<a class="anchor" href="#deno%E3%81%A8%E3%81%AF">§</a></h2>\n<p>JavaScriptおよびTypeScriptのセキュアなランタイム\n→ V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。</p>\n<p>スター数 60kという驚くべき関心の高さ（ちなみにNode.jsはスター数70kです）</p>\n<p>ライアン・ダール自身、Node.jsとは全く別の新しいランタイムである、というのを繰り返しIssuesの回答に書いていて、npmライブラリの資産を使い回す意思はないというのが伝わってきます。</p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#deno%E3%81%A8%E3%81%AF">Denoとは</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-06-23 Denoとは JavaScriptおよびTypeScriptのセキュアなランタイム → V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。 スター数 60kという驚くべき関心の高さ（ちなみ...",
+    'cover': "../static/images/deno.png",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/001-deno-introduction-in-my-company.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/001-deno-introduction-in-my-company.html",
-    'title': "社内勉強会でDenoを発表しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>社内勉強会でDenoを発表しました</h1>\n<p><img src="../static/images/deno.png" alt="Deno"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="deno%E3%81%A8%E3%81%AF">Denoとは<a class="anchor" href="#deno%E3%81%A8%E3%81%AF">§</a></h2>\n<p>JavaScriptおよびTypeScriptのセキュアなランタイム\n→ V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。</p>\n<p>スター数 60kという驚くべき関心の高さ（ちなみにNode.jsはスター数70kです）</p>\n<p>ライアン・ダール自身、Node.jsとは全く別の新しいランタイムである、というのを繰り返しIssuesの回答に書いていて、npmライブラリの資産を使い回す意思はないというのが伝わってきます。</p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#deno%E3%81%A8%E3%81%AF">Denoとは</a></li></ol></nav>'
-        } })
+    ]
 };

@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/007-deno-ja-manual-introduction.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/007-deno-ja-manual-introduction.html",
+    'title': "Deno 日本語マニュアルを公開しました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>Deno 日本語マニュアルを公開しました</h1>\n<div style="text-align: right;">\nPublication date： 2020-08-16\n</div>\n<h2 id="%E6%A6%82%E8%A6%81">概要<a class="anchor" href="#%E6%A6%82%E8%A6%81">§</a></h2>\n<p><code>Deno 日本語マニュアル</code>は、Denoの<a href="https://deno.land/manual">公式マニュアルページ</a>を参考に、翻訳している非公式なクローンサイトです。<br>\nマニュアルの内容は、今後も随時更新予定です。<br>\nURL: <a href="https://yoshixmk.github.io/deno-manual-ja">https://yoshixmk.github.io/deno-manual-ja</a><br>\nGithub: <a href="https://github.com/yoshixmk/deno-manual-ja">https://github.com/yoshixmk/deno-manual-ja</a></p>\n<h2 id="%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">きっかけ<a class="anchor" href="#%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">§</a></h2>\n<p>きっかけは、中国のDenoコミュニティが<a href="https://nugine.github.io/deno-manual-cn/">https://nugine.github.io/deno-manual-cn/</a>にて、<br>\n<code>Deno 中文手册</code>(=Deno 中国語マニュアル)を公開しているのを見つけたことです。<br>\n今回はそちらをforkして、日本語版の作成に至っています。<br>\nfork Github: <a href="https://github.com/Nugine/deno-manual-cn">https://github.com/Nugine/deno-manual-cn</a></p>\n<p>Deno関連で、何か他の人の役に立つような、コントリビュートしたいと思っていたので、夏季休暇で作りあげました。</p>\n<h2 id="%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素<a class="anchor" href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">§</a></h2>\n<ul>\n<li><a href="https://github.com/rust-lang/mdBook">mdBook</a></li>\n<li>cargo (Rust) ※ mdBookインストールのみ\nなど</li>\n</ul>\n<h2 id="%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">起動方法<a class="anchor" href="#%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">§</a></h2>\n<ol>\n<li><a href="https://www.rust-lang.org/tools/install">Rustのインストール</a>(cargoが同時に入ります)</li>\n<li><a href="https://github.com/rust-lang/mdBook#installation">mdBookのインストール</a></li>\n<li><code>mdbook serve</code></li>\n</ol>\n<h2 id="%E6%89%80%E6%84%9F">所感<a class="anchor" href="#%E6%89%80%E6%84%9F">§</a></h2>\n<p>Denoのバイナリファイルは<code>Rust</code>と<code>JS</code>で書かれており<code>Rust</code>の思想を受けている印象を持っており、CoC(Code of Conduct)がRustの内容に準拠していること、インストール方法や単一のバイナリだけで動作すること、<a href="https://doc.rust-jp.rs/rust-nomicon-ja/meet-safe-and-unsafe.html">安全性</a>など、今回触れられたので面白かったです。<br>\n※ (余談) 標準モジュールは<code>Go</code>を参考に、<code>Typescript</code>で書かれています。</p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Deno \u65E5\u672C\u8A9E\u30DE\u30CB\u30E5\u30A2\u30EB\u3092\u516C\u958B\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\nPublication date： 2020-08-16\n</div>\n<h2 id="%E6%A6%82%E8%A6%81">概要<a class="anchor" href="#%E6%A6%82%E8%A6%81">§</a></h2>\n<p><code>Deno 日本語マニュアル</code>は、Denoの<a href="https://deno.land/manual">公式マニュアルページ</a>を参考に、翻訳している非公式なクローンサイトです。<br>\nマニュアルの内容は、今後も随時更新予定です。<br>\nURL: <a href="https://yoshixmk.github.io/deno-manual-ja">https://yoshixmk.github.io/deno-manual-ja</a><br>\nGithub: <a href="https://github.com/yoshixmk/deno-manual-ja">https://github.com/yoshixmk/deno-manual-ja</a></p>\n<h2 id="%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">きっかけ<a class="anchor" href="#%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">§</a></h2>\n<p>きっかけは、中国のDenoコミュニティが<a href="https://nugine.github.io/deno-manual-cn/">https://nugine.github.io/deno-manual-cn/</a>にて、<br>\n<code>Deno 中文手册</code>(=Deno 中国語マニュアル)を公開しているのを見つけたことです。<br>\n今回はそちらをforkして、日本語版の作成に至っています。<br>\nfork Github: <a href="https://github.com/Nugine/deno-manual-cn">https://github.com/Nugine/deno-manual-cn</a></p>\n<p>Deno関連で、何か他の人の役に立つような、コントリビュートしたいと思っていたので、夏季休暇で作りあげました。</p>\n<h2 id="%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素<a class="anchor" href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">§</a></h2>\n<ul>\n<li><a href="https://github.com/rust-lang/mdBook">mdBook</a></li>\n<li>cargo (Rust) ※ mdBookインストールのみ\nなど</li>\n</ul>\n<h2 id="%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">起動方法<a class="anchor" href="#%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">§</a></h2>\n<ol>\n<li><a href="https://www.rust-lang.org/tools/install">Rustのインストール</a>(cargoが同時に入ります)</li>\n<li><a href="https://github.com/rust-lang/mdBook#installation">mdBookのインストール</a></li>\n<li><code>mdbook serve</code></li>\n</ol>\n<h2 id="%E6%89%80%E6%84%9F">所感<a class="anchor" href="#%E6%89%80%E6%84%9F">§</a></h2>\n<p>Denoのバイナリファイルは<code>Rust</code>と<code>JS</code>で書かれており<code>Rust</code>の思想を受けている印象を持っており、CoC(Code of Conduct)がRustの内容に準拠していること、インストール方法や単一のバイナリだけで動作すること、<a href="https://doc.rust-jp.rs/rust-nomicon-ja/meet-safe-and-unsafe.html">安全性</a>など、今回触れられたので面白かったです。<br>\n※ (余談) 標準モジュールは<code>Go</code>を参考に、<code>Typescript</code>で書かれています。</p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#%E6%A6%82%E8%A6%81">概要</a></li><li><a href="#%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">きっかけ</a></li><li><a href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素</a></li><li><a href="#%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">起動方法</a></li><li><a href="#%E6%89%80%E6%84%9F">所感</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-08-16 概要 Deno 日本語マニュアルは、Denoの公式マニュアルページを参考に、翻訳している非公式なクローンサイトです。 マニュアルの内容は、今後も随時更新予定です。 URL: https://yoshixmk.github...",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/007-deno-ja-manual-introduction.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/007-deno-ja-manual-introduction.html",
-    'title': "Deno 日本語マニュアルを公開しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Deno 日本語マニュアルを公開しました</h1>\n<div style="text-align: right;">\nPublication date： 2020-08-16\n</div>\n<h2 id="%E6%A6%82%E8%A6%81">概要<a class="anchor" href="#%E6%A6%82%E8%A6%81">§</a></h2>\n<p><code>Deno 日本語マニュアル</code>は、Denoの<a href="https://deno.land/manual">公式マニュアルページ</a>を参考に、翻訳している非公式なクローンサイトです。<br>\nマニュアルの内容は、今後も随時更新予定です。<br>\nURL: <a href="https://yoshixmk.github.io/deno-manual-ja">https://yoshixmk.github.io/deno-manual-ja</a><br>\nGithub: <a href="https://github.com/yoshixmk/deno-manual-ja">https://github.com/yoshixmk/deno-manual-ja</a></p>\n<h2 id="%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">きっかけ<a class="anchor" href="#%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">§</a></h2>\n<p>きっかけは、中国のDenoコミュニティが<a href="https://nugine.github.io/deno-manual-cn/">https://nugine.github.io/deno-manual-cn/</a>にて、<br>\n<code>Deno 中文手册</code>(=Deno 中国語マニュアル)を公開しているのを見つけたことです。<br>\n今回はそちらをforkして、日本語版の作成に至っています。<br>\nfork Github: <a href="https://github.com/Nugine/deno-manual-cn">https://github.com/Nugine/deno-manual-cn</a></p>\n<p>Deno関連で、何か他の人の役に立つような、コントリビュートしたいと思っていたので、夏季休暇で作りあげました。</p>\n<h2 id="%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素<a class="anchor" href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">§</a></h2>\n<ul>\n<li><a href="https://github.com/rust-lang/mdBook">mdBook</a></li>\n<li>cargo (Rust) ※ mdBookインストールのみ\nなど</li>\n</ul>\n<h2 id="%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">起動方法<a class="anchor" href="#%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">§</a></h2>\n<ol>\n<li><a href="https://www.rust-lang.org/tools/install">Rustのインストール</a>(cargoが同時に入ります)</li>\n<li><a href="https://github.com/rust-lang/mdBook#installation">mdBookのインストール</a></li>\n<li><code>mdbook serve</code></li>\n</ol>\n<h2 id="%E6%89%80%E6%84%9F">所感<a class="anchor" href="#%E6%89%80%E6%84%9F">§</a></h2>\n<p>Denoのバイナリファイルは<code>Rust</code>と<code>JS</code>で書かれており<code>Rust</code>の思想を受けている印象を持っており、CoC(Code of Conduct)がRustの内容に準拠していること、インストール方法や単一のバイナリだけで動作すること、<a href="https://doc.rust-jp.rs/rust-nomicon-ja/meet-safe-and-unsafe.html">安全性</a>など、今回触れられたので面白かったです。<br>\n※ (余談) 標準モジュールは<code>Go</code>を参考に、<code>Typescript</code>で書かれています。</p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#%E6%A6%82%E8%A6%81">概要</a></li><li><a href="#%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91">きっかけ</a></li><li><a href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素</a></li><li><a href="#%E8%B5%B7%E5%8B%95%E6%96%B9%E6%B3%95">起動方法</a></li><li><a href="#%E6%89%80%E6%84%9F">所感</a></li></ol></nav>'
-        } })
+    ]
 };

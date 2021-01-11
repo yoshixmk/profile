@@ -1,7 +1,33 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "translations/005-do-all-roads-lead-to-rome.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "translations/005-do-all-roads-lead-to-rome.html",
+    'title': "Do all roads lead to Rome?",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>Do all roads lead to Rome?</h1>\n<p>TBD <a href="https://dev.to/aralroca/do-all-roads-lead-to-rome-3154">Do all roads lead to Rome?</a></p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Do all roads lead to Rome?"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<p>TBD <a href="https://dev.to/aralroca/do-all-roads-lead-to-rome-3154">Do all roads lead to Rome?</a></p>'
+        } }),
+    'toc': null,
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "TBD Do all roads lead to Rome?",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +91,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,21 +135,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "translations/005-do-all-roads-lead-to-rome.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "translations/005-do-all-roads-lead-to-rome.html",
-    'title': "Do all roads lead to Rome?",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Do all roads lead to Rome?</h1>\n<p>TBD <a href="https://dev.to/aralroca/do-all-roads-lead-to-rome-3154">Do all roads lead to Rome?</a></p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': null
+    ]
 };

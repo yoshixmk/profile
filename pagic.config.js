@@ -23,6 +23,7 @@ export default {
                     "articles/009-tege-domains-release.md",
                     "articles/010-introduction-f3.md",
                     "articles/011-introduction-gagic.md",
+                    "articles/012-introductio-piny-and-pinyin.md",
                 ],
             },
             {

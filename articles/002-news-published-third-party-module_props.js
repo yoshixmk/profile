@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/002-news-published-third-party-module.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/002-news-published-third-party-module.html",
+    'title': "Denoのサードパーティモジュールを公開しました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>Denoのサードパーティモジュールを公開しました</h1>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="i-have-published-a-third-party-module">I have published a third party module.<a class="anchor" href="#i-have-published-a-third-party-module">§</a></h2>\n<h2 id="deno-x-ranking">deno-x-ranking<a class="anchor" href="#deno-x-ranking">§</a></h2>\n<p>🦕 Deno Third Party Modules Ranking 👑<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a></p>\n<h2 id="%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能<a class="anchor" href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">§</a></h2>\n<p>サードパーティモジュールをランキング形式で並べ、注目するべきモジュールがわかるというのを目指して、作成しました。<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a><br>\n出力形式は、tsv形式と標準出力が選べます。<br>\n使用するには下記を実行してください（Githubアカウントが必要です）</p>\n<h3 id="file-output">File output<a class="anchor" href="#file-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> file\n</code></pre>\n<h3 id="console-output">Console output<a class="anchor" href="#console-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> table\n</code></pre>\n<h2 id="%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定<a class="anchor" href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">§</a></h2>\n<p>いつでもランキングが見れるよう、ページを構築しようかと思ってます。</p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Deno\u306E\u30B5\u30FC\u30C9\u30D1\u30FC\u30C6\u30A3\u30E2\u30B8\u30E5\u30FC\u30EB\u3092\u516C\u958B\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="i-have-published-a-third-party-module">I have published a third party module.<a class="anchor" href="#i-have-published-a-third-party-module">§</a></h2>\n<h2 id="deno-x-ranking">deno-x-ranking<a class="anchor" href="#deno-x-ranking">§</a></h2>\n<p>🦕 Deno Third Party Modules Ranking 👑<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a></p>\n<h2 id="%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能<a class="anchor" href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">§</a></h2>\n<p>サードパーティモジュールをランキング形式で並べ、注目するべきモジュールがわかるというのを目指して、作成しました。<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a><br>\n出力形式は、tsv形式と標準出力が選べます。<br>\n使用するには下記を実行してください（Githubアカウントが必要です）</p>\n<h3 id="file-output">File output<a class="anchor" href="#file-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> file\n</code></pre>\n<h3 id="console-output">Console output<a class="anchor" href="#console-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> table\n</code></pre>\n<h2 id="%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定<a class="anchor" href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">§</a></h2>\n<p>いつでもランキングが見れるよう、ページを構築しようかと思ってます。</p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#i-have-published-a-third-party-module">I have published a third party module.</a></li><li><a href="#deno-x-ranking">deno-x-ranking</a></li><li><a href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能</a><ol><li><a href="#file-output">File output</a></li><li><a href="#console-output">Console output</a></li></ol></li><li><a href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-06-23 I have published a third party module. deno-x-ranking 🦕 Deno Third Party Modules Ranking 👑 https://deno.land/x/ranking ランキング機能 サードパーティモジュールをランキング形式...",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/002-news-published-third-party-module.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/002-news-published-third-party-module.html",
-    'title': "Denoのサードパーティモジュールを公開しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Denoのサードパーティモジュールを公開しました</h1>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="i-have-published-a-third-party-module.">I have published a third party module.<a class="anchor" href="#i-have-published-a-third-party-module.">§</a></h2>\n<h2 id="deno-x-ranking">deno-x-ranking<a class="anchor" href="#deno-x-ranking">§</a></h2>\n<p>🦕 Deno Third Party Modules Ranking 👑<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a></p>\n<h2 id="%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能<a class="anchor" href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">§</a></h2>\n<p>サードパーティモジュールをランキング形式で並べ、注目するべきモジュールがわかるというのを目指して、作成しました。<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a><br>\n出力形式は、tsv形式と標準出力が選べます。<br>\n使用するには下記を実行してください（Githubアカウントが必要です）</p>\n<h3 id="file-output">File output<a class="anchor" href="#file-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> file\n</code></pre>\n<h3 id="console-output">Console output<a class="anchor" href="#console-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> table\n</code></pre>\n<h2 id="%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定<a class="anchor" href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">§</a></h2>\n<p>いつでもランキングが見れるよう、ページを構築しようかと思ってます。</p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#i-have-published-a-third-party-module.">I have published a third party module.</a></li><li><a href="#deno-x-ranking">deno-x-ranking</a></li><li><a href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能</a><ol><li><a href="#file-output">File output</a></li><li><a href="#console-output">Console output</a></li></ol></li><li><a href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定</a></li></ol></nav>'
-        } })
+    ]
 };

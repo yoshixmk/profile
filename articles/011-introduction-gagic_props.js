@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/011-introduction-gagic.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/011-introduction-gagic.html",
+    'title': "Gagicの紹介",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>Gagicの紹介</h1>\n<div style="text-align: right;">\nPublication date： 2020-09-22\n</div>\n<h2 id="gagic%E3%81%A8%E3%81%AF">Gagicとは<a class="anchor" href="#gagic%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕</p>\n<p><code>Gagic</code>は<a href="https://deno.land/x/pagic@v0.9.1">Pagic</a>のサブバージョンです。<br>\n<code>Gagic</code>はに<code>Deno 1.4.0</code>以降をサポートし、今後も開発していきます。\n詳しくは後述しますが、<code>Deno 1.3.3</code>まで対応している<code>Pagic</code>v0.9.1をハードフォークして作成しています。</p>\n<h2 id="%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯<a class="anchor" href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">§</a></h2>\n<p>9/10、突然、Pagicを作成していた<a href="https://github.com/xcatliu">アカウント</a>や<strong>リポジトリ</strong>が消えて、<a href="https://github.com/yoshixmk/deno-x-ranking/">deno-x-ranking</a>のCIが失敗するようになった。<br>\nこの時はDenoのサードパーティモジュールの固定化されたURLに変更し、対応した。</p>\n<p>9/14、Deno 1.4.0の<code>BREAKING Changes</code>の内容を含んでいたため、メンテナンスの必要があったため、ハードフォークし、対応を始めた。</p>\n<p>選択肢としては、2つだが、後者を選んだ。</p>\n<ul>\n<li>1.3.3を使用し続ける</li>\n<li>自分でメンテナンスして1.4.0移行に対応する</li>\n</ul>\n<p>9/21、この<code>Profile</code>サイトや<code>deno-x-ranking</code>を<code>Pagic</code>から<code>Gagic</code>へ切り替え作業が完了。</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p><code>README</code>をご覧ください。</p>\n<p><a href="https://github.com/yoshixmk/gagic#gagic">https://github.com/yoshixmk/gagic#gagic</a></p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Gagic\u306E\u7D39\u4ECB"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\nPublication date： 2020-09-22\n</div>\n<h2 id="gagic%E3%81%A8%E3%81%AF">Gagicとは<a class="anchor" href="#gagic%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕</p>\n<p><code>Gagic</code>は<a href="https://deno.land/x/pagic@v0.9.1">Pagic</a>のサブバージョンです。<br>\n<code>Gagic</code>はに<code>Deno 1.4.0</code>以降をサポートし、今後も開発していきます。\n詳しくは後述しますが、<code>Deno 1.3.3</code>まで対応している<code>Pagic</code>v0.9.1をハードフォークして作成しています。</p>\n<h2 id="%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯<a class="anchor" href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">§</a></h2>\n<p>9/10、突然、Pagicを作成していた<a href="https://github.com/xcatliu">アカウント</a>や<strong>リポジトリ</strong>が消えて、<a href="https://github.com/yoshixmk/deno-x-ranking/">deno-x-ranking</a>のCIが失敗するようになった。<br>\nこの時はDenoのサードパーティモジュールの固定化されたURLに変更し、対応した。</p>\n<p>9/14、Deno 1.4.0の<code>BREAKING Changes</code>の内容を含んでいたため、メンテナンスの必要があったため、ハードフォークし、対応を始めた。</p>\n<p>選択肢としては、2つだが、後者を選んだ。</p>\n<ul>\n<li>1.3.3を使用し続ける</li>\n<li>自分でメンテナンスして1.4.0移行に対応する</li>\n</ul>\n<p>9/21、この<code>Profile</code>サイトや<code>deno-x-ranking</code>を<code>Pagic</code>から<code>Gagic</code>へ切り替え作業が完了。</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p><code>README</code>をご覧ください。</p>\n<p><a href="https://github.com/yoshixmk/gagic#gagic">https://github.com/yoshixmk/gagic#gagic</a></p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#gagic%E3%81%A8%E3%81%AF">Gagicとは</a></li><li><a href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯</a></li><li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-09-22 Gagicとは Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕 GagicはPagicのサブバージョンです。 GagicはにDeno 1.4.0以降をサポートし、今後も開発していきます。...",
+    'cover': undefined,
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/011-introduction-gagic.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/011-introduction-gagic.html",
-    'title': "Gagicの紹介",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Gagicの紹介</h1>\n<div style="text-align: right;">\nPublication date： 2020-09-22\n</div>\n<h2 id="gagic%E3%81%A8%E3%81%AF">Gagicとは<a class="anchor" href="#gagic%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕</p>\n<p><code>Gagic</code>は<a href="https://deno.land/x/pagic@v0.9.1">Pagic</a>のサブバージョンです。<br>\n<code>Gagic</code>はに<code>Deno 1.4.0</code>以降をサポートし、今後も開発していきます。\n詳しくは後述しますが、<code>Deno 1.3.3</code>まで対応している<code>Pagic</code>v0.9.1をハードフォークして作成しています。</p>\n<h2 id="%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯<a class="anchor" href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">§</a></h2>\n<p>9/10、突然、Pagicを作成していた<a href="https://github.com/xcatliu">アカウント</a>や<strong>リポジトリ</strong>が消えて、<a href="https://github.com/yoshixmk/deno-x-ranking/">deno-x-ranking</a>のCIが失敗するようになった。<br>\nこの時はDenoのサードパーティモジュールの固定化されたURLに変更し、対応した。</p>\n<p>9/14、Deno 1.4.0の<code>BREAKING Changes</code>の内容を含んでいたため、メンテナンスの必要があったため、ハードフォークし、対応を始めた。</p>\n<p>選択肢としては、2つだが、後者を選んだ。</p>\n<ul>\n<li>1.3.3を使用し続ける</li>\n<li>自分でメンテナンスして1.4.0移行に対応する</li>\n</ul>\n<p>9/21、この<code>Profile</code>サイトや<code>deno-x-ranking</code>を<code>Pagic</code>から<code>Gagic</code>へ切り替え作業が完了。</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p><code>README</code>をご覧ください。</p>\n<p><a href="https://github.com/yoshixmk/gagic#gagic">https://github.com/yoshixmk/gagic#gagic</a></p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#gagic%E3%81%A8%E3%81%AF">Gagicとは</a></li><li><a href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯</a></li><li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li></ol></nav>'
-        } })
+    ]
 };

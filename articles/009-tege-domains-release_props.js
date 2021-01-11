@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/009-tege-domains-release.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/009-tege-domains-release.html",
+    'title': "てげメンバーの部員紹介ページを作成し、リリースしました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>てげメンバーの部員紹介ページを作成し、リリースしました</h1>\n<div style="text-align: right;">\nPublication date： 2020-09-20\n</div>\n<p><img src="../static/images/member.png" alt="member page"></p>\n<h2 id="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ドメインについて<a class="anchor" href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>今回のリリースは、今まで最も大きなリリースです。<br>\n<strong>ドメイン移行までのマイルストーンは全て完了</strong>し、てげぶのドメインの移行が完了していることを報告します <a href="https://www.tegebu.com/">https://www.tegebu.com/</a> 。</p>\n<p>新サイトでは、私たちのテーブルゲームの紹介や、最新トレンドの動的更新、ページの整理整頓、外部リンクなどの見直しなど数えきれない変更を行ってきました。</p>\n<p>以前の記事でも紹介していますが、新テーマは明るく仕上がっています（真っ暗なテーマに、さよなら😁）</p>\n<p>これに伴い、<a href="https://github.com/yoshixmk/tegebu">旧てげぶサイト</a>については、Archiveを行っています。およそ1年間使用していました。</p>\n<h2 id="%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">てげ部の部員ページについて<a class="anchor" href="#%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>部員ページはいわゆる、メンバーページにあたります。\n今後も情報を部員更新する予定がありますので、お楽しみに！\n<a href="https://www.tegebu.com/members/">https://www.tegebu.com/members/</a></p>\n<h2 id="%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">ホスティングの場所を変更<a class="anchor" href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">§</a></h2>\n<p>開発では、<a href="https://tegebu.netlify.app/">Netlify</a>を使用していましたが、Github Actionsを使うことで、今後の開発がさらに行いやすいであろうことから、GIthub Pagesに移行しました （※ 現在もNetlifyへのデプロイ自体は行っています。）</p>\n<h2 id="%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">開発について<a class="anchor" href="#%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>開発において、最も大きなニュースは、<a href="https://github.com/tegebu">Organization</a>へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。</p>\n<p><img src="../static/images/organization_tegebu.png" alt="Github organization tegebu"></p>\n<p>開発に携わるのは、私（<a href="https://github.com/yoshixmk">@yoshixmk</a>）と<a href="https://github.com/jamashita">@jamashita</a>です。</p>\n<p>我々は、いつも遊び心を持って開発してます。</p>\n<p>今回のリリースでも、あの有名な<a href="https://www.tegebu.com/dinosaur/">恐竜ゲーム</a>をひっそり含めてみました。</p>\n<p>また新しいニュースが届けられるように、今日もまたコミットを続けています。\nテーブルゲーム、ボードゲームと、エンジニアリングを掛け合わせることにご興味がある方は、ぜひご連絡ください。</p>\n<p>Mail: <a href="mailto:info@tegebu.com">info@tegebu.com</a></p>\n<p>Twitter: <a href="https://twitter.com/tegebu">https://twitter.com/tegebu</a></p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "\u3066\u3052\u30E1\u30F3\u30D0\u30FC\u306E\u90E8\u54E1\u7D39\u4ECB\u30DA\u30FC\u30B8\u3092\u4F5C\u6210\u3057\u3001\u30EA\u30EA\u30FC\u30B9\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\nPublication date： 2020-09-20\n</div>\n<p><img src="../static/images/member.png" alt="member page"></p>\n<h2 id="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ドメインについて<a class="anchor" href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>今回のリリースは、今まで最も大きなリリースです。<br>\n<strong>ドメイン移行までのマイルストーンは全て完了</strong>し、てげぶのドメインの移行が完了していることを報告します <a href="https://www.tegebu.com/">https://www.tegebu.com/</a> 。</p>\n<p>新サイトでは、私たちのテーブルゲームの紹介や、最新トレンドの動的更新、ページの整理整頓、外部リンクなどの見直しなど数えきれない変更を行ってきました。</p>\n<p>以前の記事でも紹介していますが、新テーマは明るく仕上がっています（真っ暗なテーマに、さよなら😁）</p>\n<p>これに伴い、<a href="https://github.com/yoshixmk/tegebu">旧てげぶサイト</a>については、Archiveを行っています。およそ1年間使用していました。</p>\n<h2 id="%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">てげ部の部員ページについて<a class="anchor" href="#%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>部員ページはいわゆる、メンバーページにあたります。\n今後も情報を部員更新する予定がありますので、お楽しみに！\n<a href="https://www.tegebu.com/members/">https://www.tegebu.com/members/</a></p>\n<h2 id="%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">ホスティングの場所を変更<a class="anchor" href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">§</a></h2>\n<p>開発では、<a href="https://tegebu.netlify.app/">Netlify</a>を使用していましたが、Github Actionsを使うことで、今後の開発がさらに行いやすいであろうことから、GIthub Pagesに移行しました （※ 現在もNetlifyへのデプロイ自体は行っています。）</p>\n<h2 id="%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">開発について<a class="anchor" href="#%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>開発において、最も大きなニュースは、<a href="https://github.com/tegebu">Organization</a>へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。</p>\n<p><img src="../static/images/organization_tegebu.png" alt="Github organization tegebu"></p>\n<p>開発に携わるのは、私（<a href="https://github.com/yoshixmk">@yoshixmk</a>）と<a href="https://github.com/jamashita">@jamashita</a>です。</p>\n<p>我々は、いつも遊び心を持って開発してます。</p>\n<p>今回のリリースでも、あの有名な<a href="https://www.tegebu.com/dinosaur/">恐竜ゲーム</a>をひっそり含めてみました。</p>\n<p>また新しいニュースが届けられるように、今日もまたコミットを続けています。\nテーブルゲーム、ボードゲームと、エンジニアリングを掛け合わせることにご興味がある方は、ぜひご連絡ください。</p>\n<p>Mail: <a href="mailto:info@tegebu.com">info@tegebu.com</a></p>\n<p>Twitter: <a href="https://twitter.com/tegebu">https://twitter.com/tegebu</a></p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ドメインについて</a></li><li><a href="#%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">てげ部の部員ページについて</a></li><li><a href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">ホスティングの場所を変更</a></li><li><a href="#%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">開発について</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-09-20 ドメインについて 今回のリリースは、今まで最も大きなリリースです。 ドメイン移行までのマイルストーンは全て完了し、てげぶのドメインの移行が完了していることを報告します https://www.teg...",
+    'cover': "../static/images/member.png",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/009-tege-domains-release.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/009-tege-domains-release.html",
-    'title': "てげメンバーの部員紹介ページを作成し、リリースしました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>てげメンバーの部員紹介ページを作成し、リリースしました</h1>\n<div style="text-align: right;">\nPublication date： 2020-09-20\n</div>\n<p><img src="../static/images/member.png" alt="member page"></p>\n<h2 id="%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ドメインについて<a class="anchor" href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>今回のリリースは、今まで最も大きなリリースです。<br>\n<strong>ドメイン移行までのマイルストーンは全て完了</strong>し、てげぶのドメインの移行が完了していることを報告します <a href="https://www.tegebu.com/">https://www.tegebu.com/</a> 。</p>\n<p>新サイトでは、私たちのテーブルゲームの紹介や、最新トレンドの動的更新、ページの整理整頓、外部リンクなどの見直しなど数えきれない変更を行ってきました。</p>\n<p>以前の記事でも紹介していますが、新テーマは明るく仕上がっています（真っ暗なテーマに、さよなら😁）</p>\n<p>これに伴い、<a href="https://github.com/yoshixmk/tegebu">旧てげぶサイト</a>については、Archiveを行っています。およそ1年間使用していました。</p>\n<h2 id="%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">てげ部の部員ページについて<a class="anchor" href="#%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>部員ページはいわゆる、メンバーページにあたります。\n今後も情報を部員更新する予定がありますので、お楽しみに！\n<a href="https://www.tegebu.com/members/">https://www.tegebu.com/members/</a></p>\n<h2 id="%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">ホスティングの場所を変更<a class="anchor" href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">§</a></h2>\n<p>開発では、<a href="https://tegebu.netlify.app/">Netlify</a>を使用していましたが、Github Actionsを使うことで、今後の開発がさらに行いやすいであろうことから、GIthub Pagesに移行しました （※ 現在もNetlifyへのデプロイ自体は行っています。）</p>\n<h2 id="%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">開発について<a class="anchor" href="#%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">§</a></h2>\n<p>開発において、最も大きなニュースは、<a href="https://github.com/tegebu">Organization</a>へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。</p>\n<p><img src="../static/images/organization_tegebu.png" alt="Github organization tegebu"></p>\n<p>開発に携わるのは、私（<a href="https://github.com/yoshixmk">@yoshixmk</a>）と<a href="https://github.com/jamashita">@jamashita</a>です。</p>\n<p>我々は、いつも遊び心を持って開発してます。</p>\n<p>今回のリリースでも、あの有名な<a href="https://www.tegebu.com/dinosaur/">恐竜ゲーム</a>をひっそり含めてみました。</p>\n<p>また新しいニュースが届けられるように、今日もまたコミットを続けています。\nテーブルゲーム、ボードゲームと、エンジニアリングを掛け合わせることにご興味がある方は、ぜひご連絡ください。</p>\n<p>Mail: <a href="mailto:info@tegebu.com">info@tegebu.com</a></p>\n<p>Twitter: <a href="https://twitter.com/tegebu">https://twitter.com/tegebu</a></p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">ドメインについて</a></li><li><a href="#%E3%81%A6%E3%81%92%E9%83%A8%E3%81%AE%E9%83%A8%E5%93%A1%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">てげ部の部員ページについて</a></li><li><a href="#%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%A0%B4%E6%89%80%E3%82%92%E5%A4%89%E6%9B%B4">ホスティングの場所を変更</a></li><li><a href="#%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">開発について</a></li></ol></nav>'
-        } })
+    ]
 };

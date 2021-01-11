@@ -1,7 +1,35 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",
+    'title': "Tegebu TS勉強会で登壇しました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>Tegebu TS勉強会で登壇しました</h1>\n<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="10-things-i-regret-about-nodejs">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-nodejs">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Tegebu TS\u52C9\u5F37\u4F1A\u3067\u767B\u58C7\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="10-things-i-regret-about-nodejs">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-nodejs">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>'
+        } }),
+    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
+            __html: '<nav class="toc"><ol><li><a href="#10-things-i-regret-about-nodejs">10 Things I Regret About Node.js</a></li><li><a href="#%E7%B6%9A%E3%81%8D%E3%81%AF">続きは</a></li></ol></nav>'
+        } }),
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Typescriptのセキュアなランタイム、Denoについて話をしました Publication date： 2020-06-23 10 Things I Regret About Node.js JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。 日本語に...",
+    'cover': "../static/images/ts.png",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +93,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,23 +137,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/003-deno-introduction-at-ts-study-meeting.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/003-deno-introduction-at-ts-study-meeting.html",
-    'title': "Tegebu TS勉強会で登壇しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Tegebu TS勉強会で登壇しました</h1>\n<p>Typescriptのセキュアなランタイム、<strong>Deno</strong>について話をしました<br>\n<img src="../static/images/ts.png" alt="ts"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="10-things-i-regret-about-node.js">10 Things I Regret About Node.js<a class="anchor" href="#10-things-i-regret-about-node.js">§</a></h2>\n<p>JSConf EU 2018で、Node.js作者であるRyan Dahl ※ライアン・ダールが発表した内容。<br>\n日本語にすると、「Node.jsについて後悔する10のこと」。<br>\nDenoの公表を含んでいました。</p>\n<p>※ regretの直訳は色々ある</p>\n<ul>\n<li>後悔</li>\n<li>反省点</li>\n<li>設計ミス</li>\n</ul>\n<h2 id="%E7%B6%9A%E3%81%8D%E3%81%AF">続きは<a class="anchor" href="#%E7%B6%9A%E3%81%8D%E3%81%AF">§</a></h2>\n<p>後日全てを公開します。<br>\n（tsxで埋め込みする予定）</p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#10-things-i-regret-about-node.js">10 Things I Regret About Node.js</a></li><li><a href="#%E7%B6%9A%E3%81%8D%E3%81%AF">続きは</a></li></ol></nav>'
-        } })
+    ]
 };

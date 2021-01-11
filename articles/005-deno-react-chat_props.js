@@ -1,7 +1,33 @@
-import projectConfig from '/profile/gagic.config.js';
-var _a, _b;
+import projectConfig from '/profile/pagic.config.js';
+import Ga from '/profile/_ga.js';
 export default {
-    'head': undefined,
+    config: { "root": "/", ...projectConfig, branch: 'master' },
+    'pagePath': "articles/005-deno-react-chat.md",
+    'layoutPath': "_layout.tsx",
+    'outputPath': "articles/005-deno-react-chat.html",
+    'title': "deno-react-chatを公開しました",
+    'content': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<h1>deno-react-chatを公開しました</h1>\n<div style="text-align: right;">\n  Publication date： 2020-07-08\n</div>\n<p>React, deno-react-base-server, Websocketを使用して、チャットを作成しました。<br>\nリポジトリはこちら<br>\n<a href="https://github.com/yoshixmk/deno-react-chat">https://github.com/yoshixmk/deno-react-chat</a><br>\n（ IssueやPRをお待ちしてます ）\n<img src="../static/images/screenshot.png" alt="deno-react-chatのスクリーンショット"></p>\n<p>React.FunctionComponent (React.FC) を使用しています<br>\nまた、Typescriptファイルのみで構成してみました。</p>\n<p>サーバは、<a href="https://github.com/asos-craigmorten/deno-react-base-server">deno-react-base-server</a>を使用しており、背後で<a href="https://github.com/asos-craigmorten/opine">Opine</a>という、ExpressJSから移植されたDeno用の高速でシンプルなWebフレームワークが動作します。<br>\n<img src="../static/images/typescript100.png" alt="typescript only image"></p>\n<p>Opineを使用して、1から作成したい場合は一度<a href="https://github.com/asos-craigmorten/opine/tree/main/examples/react">Example</a>を見てみるのがおすすめです。</p>\n<p>Denoのランタイムで動作する、http server フレームワークは活動的で、ひしめいています。選定する際には、<a href="https://dev.to/craigmorten/what-is-the-best-deno-web-framework-2k69">What Is The Best Deno Web Framework?</a> が参考になります。<br>\nこちらは翻訳予定ですので、完了したらまた記事を書こうと思います。</p>'
+        } }),
+    'head': React.createElement(React.Fragment, null,
+        React.createElement(Ga, { id: "UA-149348992-2" })),
+    'script': React.createElement(React.Fragment, null,
+        React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
+        React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
+        React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'contentTitle': React.createElement("h1", { key: "0" }, "deno-react-chat\u3092\u516C\u958B\u3057\u307E\u3057\u305F"),
+    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
+            __html: '<div style="text-align: right;">\n  Publication date： 2020-07-08\n</div>\n<p>React, deno-react-base-server, Websocketを使用して、チャットを作成しました。<br>\nリポジトリはこちら<br>\n<a href="https://github.com/yoshixmk/deno-react-chat">https://github.com/yoshixmk/deno-react-chat</a><br>\n（ IssueやPRをお待ちしてます ）\n<img src="../static/images/screenshot.png" alt="deno-react-chatのスクリーンショット"></p>\n<p>React.FunctionComponent (React.FC) を使用しています<br>\nまた、Typescriptファイルのみで構成してみました。</p>\n<p>サーバは、<a href="https://github.com/asos-craigmorten/deno-react-base-server">deno-react-base-server</a>を使用しており、背後で<a href="https://github.com/asos-craigmorten/opine">Opine</a>という、ExpressJSから移植されたDeno用の高速でシンプルなWebフレームワークが動作します。<br>\n<img src="../static/images/typescript100.png" alt="typescript only image"></p>\n<p>Opineを使用して、1から作成したい場合は一度<a href="https://github.com/asos-craigmorten/opine/tree/main/examples/react">Example</a>を見てみるのがおすすめです。</p>\n<p>Denoのランタイムで動作する、http server フレームワークは活動的で、ひしめいています。選定する際には、<a href="https://dev.to/craigmorten/what-is-the-best-deno-web-framework-2k69">What Is The Best Deno Web Framework?</a> が参考になります。<br>\nこちらは翻訳予定ですので、完了したらまた記事を書こうと思います。</p>'
+        } }),
+    'toc': null,
+    'author': "yoshixmk",
+    'contributors': [
+        "yoshixmk"
+    ],
+    'date': "2021-01-11T14:17:05.000Z",
+    'updated': null,
+    'excerpt': "Publication date： 2020-07-08 React, deno-react-base-server, Websocketを使用して、チャットを作成しました。 リポジトリはこちら https://github.com/yoshixmk/deno-react-chat （ IssueやPRをお待ちしてます ） React.Fu...",
+    'cover': "../static/images/screenshot.png",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
@@ -65,10 +91,15 @@ export default {
                     "text": "Gagicの紹介",
                     "link": "articles/011-introduction-gagic.html",
                     "pagePath": "articles/011-introduction-gagic.md"
+                },
+                {
+                    "text": "PinyとPinyinの紹介",
+                    "link": "articles/012-introductio-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
                 }
             ],
-            "text": "ブログ",
-            "pagePath": "articles/README.md"
+            "pagePath": "articles/README.md",
+            "text": "ブログ"
         },
         {
             "link": "translations/index.html",
@@ -104,21 +135,8 @@ export default {
                     "pagePath": "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md"
                 }
             ],
-            "text": "翻訳",
-            "pagePath": "translations/README.md"
+            "pagePath": "translations/README.md",
+            "text": "翻訳"
         }
-    ],
-    config: { "root": "/", ...projectConfig, ...(_b = (_a = projectConfig.i18n) === null || _a === void 0 ? void 0 : _a.overrides) === null || _b === void 0 ? void 0 : _b['undefined'] },
-    'pagePath': "articles/005-deno-react-chat.md",
-    'layoutPath': "_layout.tsx",
-    'outputPath': "articles/005-deno-react-chat.html",
-    'title': "deno-react-chatを公開しました",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>deno-react-chatを公開しました</h1>\n<div style="text-align: right;">\n  Publication date： 2020-07-08\n</div>\n<p>React, deno-react-base-server, Websocketを使用して、チャットを作成しました。<br>\nリポジトリはこちら<br>\n<a href="https://github.com/yoshixmk/deno-react-chat">https://github.com/yoshixmk/deno-react-chat</a><br>\n（ IssueやPRをお待ちしてます ）\n<img src="../static/images/screenshot.png" alt="deno-react-chatのスクリーンショット"></p>\n<p>React.FunctionComponent (React.FC) を使用しています<br>\nまた、Typescriptファイルのみで構成してみました。</p>\n<p>サーバは、<a href="https://github.com/asos-craigmorten/deno-react-base-server">deno-react-base-server</a>を使用しており、背後で<a href="https://github.com/asos-craigmorten/opine">Opine</a>という、ExpressJSから移植されたDeno用の高速でシンプルなWebフレームワークが動作します。<br>\n<img src="../static/images/typescript100.png" alt="typescript only image"></p>\n<p>Opineを使用して、1から作成したい場合は一度<a href="https://github.com/asos-craigmorten/opine/tree/main/examples/react">Example</a>を見てみるのがおすすめです。</p>\n<p>Denoのランタイムで動作する、http server フレームワークは活動的で、ひしめいています。選定する際には、<a href="https://dev.to/craigmorten/what-is-the-best-deno-web-framework-2k69">What Is The Best Deno Web Framework?</a> が参考になります。<br>\nこちらは翻訳予定ですので、完了したらまた記事を書こうと思います。</p>'
-        } }),
-    'script': React.createElement(React.Fragment, null,
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react@16.13.1/umd/react.production.min.js" }),
-        React.createElement("script", { crossOrigin: "anonymous", src: "https://unpkg.com/react-dom@16.13.1/umd/react-dom.production.min.js" }),
-        React.createElement("script", { src: "/profile/index.js", type: "module" })),
-    'toc': null
+    ]
 };
