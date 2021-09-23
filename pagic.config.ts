@@ -25,6 +25,7 @@ export default {
           "articles/011-introduction-gagic.md",
           "articles/012-introduction-piny-and-pinyin.md",
           "articles/013-hasura-presentation.tsx",
+          "articles/014-playwright-presentation.tsx",
         ],
       },
       {
