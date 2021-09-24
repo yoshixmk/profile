@@ -47,5 +47,5 @@ yoshixmkはテクノロジーを通じて、
 Build  
 下記をprofile/ディレクトリ配下で実行してください。
 ```Shell
-$ deno run --unstable --allow-read --allow-write --allow-net https://deno.land/x/pagic@v0.7.30/mod.ts build --serve --watch
+$ deno run --unstable --allow-run --allow-read --allow-write --allow-net https://deno.land/x/pagic@v1.4.0/mod.ts build --serve --watch
 ```
