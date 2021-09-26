@@ -15,18 +15,26 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "\u3066\u3052\u3076\u306B\u30C8\u30EC\u30F3\u30C9\u30DA\u30FC\u30B8\u3092\u4F5C\u6210\u3057\u307E\u3057\u305F"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<div style="text-align: right;">\nPublication date： 2020-08-17\n</div>\n<h2 id="%E6%A6%82%E8%A6%81">概要<a class="anchor" href="#%E6%A6%82%E8%A6%81">§</a></h2>\n<p>先日紹介した、新しいてげぶのサイト<a href="https://tegebu.netlify.app/">Tegebu next</a>に、<a href="https://tegebu.netlify.app/trend/">トレンドページ</a>を作成しました</p>\n<h2 id="%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素<a class="anchor" href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">§</a></h2>\n<ul>\n<li>(New!!) Firestore</li>\n<li>(New!!) <a href="http://bgg-json.azurewebsites.net/">BoardGameGeek JSON APIs</a></li>\n<li>Gatsby</li>\n<li>Typescript</li>\n<li>Tailwind CSS</li>\n<li>PostCSS<br>\nなど</li>\n</ul>\n<p>今回データストアとして、<code>Firestore</code>を使いました。<br>\nGatsbyがビルドする際に、取りに行きGraphQLで扱えるようにしています。\n（<code>Firestore</code>へは、バッチ処理を別途作成してます）</p>\n<h2 id="%E6%89%80%E6%84%9F">所感<a class="anchor" href="#%E6%89%80%E6%84%9F">§</a></h2>\n<p><code>Firestore</code>接続には暗号化ファイルを用いたため、パスワードの管理について学びがありました。Github Actionsで<code>Secret</code>設定の際は機密性はもちろんありますが、Netlifyでの<a href="https://docs.netlify.com/configure-builds/environment-variables/#sensitive-variable-policy">環境変数設定</a>では話が少し違います。信頼できるデプロイかどうかに応じて「承認が必要」/「機密変数なしで扱う」/「制限なし」の中から選ぶ形でした。</p>\n<p><a href="http://bgg-json.azurewebsites.net/">BoardGameGeek JSON APIs</a>の内容を基に、注目度の高いテーブルゲームを抽出しています。APIに関して使用した感想は、ドキュメントにもある通り<em>本番品質のコードではない</em>こともあり、エラーレスポンスの発生確率が高いことから、バッチ処理の際にエラーハンドリングを工夫し、なんとかしました。英語のコンテンツのため詳細表示で、日本語にする方法は、別の機会にまた考えてみようかと思います。</p>'
         } }),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#%E6%A6%82%E8%A6%81">概要</a></li><li><a href="#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0">技術要素</a></li><li><a href="#%E6%89%80%E6%84%9F">所感</a></li></ol></nav>'
-        } }),
+    'toc': React.createElement("nav", { key: "0", className: "toc" },
+        React.createElement("ol", null,
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E6%A6%82%E8%A6%81" }, "\u6982\u8981")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E6%8A%80%E8%A1%93%E8%A6%81%E7%B4%A0" }, "\u6280\u8853\u8981\u7D20")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E6%89%80%E6%84%9F" }, "\u6240\u611F")))),
     'author': "yoshixmk",
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-01-11T14:17:05.000Z",
+    'date': "2021-09-26T07:28:11.000Z",
     'updated': null,
     'excerpt': "Publication date： 2020-08-17 概要 先日紹介した、新しいてげぶのサイトTegebu nextに、トレンドページを作成しました 技術要素 - (New!!) Firestore - (New!!) BoardGameGeek JSON APIs - Gatsby - Typescript - Tailwind C...",
     'cover': undefined,
@@ -96,8 +104,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

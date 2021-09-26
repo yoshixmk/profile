@@ -15,18 +15,22 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "\u793E\u5185\u52C9\u5F37\u4F1A\u3067Deno\u3092\u767A\u8868\u3057\u307E\u3057\u305F"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<p><img src="../static/images/deno.png" alt="Deno"></p>\n<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="deno%E3%81%A8%E3%81%AF">Denoとは<a class="anchor" href="#deno%E3%81%A8%E3%81%AF">§</a></h2>\n<p>JavaScriptおよびTypeScriptのセキュアなランタイム\n→ V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。</p>\n<p>スター数 60kという驚くべき関心の高さ（ちなみにNode.jsはスター数70kです）</p>\n<p>ライアン・ダール自身、Node.jsとは全く別の新しいランタイムである、というのを繰り返しIssuesの回答に書いていて、npmライブラリの資産を使い回す意思はないというのが伝わってきます。</p>'
         } }),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#deno%E3%81%A8%E3%81%AF">Denoとは</a></li></ol></nav>'
-        } }),
+    'toc': React.createElement("nav", { key: "0", className: "toc" },
+        React.createElement("ol", null,
+            React.createElement("li", null,
+                React.createElement("a", { href: "#deno%E3%81%A8%E3%81%AF" }, "Deno\u3068\u306F")))),
     'author': "yoshixmk",
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-01-11T14:17:05.000Z",
+    'date': "2021-09-26T07:28:11.000Z",
     'updated': null,
     'excerpt': "Publication date： 2020-06-23 Denoとは JavaScriptおよびTypeScriptのセキュアなランタイム → V8を使用し、Rust(runtime部分)とTypeScript(std module部分)で書かれています。 スター数 60kという驚くべき関心の高さ（ちなみ...",
     'cover': "../static/images/deno.png",
@@ -96,8 +100,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

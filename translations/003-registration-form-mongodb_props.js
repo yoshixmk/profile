@@ -15,6 +15,9 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "Creating Registration Form In Deno : MongoDB Setup, Saving Data"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<p>TBD <a href="https://dev.to/recoding/building-registration-form-in-deno-part-2-mongodb-setup-saving-data-36jc">Creating Registration Form In Deno : MongoDB Setup, Saving Data</a></p>'
@@ -24,7 +27,7 @@ export default {
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-01-11T14:17:05.000Z",
+    'date': "2021-09-26T07:28:11.000Z",
     'updated': null,
     'excerpt': "TBD Creating Registration Form In Deno : MongoDB Setup, Saving Data",
     'cover': undefined,
@@ -94,8 +97,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

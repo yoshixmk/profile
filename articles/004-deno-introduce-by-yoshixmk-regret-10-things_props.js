@@ -21,6 +21,9 @@ export default {
                 '**/npm-debug.log',
                 'dist'
             ],
+            footer: React.createElement("footer", null,
+                "Powered by\u00A0",
+                React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
             ga: {
                 id: 'UA-149348992-2'
             },
@@ -84,7 +87,9 @@ export default {
                             'articles/009-tege-domains-release.md',
                             'articles/010-introduction-f3.md',
                             'articles/011-introduction-gagic.md',
-                            'articles/012-introductio-piny-and-pinyin.md'
+                            'articles/012-introduction-piny-and-pinyin.md',
+                            'articles/013-hasura-presentation.tsx',
+                            'articles/014-playwright-presentation.tsx'
                         ],
                         link: 'articles/README.md'
                     },
@@ -105,13 +110,18 @@ export default {
             theme: 'docs',
             title: 'yoshixmk Profile',
             watch: false
-        }, content: null, head: null, layoutPath: "_layout.tsx", outputPath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html", pagePath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx", published: "2020-07-08", script: null, title: "Deno \u767A\u8868\u8CC7\u6599" }),
+        }, content: null, footer: React.createElement("footer", null,
+            "Powered by\u00A0",
+            React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")), head: null, layoutPath: "_layout.tsx", outputPath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.html", pagePath: "articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx", published: "2020-07-08", script: null, title: "Deno \u767A\u8868\u8CC7\u6599" }),
     'head': React.createElement(React.Fragment, null,
         React.createElement(Ga, { id: "UA-149348992-2" })),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'author': "yoshixmk",
     'published': "2020-07-08",
     'sidebar': [
@@ -180,8 +190,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

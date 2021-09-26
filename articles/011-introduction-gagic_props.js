@@ -15,18 +15,26 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "Gagic\u306E\u7D39\u4ECB"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<div style="text-align: right;">\nPublication date： 2020-09-22\n</div>\n<h2 id="gagic%E3%81%A8%E3%81%AF">Gagicとは<a class="anchor" href="#gagic%E3%81%A8%E3%81%AF">§</a></h2>\n<p>Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕</p>\n<p><code>Gagic</code>は<a href="https://deno.land/x/pagic@v0.9.1">Pagic</a>のサブバージョンです。<br>\n<code>Gagic</code>はに<code>Deno 1.4.0</code>以降をサポートし、今後も開発していきます。\n詳しくは後述しますが、<code>Deno 1.3.3</code>まで対応している<code>Pagic</code>v0.9.1をハードフォークして作成しています。</p>\n<h2 id="%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯<a class="anchor" href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">§</a></h2>\n<p>9/10、突然、Pagicを作成していた<a href="https://github.com/xcatliu">アカウント</a>や<strong>リポジトリ</strong>が消えて、<a href="https://github.com/yoshixmk/deno-x-ranking/">deno-x-ranking</a>のCIが失敗するようになった。<br>\nこの時はDenoのサードパーティモジュールの固定化されたURLに変更し、対応した。</p>\n<p>9/14、Deno 1.4.0の<code>BREAKING Changes</code>の内容を含んでいたため、メンテナンスの必要があったため、ハードフォークし、対応を始めた。</p>\n<p>選択肢としては、2つだが、後者を選んだ。</p>\n<ul>\n<li>1.3.3を使用し続ける</li>\n<li>自分でメンテナンスして1.4.0移行に対応する</li>\n</ul>\n<p>9/21、この<code>Profile</code>サイトや<code>deno-x-ranking</code>を<code>Pagic</code>から<code>Gagic</code>へ切り替え作業が完了。</p>\n<h2 id="%E4%BD%BF%E3%81%84%E6%96%B9">使い方<a class="anchor" href="#%E4%BD%BF%E3%81%84%E6%96%B9">§</a></h2>\n<p><code>README</code>をご覧ください。</p>\n<p><a href="https://github.com/yoshixmk/gagic#gagic">https://github.com/yoshixmk/gagic#gagic</a></p>'
         } }),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#gagic%E3%81%A8%E3%81%AF">Gagicとは</a></li><li><a href="#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF">ハードフォークと経緯</a></li><li><a href="#%E4%BD%BF%E3%81%84%E6%96%B9">使い方</a></li></ol></nav>'
-        } }),
+    'toc': React.createElement("nav", { key: "0", className: "toc" },
+        React.createElement("ol", null,
+            React.createElement("li", null,
+                React.createElement("a", { href: "#gagic%E3%81%A8%E3%81%AF" }, "Gagic\u3068\u306F")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E3%83%8F%E3%83%BC%E3%83%89%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF%E3%81%A8%E7%B5%8C%E7%B7%AF" }, "\u30CF\u30FC\u30C9\u30D5\u30A9\u30FC\u30AF\u3068\u7D4C\u7DEF")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E4%BD%BF%E3%81%84%E6%96%B9" }, "\u4F7F\u3044\u65B9")))),
     'author': "yoshixmk",
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-01-11T14:17:05.000Z",
+    'date': "2021-09-26T07:28:11.000Z",
     'updated': null,
     'excerpt': "Publication date： 2020-09-22 Gagicとは Denoを用いて、Markdownから静的HTMLページを生成する最も簡単なツールです🦕 GagicはPagicのサブバージョンです。 GagicはにDeno 1.4.0以降をサポートし、今後も開発していきます。...",
     'cover': undefined,
@@ -96,8 +104,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

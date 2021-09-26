@@ -15,18 +15,33 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/profile/index.js", type: "module" })),
+    'footer': React.createElement("footer", null,
+        "Powered by\u00A0",
+        React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "Deno\u306E\u30B5\u30FC\u30C9\u30D1\u30FC\u30C6\u30A3\u30E2\u30B8\u30E5\u30FC\u30EB\u3092\u516C\u958B\u3057\u307E\u3057\u305F"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<div style="text-align: right;">\nPublication date： 2020-06-23\n</div>\n<h2 id="i-have-published-a-third-party-module">I have published a third party module.<a class="anchor" href="#i-have-published-a-third-party-module">§</a></h2>\n<h2 id="deno-x-ranking">deno-x-ranking<a class="anchor" href="#deno-x-ranking">§</a></h2>\n<p>🦕 Deno Third Party Modules Ranking 👑<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a></p>\n<h2 id="%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能<a class="anchor" href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">§</a></h2>\n<p>サードパーティモジュールをランキング形式で並べ、注目するべきモジュールがわかるというのを目指して、作成しました。<br>\n<a href="https://deno.land/x/ranking">https://deno.land/x/ranking</a><br>\n出力形式は、tsv形式と標準出力が選べます。<br>\n使用するには下記を実行してください（Githubアカウントが必要です）</p>\n<h3 id="file-output">File output<a class="anchor" href="#file-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>write https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> file\n</code></pre>\n<h3 id="console-output">Console output<a class="anchor" href="#console-output">§</a></h3>\n<pre class="language-autoit"><code class="language-autoit">$ deno run <span class="token operator">-</span><span class="token operator">-</span>allow<span class="token operator">-</span>net https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>ranking<span class="token operator">/</span>mod<span class="token punctuation">.</span>ts <span class="token operator">&lt;</span>github username<span class="token operator">></span> <span class="token operator">&lt;</span>github password<span class="token operator">></span> table\n</code></pre>\n<h2 id="%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定<a class="anchor" href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">§</a></h2>\n<p>いつでもランキングが見れるよう、ページを構築しようかと思ってます。</p>'
         } }),
-    'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
-            __html: '<nav class="toc"><ol><li><a href="#i-have-published-a-third-party-module">I have published a third party module.</a></li><li><a href="#deno-x-ranking">deno-x-ranking</a></li><li><a href="#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD">ランキング機能</a><ol><li><a href="#file-output">File output</a></li><li><a href="#console-output">Console output</a></li></ol></li><li><a href="#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A">今後の予定</a></li></ol></nav>'
-        } }),
+    'toc': React.createElement("nav", { key: "0", className: "toc" },
+        React.createElement("ol", null,
+            React.createElement("li", null,
+                React.createElement("a", { href: "#i-have-published-a-third-party-module" }, "I have published a third party module.")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#deno-x-ranking" }, "deno-x-ranking")),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0%E6%A9%9F%E8%83%BD" }, "\u30E9\u30F3\u30AD\u30F3\u30B0\u6A5F\u80FD"),
+                React.createElement("ol", null,
+                    React.createElement("li", null,
+                        React.createElement("a", { href: "#file-output" }, "File output")),
+                    React.createElement("li", null,
+                        React.createElement("a", { href: "#console-output" }, "Console output")))),
+            React.createElement("li", null,
+                React.createElement("a", { href: "#%E4%BB%8A%E5%BE%8C%E3%81%AE%E4%BA%88%E5%AE%9A" }, "\u4ECA\u5F8C\u306E\u4E88\u5B9A")))),
     'author': "yoshixmk",
     'contributors': [
         "yoshixmk"
     ],
-    'date': "2021-01-11T14:17:05.000Z",
+    'date': "2021-09-26T07:28:11.000Z",
     'updated': null,
     'excerpt': "Publication date： 2020-06-23 I have published a third party module. deno-x-ranking 🦕 Deno Third Party Modules Ranking 👑 https://deno.land/x/ranking ランキング機能 サードパーティモジュールをランキング形式...",
     'cover': undefined,
@@ -96,8 +111,18 @@ export default {
                 },
                 {
                     "text": "PinyとPinyinの紹介",
-                    "link": "articles/012-introductio-piny-and-pinyin.html",
-                    "pagePath": "articles/012-introductio-piny-and-pinyin.md"
+                    "link": "articles/012-introduction-piny-and-pinyin.html",
+                    "pagePath": "articles/012-introduction-piny-and-pinyin.md"
+                },
+                {
+                    "text": "Hasura 発表資料",
+                    "link": "articles/013-hasura-presentation.html",
+                    "pagePath": "articles/013-hasura-presentation.tsx"
+                },
+                {
+                    "text": "Playwright 発表資料",
+                    "link": "articles/014-playwright-presentation.html",
+                    "pagePath": "articles/014-playwright-presentation.tsx"
                 }
             ],
             "pagePath": "articles/README.md",

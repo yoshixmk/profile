@@ -1,14 +1,118 @@
 import projectConfig from '/profile/pagic.config.js';
+import DenoIntro from './014-playwright-presentation_content.js';
 import Ga from '/profile/_ga.js';
 export default {
     config: { "root": "/", ...projectConfig, branch: 'master' },
-    'pagePath': "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md",
+    'pagePath': "articles/014-playwright-presentation.tsx",
     'layoutPath': "_layout.tsx",
-    'outputPath': "translations/006-the-wait-is-over-mandarine-2-0-0-is-here.html",
-    'title': "The wait is over, Mandarine 2.0.0 is here.",
-    'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>The wait is over, Mandarine 2.0.0 is here.</h1>\n<p>TBD <a href="https://dev.to/andreespirela/the-wait-is-over-mandarine-2-0-0-is-here-3g2e">The wait is over, Mandarine 2.0.0 is here.</a></p>'
-        } }),
+    'outputPath': "articles/014-playwright-presentation.html",
+    'title': "Playwright 発表資料",
+    'content': React.createElement(DenoIntro, { author: "yoshixmk", config: {
+            branch: 'master',
+            exclude: [
+                '**/.*',
+                '**/package.json',
+                '**/package-lock.json',
+                '**/node_modules',
+                'pagic.config.ts',
+                'pagic.config.tsx',
+                '**/config.gypi',
+                '**/CVS',
+                '**/npm-debug.log',
+                'dist'
+            ],
+            footer: React.createElement("footer", null,
+                "Powered by\u00A0",
+                React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
+            ga: {
+                id: 'UA-149348992-2'
+            },
+            github: 'https://github.com/yoshixmk',
+            ignore: [
+                /\/public\//,
+                /\/\./,
+                /\/LICENSE/
+            ],
+            include: undefined,
+            nav: [
+                {
+                    link: 'https://www.tegebu.com/',
+                    text: 'Tegebu'
+                },
+                {
+                    link: '/../deno-x-ranking/',
+                    text: 'Deno X Ranking'
+                },
+                {
+                    link: 'https://github.com/yoshixmk',
+                    text: 'Github'
+                },
+                {
+                    link: 'https://twitter.com/yoshixmk',
+                    text: 'Twitter'
+                },
+                {
+                    link: 'https://qiita.com/yoshixmk',
+                    text: 'Qiita'
+                }
+            ],
+            outDir: 'dist',
+            plugins: [
+                'clean',
+                'init',
+                'md',
+                'tsx',
+                'script',
+                'layout',
+                'out',
+                'sidebar',
+                'ga'
+            ],
+            port: 8000,
+            root: '/profile/',
+            serve: false,
+            sidebar: {
+                '/': [
+                    'README.md',
+                    {
+                        children: [
+                            'articles/001-deno-introduction-in-my-company.md',
+                            'articles/002-news-published-third-party-module.md',
+                            'articles/003-deno-introduction-at-ts-study-meeting.md',
+                            'articles/004-deno-introduce-by-yoshixmk-regret-10-things.tsx',
+                            'articles/005-deno-react-chat.md',
+                            'articles/006-tege-next-introduction.md',
+                            'articles/007-deno-ja-manual-introduction.md',
+                            'articles/008-tege-next-trend-page-release.md',
+                            'articles/009-tege-domains-release.md',
+                            'articles/010-introduction-f3.md',
+                            'articles/011-introduction-gagic.md',
+                            'articles/012-introduction-piny-and-pinyin.md',
+                            'articles/013-hasura-presentation.tsx',
+                            'articles/014-playwright-presentation.tsx'
+                        ],
+                        link: 'articles/README.md'
+                    },
+                    {
+                        children: [
+                            'translations/001-perfomance-aspect-of-deno-vs-node-js.md',
+                            'translations/002-what-is-the-best-deno-web-framework.md',
+                            'translations/003-registration-form-mongodb.md',
+                            'translations/004-guide-to-porting-node-modules-to-deno.md',
+                            'translations/005-do-all-roads-lead-to-rome.md',
+                            'translations/006-the-wait-is-over-mandarine-2-0-0-is-here.md'
+                        ],
+                        link: 'translations/README.md'
+                    }
+                ]
+            },
+            srcDir: '.',
+            theme: 'docs',
+            title: 'yoshixmk Profile',
+            watch: false
+        }, content: null, footer: React.createElement("footer", null,
+            "Powered by\u00A0",
+            React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")), head: null, layoutPath: "_layout.tsx", outputPath: "articles/014-playwright-presentation.html", pagePath: "articles/014-playwright-presentation.tsx", published: "2021-09-23", script: null, title: "Playwright \u767A\u8868\u8CC7\u6599" }),
     'head': React.createElement(React.Fragment, null,
         React.createElement(Ga, { id: "UA-149348992-2" })),
     'script': React.createElement(React.Fragment, null,
@@ -18,19 +122,8 @@ export default {
     'footer': React.createElement("footer", null,
         "Powered by\u00A0",
         React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
-    'contentTitle': React.createElement("h1", { key: "0" }, "The wait is over, Mandarine 2.0.0 is here."),
-    'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>TBD <a href="https://dev.to/andreespirela/the-wait-is-over-mandarine-2-0-0-is-here-3g2e">The wait is over, Mandarine 2.0.0 is here.</a></p>'
-        } }),
-    'toc': null,
     'author': "yoshixmk",
-    'contributors': [
-        "yoshixmk"
-    ],
-    'date': "2021-09-26T07:28:11.000Z",
-    'updated': null,
-    'excerpt': "TBD The wait is over, Mandarine 2.0.0 is here.",
-    'cover': undefined,
+    'published': "2021-09-23",
     'sidebar': [
         {
             "text": "@yoshixmk / Yoshihiro Ueki",
