@@ -15,9 +15,9 @@ type PageProps = Readonly<{
     lang: string
   }>
 }>
-const Wrapper = useMDXComponents().wrapper
 
 export default async function Page(props: PageProps) {
+  const Wrapper = useMDXComponents().wrapper
   // eslint-disable-next-line react/prefer-destructuring-assignment
   const params = await props.params
   const result = await importPage(params.mdxPath, params.lang)
