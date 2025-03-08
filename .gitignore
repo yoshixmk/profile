@@ -1,2 +1,16 @@
 .DS_Store
+
+# dependencies
+/node_modules
+
 dist/
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# local env files
+.env*.local
