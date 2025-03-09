@@ -25,15 +25,6 @@ export default withNextra({
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
   },
-  output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : '',
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/en',
-        permanent: true,
-      },
-    ]
-  },
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : ''
 })
