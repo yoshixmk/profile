@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - milestone/replace
+      - ci-build-pages
 
 permissions:
   contents: write
