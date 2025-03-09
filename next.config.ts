@@ -25,4 +25,5 @@ export default withNextra({
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
   },
+  output: 'export',
 })
