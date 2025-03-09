@@ -26,4 +26,5 @@ export default withNextra({
     silenceDeprecations: ['legacy-js-api'],
   },
   output: 'export',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : ''
 })
