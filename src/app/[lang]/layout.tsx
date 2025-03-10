@@ -1,10 +1,10 @@
-import type { I18nLangAsyncProps, I18nLangKeys } from '../../i18n'
+import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
 
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 
-import { CustomFooter } from '../../components/CustomFooter'
-import { useServerLocale } from '../../hooks'
+import { CustomFooter } from '@/components/CustomFooter'
+import { useServerLocale } from '@/hooks'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
@@ -129,7 +129,7 @@ export default async function RootLayout({ children, params }: Props) {
             search={<Search />}
             i18n={[
               { locale: 'en', name: 'English' },
-              { locale: 'zh', name: '简体中文' },
+              { locale: 'ja', name: '日本語' },
             ]}
             pageMap={pageMap}
             feedback={{ content: '' }}

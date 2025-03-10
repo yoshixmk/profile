@@ -1,7 +1,7 @@
 'use client'
 
-import { Toggle } from '../components/ui/toggle'
-import { useLocale } from '../hooks'
+import { Toggle } from '@/components/ui/toggle'
+import { useLocale } from '@/hooks'
 import clsx from 'clsx'
 import { addBasePath } from 'next/dist/client/add-base-path'
 import { usePathname, useRouter } from 'next/navigation'
@@ -10,7 +10,7 @@ import { useCallback, useEffect } from 'react'
 const ONE_YEAR = 365 * 24 * 60 * 60 * 1000
 
 /**
- * 快速切换语言组件，用于覆盖 nextra 原生切换下拉框
+ * 言語を素早く切り替えるコンポーネントで、nextraのネイティブな切り替えドロップダウンを上書きします
  */
 export default function LocaleToggle({
   className,
@@ -49,19 +49,19 @@ export default function LocaleToggle({
   }, [forceHideBanner])
 
   const changeLocale = useCallback(() => {
-    // 滚动条位置记录
+    // スクロール位置を記録
     const currentPosition = window.scrollY
-    // 检查是否滚动到底部
+    // ページの一番下までスクロールしているか確認
     const isAtBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight
 
     const nextHref = {
       value: '',
     }
-    if (currentLocale === 'zh') {
-      nextHref.value = addBasePath(pathname.replace(`/zh`, `/en`))
+    if (currentLocale === 'ja') {
+      nextHref.value = addBasePath(pathname.replace(`/ja`, `/en`))
     }
     else {
-      nextHref.value = addBasePath(pathname.replace(`/en`, `/zh`))
+      nextHref.value = addBasePath(pathname.replace(`/en`, `/ja`))
     }
 
     const date = new Date(Date.now() + ONE_YEAR)
@@ -69,7 +69,7 @@ export default function LocaleToggle({
 
     router.replace(nextHref.value)
 
-    // 在路由变化后恢复滚动位置
+    // ルート変更後にスクロール位置を復元
     requestAnimationFrame(() => {
       if (isAtBottom) {
         window.scrollTo(0, document.body.scrollHeight)
@@ -90,7 +90,7 @@ export default function LocaleToggle({
       onClick={changeLocale}
     >
       {
-        currentLocale === 'zh'
+        currentLocale === 'ja'
           ? <span className="icon-[uil--letter-chinese-a]" />
           : <span className="icon-[ri--english-input]" />
       }

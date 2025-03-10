@@ -6,7 +6,7 @@ import { useTheme } from 'nextra-theme-docs'
 import { useCallback } from 'react'
 
 /**
- * 快速切换暗黑模式组件，用于覆盖 nextra 原生切换下拉框
+ * ダークモードを素早く切り替えるコンポーネントで、nextraのネイティブな切り替えドロップダウンを上書きします
  */
 export default function ThemeToggle({
   className,
