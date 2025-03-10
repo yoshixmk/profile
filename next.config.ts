@@ -20,9 +20,11 @@ export default withNextra({
   cleanDistDir: true,
   i18n: {
     locales: ['zh', 'en'],
-    defaultLocale: 'zh',
+    defaultLocale: 'en',
   },
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
   },
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : ''
 })
