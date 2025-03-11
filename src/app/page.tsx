@@ -1,5 +1,11 @@
 import { redirect } from 'next/navigation';
 
-export default function Home() {
+type PageProps = Readonly<{
+  params: Promise<{
+    lang: string
+  }>
+}>
+
+export default function Home(props: PageProps = { params: Promise.resolve({ lang: 'en' }) }) {
   redirect('./en');
 }
