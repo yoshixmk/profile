@@ -12,8 +12,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "postbuild": "cpy out/en.html . --rename=index.html && pagefind --site .next/server/app --output-path public/_pagefind",
-    "start": "next start"
+    "copy": "cpy out/en.html . --rename=index.html",
+    "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - milestone/replace
-      - ci-build-pages
+      - remove-zh
 
 permissions:
   contents: write
@@ -27,7 +27,13 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build && pnpm postbuild
+        run: pnpm build
+
+      - name: Pagefind
+        run: pnpm copy
+
+      - name: Pagefind
+        run: pnpm pagefind
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
