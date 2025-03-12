@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - milestone/replace
-      - remove-zh
 
 permissions:
   contents: write
