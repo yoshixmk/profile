@@ -5,15 +5,15 @@ import type { ReactNode } from 'react'
 
 import { CustomFooter } from '@/components/CustomFooter'
 import { useServerLocale } from '@/hooks'
-import LocaleToggle from '../widgets/locale-toggle'
-import ThemeToggle from '../widgets/theme-toggle'
+import LocaleToggle from '../../widgets/locale-toggle'
+import ThemeToggle from '../../widgets/theme-toggle'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
-import { getDictionary, getDirection } from './_dictionaries/get-dictionary'
+import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
 
-import { ThemeProvider } from './[lang]/_components/ThemeProvider'
-import './[lang]/styles/index.css'
+import { ThemeProvider } from './_components/ThemeProvider'
+import './styles/index.css'
 
 export const metadata = {
   // Define your metadata here
@@ -67,12 +67,11 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
 
 interface Props {
   children: ReactNode
-  params: Promise<{ lang?: I18nLangKeys }>
+  params: Promise<{ lang: I18nLangKeys }>
 }
 
 export default async function RootLayout({ children, params }: Props) {
-  const tmpLang = await params
-  const lang = tmpLang.lang || 'en'
+  const { lang } = await params
   const dictionary = await getDictionary(lang)
   const pageMap = await getPageMap(lang)
 
