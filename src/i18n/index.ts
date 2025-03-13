@@ -1,9 +1,9 @@
 import en from './en'
-import zh from './zh'
+import ja from './ja'
 
 export const i18nConfig = Object.freeze({
   en,
-  zh,
+  ja,
 })
 
 export type I18nLangKeys = keyof typeof i18nConfig
@@ -11,10 +11,11 @@ export interface I18nLangAsyncProps {
   lang: I18nLangKeys
 }
 
-// 获取所有语言对象的联合类型
+// すべての言語オブジェクトのユニオン型を取得
 export type AllLocales = typeof i18nConfig[I18nLangKeys]
 
 
+// 深いキーの型
 type DeepKeys<T> = {
   [K in keyof T & (string | number)]: T[K] extends object
     ? `${K & string | number}.${DeepKeys<T[K]>}`
@@ -22,19 +23,21 @@ type DeepKeys<T> = {
 }[keyof T & (string | number)]
 
 
+// オブジェクトのネストされたキーを取得
 export type NestedKeyOf<ObjectType extends object> = {
   [Key in keyof ObjectType & (string | number)]: ObjectType[Key] extends object
     ? `${Key}` | `${Key}.${NestedKeyOf<ObjectType[Key]>}`
     : `${Key}`
 }[keyof ObjectType & (string | number)]
 
-// 获取所有可能的键
+// すべての可能なキーを取得
 export type LocaleKeys = NestedKeyOf<AllLocales>
 
 
+// 深いオブジェクトの型
 type DeepObject = Record<string, any>
 
-// 类型提取给定路径上值的类型
+// 与えられたパス上の値の型を抽出
 export type PathValue<T, P extends string> =
   P extends `${infer Key}.${infer Rest}`
     ? Key extends keyof T
@@ -44,13 +47,13 @@ export type PathValue<T, P extends string> =
       ? T[P]
       : never
 
-// 获取嵌套值
+// ネストされた値を取得
 export function getNestedValue<T extends DeepObject, K extends string>(obj: T, path: K): PathValue<T, K> {
   return path.split('.').reduce((acc, key) => acc && acc[key], obj) as PathValue<T, K>
 }
 
 
-// 插入值表达式
+// 値を挿入する式
 export function interpolateString(template: string, context: Record<string, any>): string {
   return template.replace(/\{\{\s*(\w+(\.\w+)*)\s*\}\}/g, (_, path) => {
     const value = getNestedValue(context, path.trim())

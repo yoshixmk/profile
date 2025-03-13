@@ -19,12 +19,13 @@ export default withNextra({
   reactStrictMode: true,
   cleanDistDir: true,
   i18n: {
-    locales: ['zh', 'en'],
+    locales: ['ja', 'en'],
     defaultLocale: 'en',
   },
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
   },
   output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : ''
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/profile' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/profile' : '',
 })
