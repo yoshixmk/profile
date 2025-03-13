@@ -19,7 +19,7 @@ export default {
       toc: false,
     },
   },
-  examples: {
+  blog: {
     title: 'ブログ',
     type: 'page',
   },
