@@ -20,7 +20,7 @@ export default {
     },
   },
   examples: {
-    title: '例',
+    title: 'ブログ',
     type: 'page',
   },
   upgrade: {

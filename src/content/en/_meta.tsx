@@ -20,7 +20,7 @@ export default {
     },
   },
   examples: {
-    title: 'Examples',
+    title: 'Blog',
     type: 'page',
   },
   upgrade: {
