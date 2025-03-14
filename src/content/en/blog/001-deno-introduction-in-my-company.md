@@ -1,7 +1,3 @@
----
-title: "Presented Deno at an In-House Study Session"
----
-
 # Presented Deno at an In-House Study Session
 ![Deno](/img/blog/deno.png)
 
