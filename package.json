@@ -10,7 +10,7 @@
     "url": "git+https://github.com/yoshixmk/profile.git"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "copy": "cpy out/en.html . --rename=index.html",
     "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind"
