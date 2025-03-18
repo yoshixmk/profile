@@ -1,6 +1,6 @@
 # Tegebu TS勉強会で登壇しました
 Typescriptのセキュアなランタイム、**Deno**について話をしました   
-![ts](../static/images/ts.png)
+![ts](/img/blog/ts.png)
 
 <div style="text-align: right;">
 Publication date： 2020-06-23
