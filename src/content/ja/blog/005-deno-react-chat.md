@@ -8,13 +8,13 @@ React, deno-react-base-server, Websocketを使用して、チャットを作成�
 リポジトリはこちら  
 https://github.com/yoshixmk/deno-react-chat  
 （ IssueやPRをお待ちしてます ）
-![deno-react-chatのスクリーンショット](../static/images/screenshot.png)
+![deno-react-chatのスクリーンショット](/img/blog/screenshot.png)
 
 React.FunctionComponent (React.FC) を使用しています  
 また、Typescriptファイルのみで構成してみました。  
 
 サーバは、[deno-react-base-server](https://github.com/asos-craigmorten/deno-react-base-server)を使用しており、背後で[Opine](https://github.com/asos-craigmorten/opine)という、ExpressJSから移植されたDeno用の高速でシンプルなWebフレームワークが動作します。  
-![typescript only image](../static/images/typescript100.png)
+![typescript only image](/img/blog/typescript100.png)
 
 Opineを使用して、1から作成したい場合は一度[Example](https://github.com/asos-craigmorten/opine/tree/main/examples/react)を見てみるのがおすすめです。  
 

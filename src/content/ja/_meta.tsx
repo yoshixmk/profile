@@ -19,8 +19,8 @@ export default {
       toc: false,
     },
   },
-  examples: {
-    title: '例',
+  blog: {
+    title: 'ブログ',
     type: 'page',
   },
   upgrade: {

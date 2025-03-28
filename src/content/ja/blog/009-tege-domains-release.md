@@ -4,7 +4,7 @@
 Publication date： 2020-09-20
 </div>
 
-![member page](../static/images/member.png)
+![member page](/img/blog/member.png)
 
 ## ドメインについて
 
@@ -29,7 +29,7 @@ Publication date： 2020-09-20
 ## 開発について
 開発において、最も大きなニュースは、[Organization](https://github.com/tegebu)へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。
 
-![Github organization tegebu](../static/images/organization_tegebu.png)
+![Github organization tegebu](/img/blog/organization_tegebu.png)
 
 開発に携わるのは、私（[@yoshixmk](https://github.com/yoshixmk)）と[@jamashita](https://github.com/jamashita)です。
 

@@ -14,6 +14,7 @@ import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
 
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
+import { redirect } from 'next/navigation'
 
 export const metadata = {
   // Define your metadata here
@@ -72,6 +73,9 @@ interface Props {
 
 export default async function RootLayout({ children, params }: Props) {
   const { lang } = await params
+  if (lang == undefined) {
+    redirect('/ja')
+  }
   const dictionary = await getDictionary(lang)
   const pageMap = await getPageMap(lang)
 

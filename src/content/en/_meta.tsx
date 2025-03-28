@@ -19,8 +19,8 @@ export default {
       toc: false,
     },
   },
-  examples: {
-    title: 'Examples',
+  blog: {
+    title: 'Blog',
     type: 'page',
   },
   upgrade: {

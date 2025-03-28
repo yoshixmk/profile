@@ -1,5 +1,9 @@
+---
+title: "社内勉強会でDenoを発表しました"
+---
+
 # 社内勉強会でDenoを発表しました
-![Deno](../static/images/deno.png)
+![Deno](/img/blog/deno.png)
 
 <div style="text-align: right;">
 Publication date： 2020-06-23
