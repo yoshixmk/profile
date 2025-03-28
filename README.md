@@ -3,8 +3,7 @@
 Web Engineer / Web Developer  
 
 ![Github icon](public/img/blog/usagi.jpg)
-![Facebbok's face](public/img/blog/yoshixmk.jpg)  
-
+![Facebook's face](public/img/blog/yoshixmk.jpg)
 [![yoshixmk's github stats](https://github-readme-stats.vercel.app/api?username=yoshixmk&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
 
 ## About
