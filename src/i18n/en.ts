@@ -22,7 +22,7 @@ export default {
     },
     {
       title: 'TypeScript Safety',
-      description: 'Fully integrated with TypeScript, offering blog type checking to reduce runtime errors and enhance code reliability and maintainability.',
+      description: 'Fully integrated with TypeScript, offering static type checking to reduce runtime errors and enhance code reliability and maintainability.',
     },
     {
       title: 'Iconify Icons',
