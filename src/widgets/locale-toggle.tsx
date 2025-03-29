@@ -3,7 +3,6 @@
 import { Toggle } from '@/components/ui/toggle'
 import { useLocale } from '@/hooks'
 import clsx from 'clsx'
-import { addBasePath } from 'next/dist/client/add-base-path'
 import { usePathname, useRouter } from 'next/navigation'
 import { useCallback, useEffect } from 'react'
 
@@ -58,10 +57,10 @@ export default function LocaleToggle({
       value: '',
     }
     if (currentLocale === 'ja') {
-      nextHref.value = addBasePath(pathname.replace('/profile', '').replace(`/ja`, `/en`))
+      nextHref.value = pathname.replace(`/ja`, `/en`)
     }
     else {
-      nextHref.value = addBasePath(pathname.replace('/profile', '').replace(`/en`, `/ja`))
+      nextHref.value = pathname.replace(`/en`, `/ja`)
     }
 
     const date = new Date(Date.now() + ONE_YEAR)
