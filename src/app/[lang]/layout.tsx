@@ -103,7 +103,7 @@ export default async function RootLayout({ children, params }: Props) {
         <meta property="og:description" content={description} />
         <link rel="canonical" href={repo} />
       </Head>
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

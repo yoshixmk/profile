@@ -58,10 +58,10 @@ export default function LocaleToggle({
       value: '',
     }
     if (currentLocale === 'ja') {
-      nextHref.value = addBasePath(pathname.replace(`/ja`, `/en`))
+      nextHref.value = addBasePath(pathname.replace('/profile', '').replace(`/ja`, `/en`))
     }
     else {
-      nextHref.value = addBasePath(pathname.replace(`/en`, `/ja`))
+      nextHref.value = addBasePath(pathname.replace('/profile', '').replace(`/en`, `/ja`))
     }
 
     const date = new Date(Date.now() + ONE_YEAR)
