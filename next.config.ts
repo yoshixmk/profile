@@ -20,7 +20,7 @@ export default withNextra({
   cleanDistDir: true,
   i18n: {
     locales: ['ja', 'en'],
-    defaultLocale: 'en',
+    defaultLocale: 'ja',
   },
   sassOptions: {
     silenceDeprecations: ['legacy-js-api'],
