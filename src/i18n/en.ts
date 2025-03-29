@@ -1,12 +1,16 @@
 export default {
-  systemTitle: '🚀 My Nextra Starter',
+  systemTitle: 'Profile for Yoshihiro Ueki',
   banner: {
     title: '👋 Hey there! Welcome to the Next.js Starter.',
     more: 'Check it out',
   },
 
+  firstName: 'Yoshihiro',
+  lastName: 'Ueki',
+
   badgeTitle: 'Lightweight & Easy 🎉',
-  featureSupport: `🔥 Now with {{feature}} support!`,
+  company: `💰 Currently working at {{companyName}}!`,
+  companyName: 'Money Forward\, Inc',
   lastUpdated: 'Last updated on:',
 
   getStarted: 'Get Started',

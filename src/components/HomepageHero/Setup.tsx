@@ -35,14 +35,10 @@ export function SetupHero(props: Props) {
             <span className="icon-[emojione-v1--lightning-mood]"></span>
           </MotionWrapperFlash>
           {' '}
-          Nextra
+          { t('firstName') }
           {' '}
           <br className="sm:hidden"></br>
-          {' '}
-          Starter
-          <br className="sm:hidden"></br>
-          {' '}
-          Template
+          { t('lastName') }
         </h1>
 
         <Link
@@ -56,8 +52,8 @@ export function SetupHero(props: Props) {
             '[animation-duration:2s]',
           ])}
           dangerouslySetInnerHTML={{
-            __html: t('featureSupport', {
-              feature: `<span>Tailwind CSS v4, Nextra v4</span>`,
+            __html: t('company', {
+              companyName: `<span>${ t('companyName') }</span>`,
             }),
           }}
         />
