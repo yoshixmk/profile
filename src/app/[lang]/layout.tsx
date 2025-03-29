@@ -10,7 +10,7 @@ import ThemeToggle from '../../widgets/theme-toggle'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
-import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
+import { getDirection } from '../_dictionaries/get-dictionary'
 
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
@@ -76,11 +76,10 @@ export default async function RootLayout({ children, params }: Props) {
   if (lang == undefined) {
     redirect('/ja')
   }
-  const dictionary = await getDictionary(lang)
   const pageMap = await getPageMap(lang)
 
-  const title = 'My Nextra Starter'
-  const description = 'A Starter template with Next.js, Nextra'
+  const title = 'Profile'
+  const description = 'Full-stack Web Engineer & Android Engineer'
 
   const { t } = await useServerLocale(lang)
 
@@ -95,7 +94,6 @@ export default async function RootLayout({ children, params }: Props) {
       suppressHydrationWarning
     >
       <Head
-      // ... Your additional head options
       >
         {/* <title>{asPath !== '/' ? `${normalizePagesResult.title} - ${title}` : title}</title> */}
         <meta property="og:title" content={title} />
