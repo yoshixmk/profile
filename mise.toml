@@ -1,2 +1,6 @@
 [tools]
 node = "22"
+
+[tasks.build]
+run = "pnpm build && pnpm pagefind && pnpm copy "
+description = "Build the project"
