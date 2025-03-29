@@ -1,5 +1,5 @@
-import type Ja from '../../i18n/ja'
 import 'server-only'
+import type Ja from '../../i18n/ja'
 
 // We enumerate all dictionaries here for better linting and TypeScript support
 // We also get the default import for cleaner types
@@ -10,7 +10,10 @@ const dictionaries = {
 
 export const getDictionary = async (
   locale: keyof typeof dictionaries,
-): Promise<typeof Ja> => (await dictionaries[locale]()).default
+): Promise<typeof Ja> => {
+  let dictionary = dictionaries[locale] || dictionaries.ja
+  return (await dictionary()).default
+}
 
 export const getDirection = (locale: keyof typeof dictionaries) => {
   switch (locale) {
