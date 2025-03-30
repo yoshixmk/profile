@@ -71,7 +71,7 @@ interface Props {
   params: Promise<{ lang: I18nLangKeys }>
 }
 
-export default async function RootLayout({ children, params }: Props) {
+export default async function LangLayout({ children, params }: Props) {
   const { lang } = await params
   if (lang == undefined) {
     redirect('/ja')
