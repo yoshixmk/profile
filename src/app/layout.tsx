@@ -2,8 +2,8 @@ import React from 'react'
 import {Metadata} from 'next'
 
 export const metadata: Metadata = {
-  title: 'プロファイルサイト',
-  description: '個人プロファイルサイト',
+  title: 'プロフィールサイト',
+  description: '植木善弘のプロフィールサイト',
 }
 
 type Props = {
