@@ -13,7 +13,7 @@ export default {
   },
   introduction: {
     type: 'page',
-    title: 'This is Introduction',
+    title: 'My Career',
     theme: {
       navbar: true,
       toc: false,

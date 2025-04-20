@@ -76,7 +76,7 @@ export function SetupHero(props: Props) {
             ]}
           />
           <br />
-          With
+          This site is built with
           {' '}
           <LinkPreview
             url="https://nextjs.org"
@@ -125,10 +125,10 @@ export function SetupHero(props: Props) {
               className="font-bold group max-sm:w-[100%]"
             >
               <Link
-                href="https://github.com/pdsuwwz/nextjs-nextra-starter"
+                href="https://github.com/yoshixmk"
                 target="_blank"
               >
-                Github
+                My GitHub Page
                 <span className="ml-[6px] icon-[mingcute--github-line]"></span>
               </Link>
             </Button>

@@ -13,7 +13,7 @@ export default {
   },
   introduction: {
     type: 'page',
-    title: 'はじめに',
+    title: '経歴',
     theme: {
       navbar: true,
       toc: false,

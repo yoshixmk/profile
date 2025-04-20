@@ -14,7 +14,7 @@ export default {
   lastUpdated: '最終更新:',
   professionalLang: '得意な言語は、',
 
-  getStarted: '始める',
+  getStarted: '私について学ぶ',
 
   featureList: [
     {
