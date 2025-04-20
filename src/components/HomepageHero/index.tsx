@@ -1,7 +1,6 @@
 'use client'
 
 import { PanelParticles } from '../PanelParticles'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion'
 import { HoverEffect } from '../ui/card-hover-effect'
 import { useLocale } from '../../hooks'
 import { cn } from '../../lib/utils'
@@ -34,7 +33,6 @@ export default function HomepageHero() {
   const { t } = useLocale()
 
   const featureList = t('featureList')
-  const faqs = t('faqs')
 
   const { resolvedTheme } = useTheme()
 
@@ -62,20 +60,6 @@ export default function HomepageHero() {
     <>
       <PanelParticles />
       <SetupHero />
-      {/* <div className="relative top-[-18px] mb-[-10px] flex justify-center py-[0px] z-2">
-        <a
-          href="https://nextjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-[150px] h-[40px] flex flex-col items-center gap-[20px]"
-        >
-          <img
-            className="dark:invert"
-            src="/next.svg"
-            style={{ width: '100%', height: 'auto' }}
-          />
-        </a>
-      </div> */}
       <div className="relative z-1 pb-10 md:pb-[100px]">
         <Section
           title="Tech Stack"
@@ -113,30 +97,6 @@ export default function HomepageHero() {
           <div className="flex justify-center w-full max-w-7xl">
             <HoverEffect items={processedFeatureList} />
           </div>
-        </Section>
-        <Section
-          title="Frequently Asked Questions"
-          tallPaddingY
-        >
-          <Accordion
-            type="single"
-            collapsible
-            className="w-full max-w-5xl"
-          >
-            {
-              faqs.map((faqItem, index) => (
-                <AccordionItem
-                  value={faqItem.question}
-                  key={index}
-                >
-                  <AccordionTrigger>{faqItem.question}</AccordionTrigger>
-                  <AccordionContent>
-                    {faqItem.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              ))
-            }
-          </Accordion>
         </Section>
       </div>
     </>
