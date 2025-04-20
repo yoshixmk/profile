@@ -64,19 +64,15 @@ export function SetupHero(props: Props) {
           'text-neutral-500 dark:text-neutral-300',
         ])}
         >
-          Template made
-          {' '}
+          {t('professionalLang')}
           <FlipWords
             words={[
-              'Fast',
-              'Simple',
-              'Modern',
-              'Flexible',
-              'Easy',
-              'Functional',
-              'Efficient',
-              'Scalable',
-              'Reusable',
+              'JavaScript',
+              'TypeScript',
+              'Ruby',
+              'Kotlin',
+              'Scala',
+              'Java',
             ]}
           />
           <br />

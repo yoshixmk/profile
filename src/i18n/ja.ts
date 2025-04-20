@@ -8,10 +8,11 @@ export default {
   firstName: '植木',
   lastName: '善弘',
 
-  badgeTitle: '軽量で、すぐに使える 🎉',
+  badgeTitle: `エンジニア歴 ${new Date().getFullYear() - 2016}th 🎉`,
   company: `💰 現在 {{companyName}} で働いています！`,
   companyName: '株式会社マネーフォワード',
   lastUpdated: '最終更新:',
+  professionalLang: '得意な言語は、',
 
   getStarted: '始める',
 

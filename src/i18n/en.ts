@@ -8,10 +8,11 @@ export default {
   firstName: 'Yoshihiro',
   lastName: 'Ueki',
 
-  badgeTitle: 'Lightweight & Easy 🎉',
+  badgeTitle: `Engineering experience ${new Date().getFullYear() - 2016}th 🎉`,
   company: `💰 Currently working at {{companyName}}!`,
   companyName: 'Money Forward\, Inc',
   lastUpdated: 'Last updated on:',
+  professionalLang: 'My professional languages is ',
 
   getStarted: 'Get Started',
 
