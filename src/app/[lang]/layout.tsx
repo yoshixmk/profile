@@ -5,11 +5,11 @@ import type { ReactNode } from 'react'
 
 import { CustomFooter } from '@/components/CustomFooter'
 import { useServerLocale } from '@/hooks'
-import LocaleToggle from '../../widgets/locale-toggle'
-import ThemeToggle from '../../widgets/theme-toggle'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import LocaleToggle from '../../widgets/locale-toggle'
+import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
 
 import { ThemeProvider } from './_components/ThemeProvider'
@@ -67,8 +67,7 @@ export default async function LangLayout({ children, params }: Props) {
       dir={getDirection(lang)}
       suppressHydrationWarning
     >
-      <Head
-      >
+      <Head>
         {/* <title>{asPath !== '/' ? `${normalizePagesResult.title} - ${title}` : title}</title> */}
         <meta property="og:title" content={title} />
         <meta name="description" content={description} />

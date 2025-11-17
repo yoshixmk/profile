@@ -1,12 +1,12 @@
 'use client'
 
-import { PanelParticles } from '../PanelParticles'
-import { HoverEffect } from '../ui/card-hover-effect'
-import { useLocale } from '../../hooks'
-import { cn } from '../../lib/utils'
 import { useTheme } from 'nextra-theme-docs'
 import { useMemo } from 'react'
 import Marquee from 'react-fast-marquee'
+import { useLocale } from '../../hooks'
+import { cn } from '../../lib/utils'
+import { PanelParticles } from '../PanelParticles'
+import { HoverEffect } from '../ui/card-hover-effect'
 import { Section } from './Section'
 import { SetupHero } from './Setup'
 

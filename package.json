@@ -2,6 +2,7 @@
   "name": "profile",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "description": "Next.js Nextra (v4) Tailwind CSS (v4)",
   "author": "yoshixmk <pirori67@gmail.com>",
   "license": "MIT",
@@ -13,7 +14,9 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "copy": "cpy out/en.html . --rename=index.html",
-    "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind"
+    "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --fix --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -70,6 +73,5 @@
     "sass": "^1.85.1",
     "tailwindcss": "^4.0.10",
     "typescript": "^5.8.2"
-  },
-  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6"
+  }
 }

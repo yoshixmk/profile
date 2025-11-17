@@ -1,5 +1,5 @@
-import 'server-only'
 import type Ja from '../../i18n/ja'
+import 'server-only'
 
 const dictionaries = {
   en: () => import('../../i18n/en'),

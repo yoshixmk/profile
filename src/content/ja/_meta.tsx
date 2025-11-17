@@ -32,4 +32,4 @@ export default {
     ),
     type: 'page',
   },
-} satisfies MetaRecord 
+} satisfies MetaRecord

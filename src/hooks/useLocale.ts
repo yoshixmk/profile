@@ -1,9 +1,9 @@
 'use client'
 
-import type {AllLocales, I18nLangKeys, LocaleKeys, PathValue} from '@/i18n'
-import {getNestedValue, i18nConfig, interpolateString} from '@/i18n'
-import {useParams} from 'next/navigation' // next/navigationを使用
-import {useCallback} from 'react'
+import type { AllLocales, I18nLangKeys, LocaleKeys, PathValue } from '@/i18n'
+import { getNestedValue, i18nConfig, interpolateString } from '@/i18n'
+import { useParams } from 'next/navigation' // next/navigationを使用
+import { useCallback } from 'react'
 
 // 型は、指定されたキーのローカライズされた値の型を取得します
 type LocalizedValue<T, K extends LocaleKeys> = PathValue<T, K> extends string
