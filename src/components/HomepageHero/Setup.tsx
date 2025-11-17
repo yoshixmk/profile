@@ -1,13 +1,14 @@
 'use client'
 
-import styles from './SetupHero.module.css'
+import clsx from 'clsx'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useLocale } from '../../hooks'
 import { MotionWrapperFlash } from '../MotionWrapper/Flash'
 import { Button } from '../ui/button'
 import { FlipWords } from '../ui/flip-words'
 import { LinkPreview } from '../ui/link-preview'
-import { useLocale } from '../../hooks'
-import clsx from 'clsx'
-import Link from 'next/link'
+import styles from './SetupHero.module.css'
 
 interface Props {
 }
@@ -27,13 +28,16 @@ export function SetupHero(props: Props) {
             {t('badgeTitle')}
           </a>
         </div>
-        <h1 className={styles.headline}>
+        <div className={styles.imageContainer}>
           <MotionWrapperFlash
             disabledAnimation={false}
             className="flex items-center"
           >
-            <span className="icon-[emojione-v1--lightning-mood]"></span>
+            <Image src="/img/blog/yoshixmk.jpg" alt="Yoshihiro Ueki" width={200} height={200} />
+            <Image src="/img/blog/usagi.jpg" alt="Yoshihiro Ueki" width={200} height={200} />
           </MotionWrapperFlash>
+        </div>
+        <h1 className={styles.headline}>
           {' '}
           { t('firstName') }
           {' '}
@@ -53,7 +57,7 @@ export function SetupHero(props: Props) {
           ])}
           dangerouslySetInnerHTML={{
             __html: t('company', {
-              companyName: `<span>${ t('companyName') }</span>`,
+              companyName: `<span>${t('companyName')}</span>`,
             }),
           }}
         />
