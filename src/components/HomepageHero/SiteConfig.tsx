@@ -1,8 +1,8 @@
 'use client'
 
+import { useTheme } from 'nextra-theme-docs'
 import { useMemo } from 'react'
 import Marquee from 'react-fast-marquee'
-import { useTheme } from 'nextra-theme-docs'
 import { useLocale } from '../../hooks'
 import { cn } from '../../lib/utils'
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
@@ -95,7 +95,7 @@ export function SiteConfig() {
               description={item.description}
               header={<div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-linear-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100 items-center justify-center text-4xl">{item.icon}</div>}
               icon={<span className="text-neutral-500" />}
-              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
             />
           ))}
         </BentoGrid>

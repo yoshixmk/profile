@@ -4,14 +4,13 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useLocale } from '../../hooks'
+import { cn } from '../../lib/utils'
 import { MotionWrapperFlash } from '../MotionWrapper/Flash'
 import { Button } from '../ui/button'
 import { FlipWords } from '../ui/flip-words'
-import { LinkPreview } from '../ui/link-preview'
-import styles from './SetupHero.module.css'
 import { SparklesCore } from '../ui/sparkles'
 import { TypewriterEffect } from '../ui/typewriter-effect'
-import { cn } from '../../lib/utils'
+import styles from './SetupHero.module.css'
 
 interface Props {
 }
@@ -19,7 +18,7 @@ export function SetupHero(props: Props) {
   const { t, currentLocale } = useLocale()
 
   return (
-    <div className={cn(styles.container, "min-h-[70vh] flex flex-col items-center justify-center overflow-hidden rounded-md")}>
+    <div className={cn(styles.container, 'min-h-[70vh] flex flex-col items-center justify-center overflow-hidden rounded-md')}>
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
           id="tsparticlesfullpage"
@@ -31,7 +30,7 @@ export function SetupHero(props: Props) {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className={cn(styles.content, "relative z-20")}>
+      <div className={cn(styles.content, 'relative z-20')}>
         <div className={styles.badgeContainer}>
           <a
             className={styles.badge}
@@ -69,11 +68,11 @@ export function SetupHero(props: Props) {
           </MotionWrapperFlash>
         </div>
 
-        <h1 className={cn(styles.headline, "mt-8")}>
+        <h1 className={cn(styles.headline, 'mt-8')}>
           <TypewriterEffect
             words={[
               { text: t('firstName') },
-              { text: t('lastName'), className: "text-blue-500 dark:text-blue-400" }
+              { text: t('lastName'), className: 'text-blue-500 dark:text-blue-400' },
             ]}
           />
         </h1>

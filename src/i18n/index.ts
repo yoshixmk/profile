@@ -18,16 +18,16 @@ export type AllLocales = typeof i18nConfig[I18nLangKeys]
 // 深いキーの型
 type DeepKeys<T> = {
   [K in keyof T & (string | number)]: T[K] extends object
-  ? `${K & string | number}.${DeepKeys<T[K]>}`
-  : `${K & string | number}`
+    ? `${K & string | number}.${DeepKeys<T[K]>}`
+    : `${K & string | number}`
 }[keyof T & (string | number)]
 
 
 // オブジェクトのネストされたキーを取得
 export type NestedKeyOf<ObjectType extends object> = {
   [Key in keyof ObjectType & (string | number)]: ObjectType[Key] extends object
-  ? `${Key}` | `${Key}.${NestedKeyOf<ObjectType[Key]>}`
-  : `${Key}`
+    ? `${Key}` | `${Key}.${NestedKeyOf<ObjectType[Key]>}`
+    : `${Key}`
 }[keyof ObjectType & (string | number)]
 
 // すべての可能なキーを取得
@@ -40,12 +40,12 @@ type DeepObject = Record<string, any>
 // 与えられたパス上の値の型を抽出
 export type PathValue<T, P extends string> =
   P extends `${infer Key}.${infer Rest}`
-  ? Key extends keyof T
-  ? PathValue<T[Key], Rest>
-  : never
-  : P extends keyof T
-  ? T[P]
-  : never
+    ? Key extends keyof T
+      ? PathValue<T[Key], Rest>
+      : never
+    : P extends keyof T
+      ? T[P]
+      : never
 
 // ネストされた値を取得
 export function getNestedValue<T extends DeepObject, K extends string>(obj: T, path: K): PathValue<T, K> {
