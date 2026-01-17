@@ -15,6 +15,7 @@ export default {
   professionalLang: '得意な言語は、',
 
   getStarted: '私について学ぶ',
+  heroSubtitle: 'フルスタックエンジニアとして、Next.js、Tailwind、モダンエンジニアリングでエレガントなソリューションを構築しています。',
 
   featureList: [
     {

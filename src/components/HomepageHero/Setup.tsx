@@ -111,7 +111,7 @@ export function SetupHero(props: Props) {
             ]}
           />
           <p className="mt-4 text-sm opacity-80">
-            Crafting elegant solutions with Next.js, Tailwind, and Modern Engineering.
+            {t('heroSubtitle')}
           </p>
         </div>
 
