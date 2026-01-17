@@ -81,10 +81,6 @@ This implementation plan covers the comprehensive development and enhancement of
     - Implement frontmatter processing for metadata
     - _Requirements: 4.1, 4.5_
 
-  - [ ] 4.3 Write property test for content management
-    - **Property 3: Content Management System Integrity**
-    - **Validates: Requirements 4.1, 4.2, 4.3, 4.4, 4.5**
-
 - [ ] 5. Checkpoint - Ensure core systems are functional
 
   - Ensure all tests pass, ask the user if questions arise.
