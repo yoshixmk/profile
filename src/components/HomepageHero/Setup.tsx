@@ -79,7 +79,7 @@ export function SetupHero(props: Props) {
         </h1>
 
         <Link
-          href={`/${currentLocale}/upgrade`}
+          href={`/${currentLocale}/site-structure`}
           className={clsx([
             'bg-linear-to-r from-yellow-400 via-orange-500 to-red-500 text-white shadow-lg',
             'dark:bg-linear-to-r dark:from-green-400 dark:via-teal-500 dark:to-cyan-500 dark:text-white',
