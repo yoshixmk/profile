@@ -1,10 +1,10 @@
+import process from 'node:process'
 import createWithNextra from 'nextra'
 
 const withNextra = createWithNextra({
   defaultShowCopyCode: true,
   unstable_shouldAddLocaleToLinks: true,
 })
-
 
 /**
  * @type {import("next").NextConfig}
