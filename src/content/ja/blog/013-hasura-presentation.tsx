@@ -2,8 +2,8 @@
 // import * as React from 'https://cdn.pagic.org/react@16.13.1/esnext/react.development.js';
 
 // @ts-ignore
-const headerLine = <h1>Hasura 発表資料</h1>;
-const DenoIntro = () =>
+const headerLine = <h1>Hasura 発表資料</h1>
+const DenoIntro = () => (
   <>
     {headerLine}
     <iframe
@@ -12,12 +12,13 @@ const DenoIntro = () =>
       height="500"
     >
     </iframe>
-  </>;
+  </>
+)
 
-export default DenoIntro;
+export default DenoIntro
 
 export const frontMatter = {
-  title: "Hasura 発表資料",
-  author: "yoshixmk",
-  published: "2020-12-16",
-};
+  title: 'Hasura 発表資料',
+  author: 'yoshixmk',
+  published: '2020-12-16',
+}

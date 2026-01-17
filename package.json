@@ -2,6 +2,7 @@
   "name": "profile",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "description": "Next.js Nextra (v4) Tailwind CSS (v4)",
   "author": "yoshixmk <pirori67@gmail.com>",
   "license": "MIT",
@@ -13,7 +14,12 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "copy": "cpy out/en.html . --rename=index.html",
-    "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind"
+    "pagefind": "pagefind --site .next/server/app --output-path out/_pagefind",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --fix --ext .ts,.tsx,.js,.jsx,.mjs",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -53,6 +59,9 @@
     "@svgr/plugin-svgo": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.0.10",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -64,12 +73,14 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "fast-check": "^4.5.3",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
     "pagefind": "^1.3.0",
     "postcss": "^8.5.3",
     "react-responsive": "^10.0.1",
     "sass": "^1.85.1",
     "tailwindcss": "^4.0.10",
     "typescript": "^5.8.2"
-  },
-  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6"
+  }
 }

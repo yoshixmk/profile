@@ -16,7 +16,7 @@
 }
 
 .badgeContainer {
-  @apply mt-8 md:mt-16;
+  @apply my-8 md:my-16;
 }
 
 .badge {
@@ -61,6 +61,11 @@
       box-shadow: hsl(204 10% 25%) 0 0 0 1px inset;
     }
   }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .headline {

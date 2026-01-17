@@ -1,9 +1,9 @@
 'use client'
 
-import { Toggle } from '../components/ui/toggle'
 import clsx from 'clsx'
 import { useTheme } from 'nextra-theme-docs'
 import { useCallback } from 'react'
+import { Toggle } from '../components/ui/toggle'
 
 /**
  * ダークモードを素早く切り替えるコンポーネントで、nextraのネイティブな切り替えドロップダウンを上書きします

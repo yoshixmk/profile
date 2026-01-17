@@ -1,15 +1,20 @@
 export default {
-  systemTitle: '🚀 Nextra スターターテンプレート',
+  systemTitle: '植木善弘 Profile',
   banner: {
     title: '👋 こんにちは、Next.js スターターテンプレートへようこそ!',
     more: '詳細を見る',
   },
 
-  badgeTitle: '軽量で、すぐに使える 🎉',
-  featureSupport: `🔥 現在 {{feature}} をサポートしています！`,
-  lastUpdated: '最終更新:',
+  firstName: '植木',
+  lastName: '善弘',
 
-  getStarted: '始める',
+  badgeTitle: `エンジニア歴 ${new Date().getFullYear() - 2016}th 🎉`,
+  company: `💰 現在 {{companyName}} で働いています！`,
+  companyName: '株式会社マネーフォワード',
+  lastUpdated: '最終更新:',
+  professionalLang: '得意な言語は、',
+
+  getStarted: '私について学ぶ',
 
   featureList: [
     {

@@ -12,6 +12,9 @@ export default antfu({
     'node_modules',
     'coverage',
     'src/assets/**',
+    'jest.config.mjs',
+    'jest.setup.mjs',
+    '.kiro/**',
   ],
   stylistic: {
     indent: 2,

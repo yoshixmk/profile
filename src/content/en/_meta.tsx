@@ -1,5 +1,4 @@
 import type { MetaRecord } from 'nextra'
-import { TitleBadge } from '../../components/TitleBadge'
 
 export default {
   index: {
@@ -13,7 +12,7 @@ export default {
   },
   introduction: {
     type: 'page',
-    title: 'This is Introduction',
+    title: 'My Career',
     theme: {
       navbar: true,
       toc: false,
@@ -23,13 +22,8 @@ export default {
     title: 'Blog',
     type: 'page',
   },
-  upgrade: {
-    title: (
-      <span className="flex items-center leading-[1]">
-        What's New
-        <TitleBadge />
-      </span>
-    ),
+  'site-structure': {
+    title: 'Site Structure',
     type: 'page',
   },
 } satisfies MetaRecord

@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react'
-import { Separator } from '../ui/separator'
+import Link from 'next/link'
 import { cn } from '../../lib/utils'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
-import Link from 'next/link'
+import { Separator } from '../ui/separator'
 
 const UnderlineLink = ({
   link,
@@ -57,8 +57,8 @@ export function CustomFooter() {
             { new Date().getFullYear() }
           </span>
           <UnderlineLink
-            link="https://github.com/pdsuwwz"
-            label="Wisdom"
+            link="https://github.com/yoshixmk"
+            label="yoshixmk"
           />
         </div>
 
