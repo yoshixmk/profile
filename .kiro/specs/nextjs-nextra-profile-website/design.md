@@ -16,20 +16,20 @@ graph TB
         A[Browser] --> B[Next.js App Router]
         B --> C[Nextra Theme Engine]
     end
-    
+
     subgraph "Application Layer"
         C --> D[Language Middleware]
         D --> E[Page Components]
         E --> F[UI Component Library]
         F --> G[Animation System]
     end
-    
+
     subgraph "Content Layer"
         H[MDX Content] --> I[Content Management System]
         J[TSX Interactive Articles] --> I
         I --> E
     end
-    
+
     subgraph "Build Layer"
         K[Static Site Generation] --> L[GitHub Pages]
         M[Pagefind Indexing] --> K
@@ -68,15 +68,15 @@ graph TD
     C --> D[CustomNavbar]
     C --> E[Page Content]
     C --> F[CustomFooter]
-    
+
     E --> G[HomepageHero]
     E --> H[Blog Articles]
     E --> I[Profile Pages]
-    
+
     G --> J[PanelParticles]
     G --> K[SetupHero]
     G --> L[Feature Sections]
-    
+
     D --> M[LocaleToggle]
     D --> N[ThemeToggle]
     D --> O[Search Component]
@@ -87,14 +87,16 @@ graph TD
 #### Layout Components
 
 **RootLayout Component**
+
 - Purpose: Provides the base HTML structure and metadata
 - Props: `{ children: ReactNode }`
 - Responsibilities: Sets up document metadata and renders child components
 
 **LangLayout Component**
+
 - Purpose: Handles language-specific layouts and Nextra integration
 - Props: `{ children: ReactNode, params: Promise<{ lang: I18nLangKeys }> }`
-- Responsibilities: 
+- Responsibilities:
   - Configures Nextra theme with custom navbar and footer
   - Sets up ThemeProvider for dark/light mode
   - Manages language-specific page maps and metadata
@@ -102,12 +104,14 @@ graph TD
 #### Interactive Components
 
 **HomepageHero Component**
+
 - Purpose: Renders the main landing page with animations and feature showcase
 - State: Uses theme context and locale context
 - Subcomponents: PanelParticles, SetupHero, Feature sections with HoverEffect
 - Animation: Integrates with Framer Motion for smooth transitions
 
 **PanelParticles Component**
+
 - Purpose: Renders interactive particle background effects
 - Configuration: Dynamic particle settings based on theme (light/dark)
 - Performance: Disabled on mobile devices via CSS classes
@@ -116,12 +120,14 @@ graph TD
 #### Widget Components
 
 **ThemeToggle Component**
+
 - Purpose: Provides quick dark/light mode switching
 - State: Integrates with nextra-theme-docs useTheme hook
 - UI: Toggle button with sun/moon icons
 - Persistence: Automatically saves preference to localStorage
 
 **LocaleToggle Component**
+
 - Purpose: Enables language switching between Japanese and English
 - State: Uses custom useLocale hook and Next.js navigation
 - Behavior: Preserves scroll position during language changes
@@ -323,11 +329,13 @@ The application implements comprehensive error handling at multiple levels:
 #### Component-Level Error Handling
 
 **Particle System Error Handling**
+
 - Graceful degradation when WebGL is not supported
 - Fallback to CSS animations if tsparticles fails to initialize
 - Performance monitoring to disable particles on low-end devices
 
 **Content Loading Error Handling**
+
 - MDX parsing error boundaries with user-friendly error messages
 - Fallback content when language-specific pages are missing
 - Automatic retry mechanisms for failed content loads
@@ -335,11 +343,13 @@ The application implements comprehensive error handling at multiple levels:
 #### Navigation Error Handling
 
 **Language Switching Errors**
+
 - Fallback to default language if target language content is unavailable
 - Preservation of user context during error recovery
 - Cookie handling errors with localStorage fallback
 
 **Routing Error Handling**
+
 - 404 page handling with language-appropriate content
 - Middleware error recovery with default routing
 - Search functionality error handling with graceful degradation
@@ -347,11 +357,13 @@ The application implements comprehensive error handling at multiple levels:
 ### Build-Time Error Handling
 
 **Content Validation**
+
 - MDX syntax validation during build process
 - Missing translation detection and warnings
 - Asset optimization error handling with fallbacks
 
 **Deployment Error Handling**
+
 - GitHub Pages deployment validation
 - Asset path verification for production builds
 - Search index generation error recovery
@@ -365,17 +377,20 @@ The testing strategy combines unit tests for specific functionality with propert
 #### Unit Testing Focus Areas
 
 **Component Integration Tests**
+
 - Theme switching functionality with localStorage persistence
 - Language switching with cookie management and scroll preservation
 - Particle animation initialization and theme adaptation
 - Content rendering for both MDX and TSX formats
 
 **Navigation and Routing Tests**
+
 - Middleware language detection and redirection
 - URL generation for different locales
 - Page metadata generation for SEO
 
 **Error Condition Tests**
+
 - Missing content file handling
 - Invalid language parameter handling
 - Theme system fallback behavior
@@ -388,12 +403,14 @@ Property tests will use **fast-check** for TypeScript/JavaScript property-based 
 **Feature: nextjs-nextra-profile-website, Property {number}: {property_text}**
 
 **Property Test Areas**
+
 - Content management system behavior across all valid content structures
 - Theme system consistency across all supported themes and devices
 - Internationalization system behavior across all supported locales
 - Animation system performance across different device capabilities
 
 **Testing Infrastructure**
+
 - Jest for unit testing framework
 - React Testing Library for component testing
 - fast-check for property-based testing
@@ -401,44 +418,53 @@ Property tests will use **fast-check** for TypeScript/JavaScript property-based 
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system—essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+_A property is a characteristic or behavior that should hold true across all valid executions of a system—essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees._
 
 Based on the prework analysis and property reflection, the following correctness properties ensure the system behaves correctly across all valid inputs and configurations:
 
 ### Property 1: Locale System Consistency
-*For any* user browser configuration and website state, when the locale system processes language preferences, it should correctly detect, redirect, and persist the appropriate language while preserving user context
+
+_For any_ user browser configuration and website state, when the locale system processes language preferences, it should correctly detect, redirect, and persist the appropriate language while preserving user context
 **Validates: Requirements 1.1, 1.2, 1.4, 1.5, 5.4**
 
-### Property 2: Theme System Completeness  
-*For any* theme mode (light, dark, system) and UI component, when theme changes occur, all visual elements should consistently reflect the new theme including particles, colors, and component styling
+### Property 2: Theme System Completeness
+
+_For any_ theme mode (light, dark, system) and UI component, when theme changes occur, all visual elements should consistently reflect the new theme including particles, colors, and component styling
 **Validates: Requirements 3.1, 3.2, 3.3, 3.4, 3.5**
 
 ### Property 3: Content Management System Integrity
-*For any* valid content file (MDX or TSX) and language directory, the content management system should correctly render the content with proper navigation structure and embedded component functionality
+
+_For any_ valid content file (MDX or TSX) and language directory, the content management system should correctly render the content with proper navigation structure and embedded component functionality
 **Validates: Requirements 4.1, 4.2, 4.3, 4.4, 4.5**
 
 ### Property 4: Animation System Adaptation
-*For any* device type and theme configuration, the animation system should provide appropriate visual effects with hover animations enabled on desktop and particles disabled on mobile devices
+
+_For any_ device type and theme configuration, the animation system should provide appropriate visual effects with hover animations enabled on desktop and particles disabled on mobile devices
 **Validates: Requirements 2.2, 2.3, 2.5**
 
 ### Property 5: Navigation System Consistency
-*For any* page navigation and language context, the navigation system should maintain consistent header structure, proper routing, and appropriate navigation elements (breadcrumbs, TOC) based on page type
+
+_For any_ page navigation and language context, the navigation system should maintain consistent header structure, proper routing, and appropriate navigation elements (breadcrumbs, TOC) based on page type
 **Validates: Requirements 5.1, 5.2, 5.3, 5.5**
 
 ### Property 6: Search System Completeness
-*For any* search query and content language, the search system should return relevant results from both Japanese and English content with proper highlighting and comprehensive coverage
+
+_For any_ search query and content language, the search system should return relevant results from both Japanese and English content with proper highlighting and comprehensive coverage
 **Validates: Requirements 6.2, 6.3, 6.4**
 
 ### Property 7: Responsive Design Adaptation
-*For any* screen size and device orientation, the component library should provide appropriate layouts, typography scaling, and mobile-optimized interactions
+
+_For any_ screen size and device orientation, the component library should provide appropriate layouts, typography scaling, and mobile-optimized interactions
 **Validates: Requirements 7.1, 7.2, 7.4, 7.5**
 
 ### Property 8: Component Library Consistency
-*For any* UI component usage, the component library should follow shadcn/ui design patterns and provide consistent visual and interaction behaviors
+
+_For any_ UI component usage, the component library should follow shadcn/ui design patterns and provide consistent visual and interaction behaviors
 **Validates: Requirements 7.3**
 
 ### Property 9: Accessibility Compliance
-*For any* page content and interactive element, the website should provide proper semantic HTML structure, keyboard navigation support, and appropriate ARIA labels and alt text
+
+_For any_ page content and interactive element, the website should provide proper semantic HTML structure, keyboard navigation support, and appropriate ARIA labels and alt text
 **Validates: Requirements 10.2, 10.4, 10.5**
 
 ### Example-Based Properties
@@ -446,13 +472,16 @@ Based on the prework analysis and property reflection, the following correctness
 The following properties are best validated through specific examples rather than universal quantification:
 
 ### Example 1: Homepage Particle Initialization
+
 When a user loads the homepage, the animation system should initialize tsparticles with proper configuration and display animated background effects
 **Validates: Requirements 2.1**
 
 ### Example 2: Tech Stack Marquee Display
+
 When displaying the tech stack section, the website should render a scrolling marquee component with technology icons and proper animation
 **Validates: Requirements 2.4**
 
 ### Example 3: Search Interface Availability
+
 When accessing any page, the search system should provide a functional search interface powered by Pagefind
 **Validates: Requirements 6.1**
