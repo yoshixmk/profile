@@ -15,6 +15,7 @@ export default {
   professionalLang: 'My professional languages is ',
 
   getStarted: 'Get Started',
+  heroSubtitle: 'Crafting elegant solutions with Next.js, Tailwind, and Modern Engineering.',
 
   featureList: [
     {
