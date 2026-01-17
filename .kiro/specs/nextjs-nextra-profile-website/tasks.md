@@ -104,15 +104,10 @@ This implementation plan covers the comprehensive development and enhancement of
     - Create motion wrappers for component animations
     - _Requirements: 2.2_
 
-  - [ ] 5.4 Write property test for animation system
+  - [x] 5.4 Write property test for animation system
 
     - **Property 4: Animation System Adaptation**
     - **Validates: Requirements 2.2, 2.3, 2.5**
-
-  - [ ] 5.5 Write example tests for specific animations
-    - **Example 1: Homepage Particle Initialization**
-    - **Example 2: Tech Stack Marquee Display**
-    - **Validates: Requirements 2.1, 2.4**
 
 - [x] 6. Implement navigation and routing system
 
