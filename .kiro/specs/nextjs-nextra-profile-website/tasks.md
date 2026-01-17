@@ -61,7 +61,7 @@ This implementation plan covers the comprehensive development and enhancement of
     - Add visual feedback for theme changes
     - _Requirements: 3.1_
 
-  - [ ] 3.3 Write property test for theme system
+  - [x] 3.3 Write property test for theme system
     - **Property 2: Theme System Completeness**
     - **Validates: Requirements 3.1, 3.2, 3.3, 3.4, 3.5**
 
