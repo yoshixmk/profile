@@ -30,9 +30,16 @@ graph TB
         I --> E
     end
 
+    subgraph "Search Layer"
+        N[Pagefind Engine] --> O[Search Index]
+        O --> P[Search Interface]
+        P --> E
+    end
+
     subgraph "Build Layer"
         K[Static Site Generation] --> L[GitHub Pages]
         M[Pagefind Indexing] --> K
+        N --> M
         I --> K
     end
 ```
@@ -47,15 +54,70 @@ The architecture integrates multiple modern technologies:
 - **Framer Motion**: Powers smooth animations and transitions
 - **tsparticles**: Creates interactive particle background effects
 - **next-themes**: Manages dark/light mode switching with system preference detection
+- **Pagefind**: Provides static search functionality with multilingual indexing and real-time search capabilities
+
+### Search System Architecture
+
+The search functionality is implemented using Pagefind, a static search engine that generates indices at build time:
+
+```mermaid
+graph TB
+    subgraph "Content Sources"
+        A[MDX Blog Posts] --> B[Content Indexer]
+        C[TSX Interactive Articles] --> B
+        D[Profile Pages] --> B
+    end
+
+    subgraph "Build Process"
+        B --> E[Pagefind CLI]
+        E --> F[Search Index Generation]
+        F --> G[Language-Specific Indices]
+    end
+
+    subgraph "Runtime Search"
+        H[Search Interface] --> I[Pagefind JS Client]
+        I --> G
+        G --> J[Search Results]
+        J --> K[Result Highlighting]
+    end
+```
+
+**Design Rationale**: Pagefind provides client-side search without requiring a backend server, making it ideal for static site deployment on GitHub Pages. The build-time indexing ensures fast search performance while supporting multilingual content with proper language separation.
 
 ### Deployment Architecture
 
-The system uses a static export approach optimized for GitHub Pages:
+The system uses a static export approach optimized for GitHub Pages with specific configuration requirements:
 
-1. **Build Process**: Next.js generates static HTML/CSS/JS files
-2. **Asset Optimization**: Images and resources are optimized for production
-3. **Search Indexing**: Pagefind creates search indices during build
-4. **Path Configuration**: Base paths and asset prefixes are applied for GitHub Pages hosting
+```mermaid
+graph TB
+    subgraph "Development"
+        A[Source Code] --> B[Next.js Build]
+        C[Content Files] --> B
+    end
+
+    subgraph "Build Pipeline"
+        B --> D[Static Export Generation]
+        D --> E[Asset Optimization]
+        E --> F[Pagefind Index Generation]
+        F --> G[GitHub Pages Deployment]
+    end
+
+    subgraph "Production Environment"
+        G --> H[https://yoshixmk.github.io/profile/]
+        H --> I[Static File Serving]
+        I --> J[Client-Side Routing]
+    end
+```
+
+**GitHub Pages Configuration Requirements**:
+
+1. **Base Path Configuration**: `/profile/` base path for repository-based GitHub Pages hosting
+2. **Asset Prefix**: Proper asset URL prefixing for static resource loading
+3. **Trailing Slash**: Enabled for GitHub Pages routing compatibility
+4. **Static Export**: Complete static file generation without server-side dependencies
+5. **Search Index Integration**: Pagefind indices included in the static export
+
+**Design Rationale**: This configuration ensures reliable deployment to GitHub Pages while maintaining full functionality including search, routing, and asset loading. The static export approach eliminates server dependencies and provides optimal performance.
 
 ## Components and Interfaces
 
@@ -132,6 +194,13 @@ graph TD
 - State: Uses custom useLocale hook and Next.js navigation
 - Behavior: Preserves scroll position during language changes
 - Persistence: Sets NEXT_LOCALE cookie with one-year expiration
+
+**SearchInterface Component**
+
+- Purpose: Provides static search functionality across all content
+- Integration: Uses Pagefind JS client for real-time search
+- Features: Multilingual search with result highlighting and snippets
+- Performance: Client-side search with pre-built indices for fast results
 
 ### Interface Definitions
 
@@ -215,11 +284,41 @@ interface ParticleOptions {
 }
 ```
 
+#### Search System Interfaces
+
+```typescript
+interface SearchResult {
+  id: string
+  url: string
+  title: string
+  excerpt: string
+  content: string
+  language: I18nLangKeys
+  meta: {
+    word_count: number
+    filters: Record<string, string>
+  }
+}
+
+interface SearchOptions {
+  language?: I18nLangKeys
+  limit?: number
+  excerptLength?: number
+  highlightParam?: string
+}
+
+interface PagefindInstance {
+  search: (query: string, options?: SearchOptions) => Promise<SearchResult[]>
+  filters: () => Promise<Record<string, string[]>>
+  init: () => Promise<void>
+}
+```
+
 ## Data Models
 
 ### Content Structure Model
 
-The content management system organizes files in a hierarchical structure:
+The content management system organizes files in a hierarchical structure following the development guidelines:
 
 ```
 src/content/
@@ -227,14 +326,16 @@ src/content/
 │   ├── _meta.tsx               # Navigation configuration
 │   ├── index.mdx               # Homepage content
 │   ├── introduction.mdx        # Profile/career page
-│   ├── upgrade.mdx             # New features page
+│   ├── site-structure.mdx      # Site structure documentation
 │   └── blog/                   # Blog articles
 │       ├── _meta.tsx           # Blog navigation
 │       ├── index.mdx           # Blog index
-│       ├── *.md                # Standard blog posts
+│       ├── *.md                # Standard blog posts (numbered: 001-title.md)
 │       └── *.tsx               # Interactive presentations
 └── en/                         # English content (mirrors ja structure)
 ```
+
+**Design Rationale**: This structure ensures consistent bilingual content management with clear separation between languages while maintaining identical navigation structures. The numbered blog post convention (001-title.md) provides clear ordering and organization.
 
 ### Configuration Data Models
 
@@ -245,15 +346,14 @@ interface NextConfig {
   images: { unoptimized: boolean }
   eslint: { ignoreDuringBuilds: boolean }
   reactStrictMode: boolean
-  i18n: {
-    locales: string[]
-    defaultLocale: string
-  }
-  output?: 'export'
-  assetPrefix?: string
-  basePath?: string
+  output: 'export'                    // Required for GitHub Pages
+  assetPrefix: string                 // GitHub Pages base path
+  basePath: string                    // Repository path (/profile/)
+  trailingSlash: boolean             // GitHub Pages compatibility
 }
 ```
+
+**Design Rationale**: The configuration is optimized for GitHub Pages deployment with static export, proper asset prefixing, and trailing slash handling for reliable routing on static hosting.
 
 #### Nextra Configuration Model
 
@@ -263,6 +363,30 @@ interface NextraConfig {
   unstable_shouldAddLocaleToLinks: boolean
 }
 ```
+
+#### Package Management Model
+
+```typescript
+interface PackageConfig {
+  packageManager: 'pnpm'             // Enforced package manager
+  scripts: {
+    dev: 'next dev'
+    build: 'next build'
+    pagefind: 'pagefind --site out'   // Search index generation
+    export: 'next build && pnpm run pagefind'  // Complete build with search
+    'build:search': 'pnpm run build && pnpm run pagefind'  // Alias for export
+  }
+  dependencies: {
+    next: '^15.0.0'
+    nextra: '^4.0.0'
+    'nextra-theme-docs': '^4.0.0'
+    typescript: '^5.0.0'
+    pagefind: '^1.0.0'               // Static search engine
+  }
+}
+```
+
+**Design Rationale**: pnpm is enforced for consistent dependency management and faster installs. The build process includes automatic search index generation for optimal user experience. Multiple script aliases provide flexibility for different deployment scenarios.
 
 ### Theme Data Model
 
@@ -291,6 +415,77 @@ interface ThemeColors {
 }
 ```
 
+### Performance Optimization Strategy
+
+The architecture implements multiple performance optimization techniques:
+
+#### Code Splitting and Lazy Loading
+
+- **Component-Level Splitting**: Heavy components like particle systems are dynamically imported
+- **Route-Level Splitting**: Next.js App Router automatically splits routes for optimal loading
+- **Asset Optimization**: Images and static assets are optimized during build process
+
+#### Core Web Vitals Optimization
+
+```typescript
+interface PerformanceTargets {
+  LCP: '<2.5s'    // Largest Contentful Paint
+  FID: '<100ms'   // First Input Delay  
+  CLS: '<0.1'     // Cumulative Layout Shift
+}
+```
+
+**Design Rationale**: Performance targets align with Google's Core Web Vitals recommendations to ensure optimal user experience across all devices and connection speeds.
+
+#### Mobile Performance Considerations
+
+- **Particle System**: Automatically disabled on mobile devices to preserve battery and performance
+- **Image Optimization**: Next.js Image component with responsive sizing and lazy loading
+- **Bundle Size**: Minimal dependencies and tree-shaking to reduce initial load time
+
+**Design Rationale**: Mobile-first performance approach ensures the website remains accessible and fast on lower-powered devices while providing enhanced experiences on desktop.
+
+### Accessibility Architecture
+
+The accessibility system is built into every component and interaction to ensure WCAG 2.1 AA compliance:
+
+```mermaid
+graph TB
+    subgraph "Semantic Structure"
+        A[HTML5 Landmarks] --> B[Heading Hierarchy]
+        B --> C[Navigation Structure]
+        C --> D[Content Organization]
+    end
+
+    subgraph "Keyboard Navigation"
+        E[Focus Management] --> F[Tab Order]
+        F --> G[Skip Links]
+        G --> H[Keyboard Shortcuts]
+    end
+
+    subgraph "Screen Reader Support"
+        I[ARIA Labels] --> J[Alt Text]
+        J --> K[Live Regions]
+        K --> L[Role Attributes]
+    end
+
+    subgraph "Visual Accessibility"
+        M[Color Contrast] --> N[Focus Indicators]
+        N --> O[Text Scaling]
+        O --> P[Motion Preferences]
+    end
+```
+
+**Accessibility Design Principles**:
+
+1. **Semantic HTML**: Proper use of HTML5 landmarks, headings, and semantic elements
+2. **Keyboard Navigation**: Full keyboard accessibility with logical tab order and focus management
+3. **Screen Reader Compatibility**: Comprehensive ARIA labels, alt text, and live regions
+4. **Visual Accessibility**: High contrast ratios, visible focus indicators, and respect for motion preferences
+5. **Progressive Enhancement**: Core functionality works without JavaScript or CSS
+
+**Design Rationale**: Accessibility is integrated at the architectural level rather than added as an afterthought, ensuring consistent and comprehensive support across all components and interactions.
+
 ### Internationalization Data Model
 
 Language-specific content is structured as nested objects supporting interpolation:
@@ -317,6 +512,8 @@ interface LocaleData {
   }>
 }
 ```
+
+**Design Rationale**: Nested structure allows for organized translation management while supporting dynamic content interpolation for personalized user experiences.
 
 ## Error Handling
 
@@ -352,6 +549,20 @@ The application implements comprehensive error handling at multiple levels:
 - Middleware error recovery with default routing
 - Search functionality error handling with graceful degradation
 
+### Development Environment Error Handling
+
+**TypeScript Integration**
+
+- Strict mode enforcement with comprehensive type checking
+- ESLint integration with @antfu/eslint-config for consistent code quality
+- Real-time error detection during development with Next.js Fast Refresh
+
+**Build Process Error Handling**
+
+- Comprehensive error reporting during static export generation
+- Asset optimization error recovery with fallback strategies
+- Search index generation validation with build failure on errors
+
 ### Build-Time Error Handling
 
 **Content Validation**
@@ -365,6 +576,8 @@ The application implements comprehensive error handling at multiple levels:
 - GitHub Pages deployment validation
 - Asset path verification for production builds
 - Search index generation error recovery
+
+**Design Rationale**: Multi-layered error handling ensures reliable builds and deployments while providing clear feedback for content creators and developers.
 
 ## Testing Strategy
 
@@ -448,7 +661,7 @@ _For any_ page navigation and language context, the navigation system should mai
 ### Property 6: Search System Completeness
 
 _For any_ search query and content language, the search system should return relevant results from both Japanese and English content with proper highlighting and comprehensive coverage
-**Validates: Requirements 6.2, 6.3, 6.4**
+**Validates: Requirements 6.1, 6.2, 6.3, 6.4, 6.5**
 
 ### Property 7: Responsive Design Adaptation
 
@@ -460,10 +673,20 @@ _For any_ screen size and device orientation, the component library should provi
 _For any_ UI component usage, the component library should follow shadcn/ui design patterns and provide consistent visual and interaction behaviors
 **Validates: Requirements 7.3**
 
-### Property 9: Accessibility Compliance
+### Property 9: Performance Optimization
+
+_For any_ page load and user interaction, the website should achieve optimal Core Web Vitals scores with efficient code splitting, lazy loading, and minimal bundle size
+**Validates: Requirements 9.1, 9.3**
+
+### Property 10: Accessibility Compliance
 
 _For any_ page content and interactive element, the website should provide proper semantic HTML structure, keyboard navigation support, and appropriate ARIA labels and alt text
 **Validates: Requirements 10.2, 10.4, 10.5**
+
+### Property 11: Deployment System Reliability
+
+_For any_ build and deployment process, the system should generate optimized static exports with proper GitHub Pages configuration and search index generation
+**Validates: Requirements 8.1, 8.2, 8.3, 8.4, 8.5**
 
 ### Example-Based Properties
 
@@ -483,3 +706,13 @@ When displaying the tech stack section, the website should render a scrolling ma
 
 When accessing any page, the search system should provide a functional search interface powered by Pagefind
 **Validates: Requirements 6.1**
+
+### Example 4: Development Environment Setup
+
+When setting up the development environment, the system should provide TypeScript strict mode, ESLint configuration, and pnpm package management with hot reload functionality
+**Validates: Requirements 9.1, 9.2, 9.3, 9.4, 9.5**
+
+### Example 5: GitHub Pages Deployment
+
+When deploying to production, the system should generate static exports with proper base path configuration and accessible at the target GitHub Pages URL
+**Validates: Requirements 8.5**

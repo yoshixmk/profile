@@ -4,6 +4,8 @@
 
 This document specifies the requirements for a comprehensive Next.js 15 + Nextra 4 personal profile and blog website. The system is a migration from Deno/Pagic to a modern Next.js stack, featuring bilingual support, rich UI/UX with animations, dark/light mode theming, and MDX-based content management.
 
+The website serves as both a personal portfolio and technical blog, showcasing professional experience while providing valuable content to the developer community in both Japanese and English languages.
+
 ## Glossary
 
 - **Website**: The complete Next.js 15 + Nextra 4 personal profile and blog website
@@ -30,7 +32,6 @@ This document specifies the requirements for a comprehensive Next.js 15 + Nextra
 2. WHEN a user switches languages, THE Navigation_System SHALL preserve their current page context and scroll position
 3. THE Website SHALL support Japanese (ja) and English (en) locales with complete content translation
 4. WHEN displaying content, THE Content_Management_System SHALL serve language-specific versions from the appropriate content directory
-5. THE Locale_System SHALL persist language preference using cookies with one-year expiration
 
 ### Requirement 2: Rich User Interface and Animation System
 
@@ -80,7 +81,7 @@ This document specifies the requirements for a comprehensive Next.js 15 + Nextra
 4. WHEN accessing URLs, THE Navigation_System SHALL handle language detection and redirection via middleware
 5. THE Navigation_System SHALL support both profile pages (introduction, upgrade) and blog article browsing
 
-### Requirement 6: Search Functionality
+### Requirement 7: Search Functionality
 
 **User Story:** As a user, I want to search through blog content, so that I can quickly find relevant articles and information.
 
@@ -92,41 +93,41 @@ This document specifies the requirements for a comprehensive Next.js 15 + Nextra
 4. WHEN displaying search results, THE Search_System SHALL highlight matching text snippets
 5. THE Search_System SHALL generate search indices during the build process for optimal performance
 
-### Requirement 7: Responsive Design and Component System
+### Requirement 8: Responsive Design and Component System
 
-**User Story:** As a user, I want the website to work seamlessly across different devices and screen sizes, so that I can access content anywhere.
+**User Story:** As a user, I want the website to work seamlessly across different devices and screen sizes, so that I can access content anywhere with an optimal experience.
 
 #### Acceptance Criteria
 
-1. THE Component_Library SHALL provide responsive layouts using Tailwind CSS 4 breakpoints
-2. WHEN viewed on mobile devices, THE Website SHALL hide particle animations and optimize touch interactions
-3. THE Component_Library SHALL use shadcn/ui components for consistent design patterns
-4. WHEN displaying content, THE Website SHALL adapt typography and spacing for optimal readability on all devices
-5. THE Website SHALL support both portrait and landscape orientations on mobile devices
+1. THE Component_Library SHALL provide responsive layouts using Tailwind CSS 4 breakpoints (sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px)
+2. WHEN viewed on mobile devices, THE Website SHALL hide particle animations and optimize touch interactions for better performance
+3. THE Component_Library SHALL use shadcn/ui components for consistent design patterns and accessibility compliance
+4. WHEN displaying content, THE Website SHALL adapt typography and spacing for optimal readability on all devices with proper contrast ratios
+5. THE Website SHALL support both portrait and landscape orientations on mobile devices with appropriate layout adjustments
 
-### Requirement 8: Development Environment and Code Quality
+### Requirement 8: Deployment and Build System
+
+**User Story:** As a website owner, I want automated deployment to GitHub Pages with optimized builds, so that content updates are published automatically with optimal performance.
+
+#### Acceptance Criteria
+
+1. THE Website SHALL generate static exports optimized for GitHub Pages deployment using Next.js static export functionality
+2. WHEN building for production, THE Website SHALL apply appropriate base path (/profile/) and asset prefix configuration for GitHub Pages hosting
+3. THE Website SHALL generate Pagefind search indices as part of the build process using `pnpm run pagefind` command
+4. THE Website SHALL optimize images and assets for production deployment with proper compression and caching headers
+5. WHEN deployed, THE Website SHALL be accessible at https://yoshixmk.github.io/profile/ with proper routing and all assets loading correctly
+
+### Requirement 9: Development Environment and Code Quality
 
 **User Story:** As a developer, I want a well-configured development environment with type safety and code quality tools, so that I can maintain and extend the website efficiently.
 
 #### Acceptance Criteria
 
-1. THE Website SHALL use TypeScript for complete type safety across all components and utilities
-2. THE Website SHALL enforce code quality using ESLint with @antfu/eslint-config configuration
-3. WHEN developing, THE Website SHALL provide hot reload functionality with Next.js development server
-4. THE Website SHALL use modern CSS with Tailwind CSS 4 and PostCSS for styling
-5. THE Website SHALL support SASS preprocessing for complex styling requirements
-
-### Requirement 9: Deployment and Build System
-
-**User Story:** As a website owner, I want automated deployment to GitHub Pages, so that content updates are published automatically.
-
-#### Acceptance Criteria
-
-1. THE Website SHALL generate static exports optimized for GitHub Pages deployment
-2. WHEN building for production, THE Website SHALL apply appropriate base path and asset prefix configuration
-3. THE Website SHALL generate Pagefind search indices as part of the build process
-4. THE Website SHALL optimize images and assets for production deployment
-5. WHEN deployed, THE Website SHALL be accessible at https://yoshixmk.github.io/profile/ with proper routing
+1. THE Website SHALL use TypeScript with strict mode enabled for complete type safety across all components and utilities
+2. THE Website SHALL enforce code quality using ESLint with @antfu/eslint-config configuration and consistent formatting
+3. WHEN developing, THE Website SHALL provide hot reload functionality with Next.js development server and fast refresh
+4. THE Website SHALL use pnpm as the package manager for all dependency management and script execution
+5. THE Website SHALL support modern CSS with Tailwind CSS 4 and PostCSS for styling with proper IntelliSense support
 
 ### Requirement 10: Performance and Accessibility
 
@@ -134,8 +135,8 @@ This document specifies the requirements for a comprehensive Next.js 15 + Nextra
 
 #### Acceptance Criteria
 
-1. THE Website SHALL achieve optimal Core Web Vitals scores for performance
-2. THE Website SHALL provide proper semantic HTML structure for screen readers
-3. WHEN loading pages, THE Website SHALL implement efficient code splitting and lazy loading
-4. THE Website SHALL support keyboard navigation for all interactive elements
-5. THE Website SHALL provide appropriate alt text and ARIA labels for accessibility compliance
+1. THE Website SHALL achieve optimal Core Web Vitals scores for performance with LCP < 2.5s, FID < 100ms, and CLS < 0.1
+2. THE Website SHALL provide proper semantic HTML structure for screen readers with appropriate heading hierarchy and landmarks
+3. WHEN loading pages, THE Website SHALL implement efficient code splitting and lazy loading to minimize initial bundle size
+4. THE Website SHALL support keyboard navigation for all interactive elements with visible focus indicators
+5. THE Website SHALL provide appropriate alt text and ARIA labels for accessibility compliance meeting WCAG 2.1 AA standards
