@@ -138,9 +138,7 @@ graph TD
 #### Internationalization Interfaces
 
 ```typescript
-interface I18nLangKeys {
-  'ja' | 'en'
-}
+type I18nLangKeys = 'ja' | 'en'
 
 interface I18nLangAsyncProps {
   lang: I18nLangKeys

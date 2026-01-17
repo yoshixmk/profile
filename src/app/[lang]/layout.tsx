@@ -1,12 +1,11 @@
 import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
-
 import type { Metadata } from 'next'
-import type { ReactNode } from 'react'
 
+import type { ReactNode } from 'react'
 import { CustomFooter } from '@/components/CustomFooter'
 import { useServerLocale } from '@/hooks'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
-import { Head, Search } from 'nextra/components'
+import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
@@ -15,12 +14,26 @@ import { getDirection } from '../_dictionaries/get-dictionary'
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
 
-export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
-  metadataBase: new URL('https://yoshixmk.github.io/profile'),
-  icons: '/img/favicon.svg',
-} satisfies Metadata
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const { lang } = await props.params
+  const title = 'Profile'
+  const description = 'Full-stack Web Engineer & Android Engineer'
+  const repo = 'https://github.com/yoshixmk/profile'
+
+  return {
+    title,
+    description,
+    metadataBase: new URL('https://yoshixmk.github.io/profile'),
+    icons: '/img/favicon.svg',
+    openGraph: {
+      title,
+      description,
+    },
+    alternates: {
+      canonical: repo,
+    },
+  }
+}
 
 const repo = 'https://github.com/yoshixmk/profile'
 
@@ -29,7 +42,7 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
   return (
     <Navbar
       logo={(
-        <span>{ t('systemTitle') }</span>
+        <span>{t('systemTitle')}</span>
       )}
       logoLink={`/${lang}`}
       projectLink={repo}
@@ -52,28 +65,14 @@ export default async function LangLayout({ children, params }: Props) {
   const { lang } = await params
   const pageMap = await getPageMap(lang)
 
-  const title = 'Profile'
-  const description = 'Full-stack Web Engineer & Android Engineer'
-
   const { t } = await useServerLocale(lang)
 
   return (
     <html
-      // Not required, but good for SEO
       lang={lang}
-      // Required to be set
-      // dir="ltr"
-      // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
       dir={getDirection(lang)}
       suppressHydrationWarning
     >
-      <Head>
-        {/* <title>{asPath !== '/' ? `${normalizePagesResult.title} - ${title}` : title}</title> */}
-        <meta property="og:title" content={title} />
-        <meta name="description" content={description} />
-        <meta property="og:description" content={description} />
-        <link rel="canonical" href={repo} />
-      </Head>
       <body suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
@@ -88,7 +87,7 @@ export default async function LangLayout({ children, params }: Props) {
             }
             lastUpdated={(
               <LastUpdated>
-                { t('lastUpdated') }
+                {t('lastUpdated')}
               </LastUpdated>
             )}
             editLink={null}
@@ -105,7 +104,6 @@ export default async function LangLayout({ children, params }: Props) {
             ]}
             pageMap={pageMap}
             feedback={{ content: '' }}
-          // ... Your additional layout options
           >
             {children}
           </Layout>
