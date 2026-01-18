@@ -46,14 +46,17 @@
     from {
       height: 0;
     }
+
     to {
       height: var(--radix-accordion-content-height);
     }
   }
+
   @keyframes accordion-up {
     from {
       height: var(--radix-accordion-content-height);
     }
+
     to {
       height: 0;
     }
@@ -63,10 +66,12 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
-  @media (width >= --theme(--breakpoint-sm)) {
+
+  @media (width >=--theme(--breakpoint-sm)) {
     max-width: none;
   }
-  @media (width >= 1400px) {
+
+  @media (width >=1400px) {
     max-width: 1400px;
   }
 }
@@ -112,6 +117,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -126,15 +132,18 @@
 .x\:bg-gray-100 {
   @apply bg-background;
 }
+
 .nextra-sidebar-footer,
 .nextra-navbar-blur {
   @apply bg-background;
 }
+
 .nextra-mobile-nav {
   .nextra-sidebar-footer {
     @apply mx-0 px-4;
   }
 }
+
 /*
   ---break---
 */
@@ -166,6 +175,7 @@
   --chart-5: hsl(27 87% 67%);
   --radius: 0.6rem;
 }
+
 /*
   ---break---
 */
@@ -195,6 +205,7 @@
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
 }
+
 /*
   ---break---
 */
@@ -202,14 +213,46 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
 @layer base {
+
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;
+  }
+}
+
+/* Enhanced focus styles for accessibility */
+@layer base {
+
+  /* Focus styles for links */
+  a:focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring rounded-sm;
+  }
+
+  /* Focus styles for buttons that don't already have focus-visible classes */
+  button:focus-visible:not([class*="focus-visible"]) {
+    @apply outline-2 outline-offset-2 outline-ring rounded-sm;
+  }
+
+  /* Focus styles for interactive elements */
+  [tabindex]:focus-visible:not([class*="focus-visible"]),
+  input:focus-visible:not([class*="focus-visible"]),
+  select:focus-visible:not([class*="focus-visible"]),
+  textarea:focus-visible:not([class*="focus-visible"]) {
+    @apply outline-2 outline-offset-2 outline-ring rounded-sm;
+  }
+
+  /* Ensure focus is visible on custom interactive elements */
+  [role="button"]:focus-visible:not([class*="focus-visible"]),
+  [role="link"]:focus-visible:not([class*="focus-visible"]),
+  [role="tab"]:focus-visible:not([class*="focus-visible"]),
+  [role="menuitem"]:focus-visible:not([class*="focus-visible"]) {
+    @apply outline-2 outline-offset-2 outline-ring rounded-sm;
   }
 }

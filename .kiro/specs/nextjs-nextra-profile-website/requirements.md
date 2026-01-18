@@ -139,7 +139,6 @@ The website serves as both a personal portfolio and technical blog, showcasing p
 2. THE Website SHALL provide proper semantic HTML structure for screen readers with appropriate heading hierarchy and landmarks
 3. WHEN loading pages, THE Website SHALL implement efficient code splitting and lazy loading to minimize initial bundle size
 4. THE Website SHALL support keyboard navigation for all interactive elements with visible focus indicators
-5. THE Website SHALL provide appropriate alt text and ARIA labels for accessibility compliance meeting WCAG 2.1 AA standards
 
 ### Requirement 11: Asset Path Management System
 

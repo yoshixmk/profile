@@ -87,6 +87,7 @@ export default function LocaleToggle({
         className,
       ])}
       onClick={changeLocale}
+      aria-label={currentLocale === 'ja' ? 'Switch to English' : 'Switch to Japanese'}
     >
       {
         currentLocale === 'ja'

@@ -106,6 +106,16 @@ export const HoverEffect = ({
   className?: string
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [focusedIndex, setFocusedIndex] = useState<number | null>(null)
+
+  const handleKeyDown = (e: React.KeyboardEvent, idx: number) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault()
+      if (items[idx].link) {
+        window.open(items[idx].link, '_blank', 'noopener,noreferrer')
+      }
+    }
+  }
 
   return (
     <div
@@ -118,11 +128,18 @@ export const HoverEffect = ({
         <div
           key={idx}
           className="relative group block p-2 h-full w-full"
+          tabIndex={0}
+          role={item.link ? 'button' : 'article'}
+          aria-label={`${item.title}: ${item.description}`}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onFocus={() => setFocusedIndex(idx)}
+          onBlur={() => setFocusedIndex(null)}
+          onKeyDown={(e) => handleKeyDown(e, idx)}
+          style={{ cursor: item.link ? 'pointer' : 'default' }}
         >
           <AnimatePresence>
-            {hoveredIndex === idx && (
+            {(hoveredIndex === idx || focusedIndex === idx) && (
               <motion.span
                 className="z-[-1] absolute inset-0 h-full w-full bg-neutral-200/[0.3] dark:bg-neutral-500/[0.5] block rounded-3xl"
                 layoutId="hoverBackground"
