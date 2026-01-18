@@ -195,7 +195,7 @@ graph TD
 - Behavior: Preserves scroll position during language changes
 - Persistence: Sets NEXT_LOCALE cookie with one-year expiration
 
-**SearchInterface Component**
+**Search Component in nextra**
 
 - Purpose: Provides static search functionality across all content
 - Integration: Uses Pagefind JS client for real-time search
@@ -373,8 +373,6 @@ interface PackageConfig {
     dev: 'next dev'
     build: 'next build'
     pagefind: 'pagefind --site out'   // Search index generation
-    export: 'next build && pnpm run pagefind'  // Complete build with search
-    'build:search': 'pnpm run build && pnpm run pagefind'  // Alias for export
   }
   dependencies: {
     next: '^15.0.0'

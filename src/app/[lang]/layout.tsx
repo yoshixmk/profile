@@ -15,7 +15,6 @@ import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { lang } = await props.params
   const title = 'Profile'
   const description = 'Full-stack Web Engineer & Android Engineer'
   const repo = 'https://github.com/yoshixmk/profile'
