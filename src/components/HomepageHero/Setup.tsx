@@ -14,7 +14,7 @@ import styles from './SetupHero.module.css'
 
 interface Props {
 }
-export function SetupHero(props: Props) {
+export function SetupHero(_props: Props) {
   const { t, currentLocale } = useLocale()
 
   return (
@@ -37,6 +37,7 @@ export function SetupHero(props: Props) {
             href="https://github.com/yoshixmk/profile"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View source code on GitHub"
           >
             {t('badgeTitle')}
           </a>
@@ -86,7 +87,9 @@ export function SetupHero(props: Props) {
             'hover:scale-105 transition-transform duration-1500',
             'animate-pulse',
             '[animation-duration:3s]',
+            'focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500',
           ])}
+          aria-label={`Currently working at ${t('companyName')} - View site structure`}
           dangerouslySetInnerHTML={{
             __html: t('company', {
               companyName: `<span>${t('companyName')}</span>`,

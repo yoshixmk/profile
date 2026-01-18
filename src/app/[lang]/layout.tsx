@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: repo,
       languages: {
-        'ja': 'https://yoshixmk.github.io/profile/ja',
-        'en': 'https://yoshixmk.github.io/profile/en',
+        ja: 'https://yoshixmk.github.io/profile/ja',
+        en: 'https://yoshixmk.github.io/profile/en',
       },
     },
   }

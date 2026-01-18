@@ -5,13 +5,7 @@ import { getNestedValue, i18nConfig, interpolateString } from '../i18n'
 type LocalizedValue<T, K extends LocaleKeys> = PathValue<T, K> extends string
   ? string
   : PathValue<T, K>
-
-interface ServerLocaleParams {
-  params: {
-    lang?: string
-  }
-}
-
+ 
 export async function useServerLocale(lang: I18nLangKeys) {
   // パラメータから現在の言語を取得
   const currentLocale = lang
