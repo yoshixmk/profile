@@ -25,12 +25,12 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: NODE_ENV=production pnpm build
+        run: pnpm build
 
-      - name: Copy index file
+      - name: Pagefind
         run: pnpm copy
 
-      - name: Generate search index
+      - name: Pagefind
         run: pnpm pagefind
 
       - name: Deploy to GitHub Pages

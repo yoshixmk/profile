@@ -14,9 +14,14 @@ import { getDirection } from '../_dictionaries/get-dictionary'
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
 
-export async function generateMetadata(props: Props): Promise<Metadata> {
-  const title = 'Profile'
-  const description = 'Full-stack Web Engineer & Android Engineer'
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params
+  const { t } = await useServerLocale(lang)
+
+  const title = t('systemTitle')
+  const description = lang === 'ja'
+    ? 'フルスタックWebエンジニア & Androidエンジニア'
+    : 'Full-stack Web Engineer & Android Engineer'
   const repo = 'https://github.com/yoshixmk/profile'
 
   return {
@@ -27,9 +32,24 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     openGraph: {
       title,
       description,
+      url: `https://yoshixmk.github.io/profile/${lang}`,
+      siteName: title,
+      type: 'website',
+      locale: lang === 'ja' ? 'ja_JP' : 'en_US',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      site: '@yoshixmk',
+      creator: '@yoshixmk',
     },
     alternates: {
       canonical: repo,
+      languages: {
+        'ja': 'https://yoshixmk.github.io/profile/ja',
+        'en': 'https://yoshixmk.github.io/profile/en',
+      },
     },
   }
 }
