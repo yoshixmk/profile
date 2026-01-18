@@ -5,8 +5,8 @@ import type { ReactNode } from 'react'
 import { CustomFooter } from '@/components/CustomFooter'
 import { useServerLocale } from '@/hooks'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
-import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { SearchInterface } from '@/components/SearchInterface'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
@@ -97,7 +97,7 @@ export default async function LangLayout({ children, params }: Props) {
                 <CustomFooter />
               </Footer>
             )}
-            search={<Search />}
+            search={<SearchInterface />}
             i18n={[
               { locale: 'en', name: 'English' },
               { locale: 'ja', name: '日本語' },
