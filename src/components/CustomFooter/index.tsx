@@ -18,6 +18,7 @@ const UnderlineLink = ({
     <Link
       href={link}
       target="_blank"
+      rel="noopener noreferrer"
       className={cn(
         'flex items-center rounded-none border border-transparent',
         'dark:text-zinc-300',
@@ -28,8 +29,9 @@ const UnderlineLink = ({
           ? `border-b border-b-zinc-400/[0.3] dark:border-b-zinc-500`
           : 'hover:border-b',
       )}
+      aria-label={typeof label === 'string' ? `${label} (opens in new tab)` : undefined}
     >
-      { label }
+      {label}
     </Link>
   )
 }
@@ -54,7 +56,7 @@ export function CustomFooter() {
           <span className="pl-[4px]">
             Copyright ©
             {' '}
-            { new Date().getFullYear() }
+            {new Date().getFullYear()}
           </span>
           <UnderlineLink
             link="https://github.com/yoshixmk"

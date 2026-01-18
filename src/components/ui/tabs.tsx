@@ -43,6 +43,8 @@ export const Tabs = ({
           'flex flex-row items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-scrollbar w-full',
           containerClassName,
         )}
+        role="tablist"
+        aria-label="Content tabs"
       >
         {propTabs.map((tab, idx) => (
           <button
@@ -56,6 +58,11 @@ export const Tabs = ({
             style={{
               transformStyle: 'preserve-3d',
             }}
+            role="tab"
+            aria-selected={active.value === tab.value}
+            aria-controls={`tabpanel-${tab.value}`}
+            id={`tab-${tab.value}`}
+            tabIndex={active.value === tab.value ? 0 : -1}
           >
             {active.value === tab.value && (
               <motion.div
@@ -114,6 +121,10 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn('w-full h-full absolute top-0 left-0', className)}
+          role="tabpanel"
+          id={`tabpanel-${tab.value}`}
+          aria-labelledby={`tab-${tab.value}`}
+          hidden={!isActive(tab)}
         >
           {tab.content}
         </motion.div>

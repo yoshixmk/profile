@@ -128,7 +128,7 @@ export function SetupHero(_props: Props) {
               href={`/${currentLocale}/introduction`}
             >
               {t('getStarted')}
-              <span className="w-[18px] ml-2 transition-transform group-hover:translate-x-1 icon-[mingcute--arrow-right-fill]"></span>
+              <span className="w-[18px] ml-2 transition-transform group-hover:translate-x-1 icon-[mingcute--arrow-right-fill]" aria-hidden="true"></span>
             </Link>
           </Button>
           <Button
@@ -142,7 +142,7 @@ export function SetupHero(_props: Props) {
               target="_blank"
             >
               GitHub Profile
-              <span className="ml-2 icon-[mingcute--github-line]"></span>
+              <span className="ml-2 icon-[mingcute--github-line]" aria-hidden="true"></span>
             </Link>
           </Button>
         </div>
