@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Profile',
     description: 'Full-stack Web Engineer & Android Engineer',
     metadataBase: new URL('https://yoshixmk.github.io/profile'),
-    icons: '/img/favicon.svg',
+    icons: './img/favicon.svg',
     openGraph: {
         title: 'Profile',
         description: 'Full-stack Web Engineer & Android Engineer',

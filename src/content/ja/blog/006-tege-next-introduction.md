@@ -60,10 +60,10 @@ $ gatsby develop
 <div>
   <p align="center">
     <a href="https://tegebu.netlify.app/" >
-      <img alt="Tegebuプレビュー画像1" src="/img/blog/preview.png" width="67%"/>
+      <img alt="Tegebuプレビュー画像1" src="./img/blog/preview.png" width="67%"/>
     </a>
     <a href="https://tegebu.netlify.app/" >
-      <img alt="Tegebuプレビュー画像2" src="/img/blog/preview2.png" width="28%"/>
+      <img alt="Tegebuプレビュー画像2" src="./img/blog/preview2.png" width="28%"/>
     </a>
   </p>
 </div>

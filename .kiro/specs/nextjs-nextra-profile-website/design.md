@@ -386,6 +386,57 @@ interface PackageConfig {
 
 **Design Rationale**: pnpm is enforced for consistent dependency management and faster installs. The build process includes automatic search index generation for optimal user experience. Multiple script aliases provide flexibility for different deployment scenarios.
 
+### Asset Path Management Model
+
+The asset path management system ensures consistent loading across development and production environments:
+
+```typescript
+interface AssetPathConfig {
+  development: {
+    basePath: ''                      // No base path in development
+    assetPrefix: ''                   // No asset prefix in development
+    publicPath: '/img/'               // Standard public directory access
+  }
+  production: {
+    basePath: '/profile'              // GitHub Pages repository path
+    assetPrefix: '/profile'           // GitHub Pages asset prefix
+    publicPath: '/profile/img/'       // Prefixed public directory access
+  }
+}
+
+interface RelativePathStrategy {
+  components: {
+    imageReferences: './img/'         // Relative paths in React components
+    iconReferences: './img/'          // Relative paths for icons
+    assetImports: './assets/'         // Relative paths for asset imports
+  }
+  content: {
+    mdxImages: './img/'              // Relative paths in MDX files
+    markdownImages: './img/'         // Relative paths in Markdown files
+    embeddedAssets: './img/'         // Relative paths for embedded assets
+  }
+}
+```
+
+**Design Rationale**: Using relative paths (./img/) in source code allows Next.js to automatically handle base path prefixing during the build process. This approach eliminates the need for manual path updates between development and production environments while ensuring compatibility with GitHub Pages deployment.
+
+#### Path Resolution Strategy
+
+```typescript
+interface PathResolutionConfig {
+  buildTime: {
+    staticAssets: 'relative'          // Use relative paths in source
+    dynamicAssets: 'absolute'         // Use absolute paths for dynamic content
+    externalAssets: 'absolute'        // Use absolute paths for external resources
+  }
+  runtime: {
+    pathTransformation: 'automatic'   // Next.js handles path transformation
+    basePathInjection: 'build-time'   // Base path injected during build
+    assetOptimization: 'enabled'      // Asset optimization enabled
+  }
+}
+```
+
 ### Theme Data Model
 
 The theme system uses a structured approach to manage color schemes and visual preferences:

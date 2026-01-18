@@ -140,3 +140,15 @@ The website serves as both a personal portfolio and technical blog, showcasing p
 3. WHEN loading pages, THE Website SHALL implement efficient code splitting and lazy loading to minimize initial bundle size
 4. THE Website SHALL support keyboard navigation for all interactive elements with visible focus indicators
 5. THE Website SHALL provide appropriate alt text and ARIA labels for accessibility compliance meeting WCAG 2.1 AA standards
+
+### Requirement 11: Asset Path Management System
+
+**User Story:** As a developer, I want consistent asset path management that works across development and production environments, so that images and static assets load correctly in all deployment scenarios.
+
+#### Acceptance Criteria
+
+1. THE Website SHALL use relative paths (./img/) for all static asset references in components and content files to ensure compatibility with GitHub Pages deployment
+2. WHEN building for production, THE Website SHALL automatically handle base path prefixing through Next.js configuration without requiring manual path updates
+3. THE Website SHALL maintain consistent asset loading behavior between development (localhost) and production (GitHub Pages) environments
+4. WHEN referencing images in MDX/MD content files, THE Content_Management_System SHALL support relative path resolution for proper asset loading
+5. THE Website SHALL optimize static assets (images, icons, fonts) with appropriate compression and caching strategies while maintaining relative path compatibility

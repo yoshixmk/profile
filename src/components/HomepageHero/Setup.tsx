@@ -49,7 +49,7 @@ export function SetupHero(props: Props) {
             <div className="relative group">
               <div className="absolute -inset-1 bg-conic-to-r from-cyan-400 via-light-blue-500 to-indigo-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
               <Image
-                src="/img/blog/yoshixmk.jpg"
+                src="./img/blog/yoshixmk.jpg"
                 alt="Yoshihiro Ueki"
                 width={120}
                 height={120}
@@ -57,7 +57,7 @@ export function SetupHero(props: Props) {
               />
               <div className="absolute -bottom-2 -right-4 w-18 h-18 rounded-full overflow-hidden border-4 border-white dark:border-zinc-900 shadow-xl z-20 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
                 <Image
-                  src="/img/blog/usagi.jpg"
+                  src="./img/blog/usagi.jpg"
                   alt="Usagi"
                   width={72}
                   height={72}
