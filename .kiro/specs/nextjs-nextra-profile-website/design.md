@@ -373,8 +373,6 @@ interface PackageConfig {
     dev: 'next dev'
     build: 'next build'
     pagefind: 'pagefind --site out'   // Search index generation
-    export: 'next build && pnpm run pagefind'  // Complete build with search
-    'build:search': 'pnpm run build && pnpm run pagefind'  // Alias for export
   }
   dependencies: {
     next: '^15.0.0'
