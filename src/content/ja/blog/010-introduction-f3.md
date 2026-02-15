@@ -1,8 +1,10 @@
-# f3の紹介
+---
+title: "f3の紹介"
+author: "yoshixmk"
+published: "2020-09-21"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-09-21
-</div>
+# f3の紹介
 
 ![F3 image](https://github.com/yoshixmk/f3/blob/master/screenshot.png?raw=true)
 

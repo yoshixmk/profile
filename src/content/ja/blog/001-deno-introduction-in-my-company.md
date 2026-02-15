@@ -1,14 +1,12 @@
 ---
 title: "社内勉強会でDenoを発表しました"
+author: "yoshixmk"
+published: "2020-06-23"
 ---
 
 # 社内勉強会でDenoを発表しました
 
-![Deno](public/img/blog/deno.png)
-
-<div style="text-align: right;">
-Publication date： 2020-06-23
-</div>
+![Deno](/img/blog/deno.png)
 
 ## Denoとは
 

@@ -1,8 +1,10 @@
-# てげぶにトレンドページを作成しました
+---
+title: "てげぶにトレンドページを作成しました"
+author: "yoshixmk"
+published: "2020-08-17"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-08-17
-</div>
+# てげぶにトレンドページを作成しました
 
 ## 概要
 

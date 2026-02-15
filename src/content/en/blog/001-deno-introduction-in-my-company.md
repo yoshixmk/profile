@@ -1,10 +1,12 @@
+---
+title: "Presented Deno at an In-House Study Session"
+author: "yoshixmk"
+published: "2020-06-23"
+---
+
 # Presented Deno at an In-House Study Session
 
-![Deno](public/img/blog/deno.png)
-
-<div style="text-align: right;">
-Publication date: 2020-06-23
-</div>
+![Deno](/img/blog/deno.png)
 
 ## What is Deno
 
