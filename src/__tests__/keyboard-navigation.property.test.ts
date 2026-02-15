@@ -95,13 +95,20 @@ describe('property 9: Accessibility Compliance - Keyboard Navigation', () => {
       fc.property(
         fc.array(
           fc.record({
-            id: fc.string({ minLength: 1, maxLength: 10 }),
+            id: fc.string({ minLength: 1, maxLength: 10 }).filter(s => s.trim().length > 0),
             tabIndex: fc.integer({ min: 0, max: 100 }),
             isVisible: fc.boolean(),
             isDisabled: fc.boolean(),
           }),
           { minLength: 1, maxLength: 10 },
-        ),
+        ).chain(elements => {
+          // Ensure unique IDs by appending index
+          const uniqueElements = elements.map((el, idx) => ({
+            ...el,
+            id: `${el.id}-${idx}`,
+          }))
+          return fc.constant(uniqueElements)
+        }),
         (elements) => {
           // Filter focusable elements
           const focusableElements = elements.filter(el =>
