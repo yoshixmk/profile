@@ -1,8 +1,10 @@
-# Gagicの紹介
+---
+title: "Gagicの紹介"
+author: "yoshixmk"
+published: "2020-09-22"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-09-22
-</div>
+# Gagicの紹介
 
 ## Gagicとは
 

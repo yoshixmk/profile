@@ -1,8 +1,10 @@
-# Deno 日本語マニュアルを公開しました
+---
+title: "Deno 日本語マニュアルを公開しました"
+author: "yoshixmk"
+published: "2020-08-16"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-08-16
-</div>
+# Deno 日本語マニュアルを公開しました
 
 ## 概要
 

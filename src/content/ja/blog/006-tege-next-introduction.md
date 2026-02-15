@@ -1,8 +1,10 @@
-# てげぶのサイトを新たに作成しました
+---
+title: "てげぶのサイトを新たに作成しました"
+author: "yoshixmk"
+published: "2020-08-02"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-08-02
-</div>
+# てげぶのサイトを新たに作成しました
 
 ## 概要
 
@@ -60,10 +62,10 @@ $ gatsby develop
 <div>
   <p align="center">
     <a href="https://tegebu.netlify.app/" >
-      <img alt="Tegebuプレビュー画像1" src="./img/blog/preview.png" width="67%"/>
+      <img alt="Tegebuプレビュー画像1" src="/img/blog/preview.png" width="67%"/>
     </a>
     <a href="https://tegebu.netlify.app/" >
-      <img alt="Tegebuプレビュー画像2" src="./img/blog/preview2.png" width="28%"/>
+      <img alt="Tegebuプレビュー画像2" src="/img/blog/preview2.png" width="28%"/>
     </a>
   </p>
 </div>

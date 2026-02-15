@@ -1,8 +1,10 @@
-# PinyとPinyinの紹介
+---
+title: "PinyとPinyinの紹介"
+author: "yoshixmk"
+published: "2021-01-11"
+---
 
-<div style="text-align: right;">
-Publication date： 2021-01-11
-</div>
+# PinyとPinyinの紹介
 
 ## Pinyとは
 

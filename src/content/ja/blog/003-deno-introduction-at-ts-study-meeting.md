@@ -1,11 +1,13 @@
+---
+title: "Tegebu TS勉強会で登壇しました"
+author: "yoshixmk"
+published: "2020-06-23"
+---
+
 # Tegebu TS勉強会で登壇しました
 
 Typescriptのセキュアなランタイム、**Deno**について話をしました
-![ts](public/img/blog/ts.png)
-
-<div style="text-align: right;">
-Publication date： 2020-06-23
-</div>
+![ts](/img/blog/ts.png)
 
 ## 10 Things I Regret About Node.js
 

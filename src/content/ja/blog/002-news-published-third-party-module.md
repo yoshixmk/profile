@@ -1,8 +1,10 @@
-# Denoのサードパーティモジュールを公開しました
+---
+title: "Denoのサードパーティモジュールを公開しました"
+author: "yoshixmk"
+published: "2020-06-23"
+---
 
-<div style="text-align: right;">
-Publication date： 2020-06-23
-</div>
+# Denoのサードパーティモジュールを公開しました
 
 ## I have published a third party module.
 
