@@ -127,7 +127,7 @@ describe('property 4: Animation System Adaptation', () => {
           elementType: fc.constantFrom('button', 'card', 'image', 'link', 'icon'),
           hoverEnabled: fc.boolean(),
           animationDisabled: fc.boolean(),
-          transitionDuration: fc.float({ min: Math.fround(0.1), max: Math.fround(2.0) }),
+          transitionDuration: fc.float({ min: Math.fround(0.1), max: Math.fround(2.0), noNaN: true }),
           easing: fc.constantFrom('linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out'),
         }),
         (config) => {
@@ -378,7 +378,7 @@ describe('property 4: Animation System Adaptation', () => {
       fc.property(
         fc.record({
           animationType: fc.constantFrom('fadeIn', 'flash', 'scale', 'rotate', 'slide'),
-          duration: fc.float({ min: Math.fround(0.1), max: Math.fround(3.0) }),
+          duration: fc.float({ min: Math.fround(0.1), max: Math.fround(3.0), noNaN: true }),
           delay: fc.integer({ min: 0, max: 20 }).map(x => x / 10),
           ease: fc.constantFrom('linear', 'easeIn', 'easeOut', 'easeInOut', 'spring'),
           springConfig: fc.record({
