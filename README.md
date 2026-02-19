@@ -31,7 +31,7 @@ yoshixmkはテクノロジーを通じて、
 
 バックエンドエンジニア、SREエンジニアとしてキャリアをスタートし、現在はバックエンドを中心にフルスタックに活躍。
 
-## このサイトに関して ![gh-pages](https://github.com/yoshixmk/profile/workflows/gh-pages/badge.svg)
+## このサイトに関して ![gh-pages](https://github.com/yoshixmk/profile/actions/workflows/gh-pages.yml/badge.svg)
 
 ### ブログ
 
