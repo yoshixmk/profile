@@ -1,12 +1,12 @@
-import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
 import type { Metadata } from 'next'
-
 import type { ReactNode } from 'react'
-import { CustomFooter } from '@/components/CustomFooter'
-import { useServerLocale } from '@/hooks'
+
+import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { CustomFooter } from '@/components/CustomFooter'
+import { useServerLocale } from '@/hooks'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
@@ -14,8 +14,26 @@ import { getDirection } from '../_dictionaries/get-dictionary'
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
 
+interface PageParams {
+  lang: I18nLangKeys
+}
+
+interface Props {
+  children: ReactNode
+  params: Promise<{ lang: string }>
+}
+
+function validateLang(lang: string): I18nLangKeys {
+  if (lang === 'ja' || lang === 'en') {
+    return lang
+  }
+  throw new Error(`Invalid language: ${lang}. Expected 'ja' or 'en'.`)
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { lang } = await params
+  const resolvedParams = await params
+  const lang = validateLang(resolvedParams.lang)
+
   const { t } = await useServerLocale(lang)
 
   const title = t('systemTitle')
@@ -56,6 +74,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const repo = 'https://github.com/yoshixmk/profile'
 
+export async function generateStaticParams(): Promise<PageParams[]> {
+  return [
+    { lang: 'en' },
+    { lang: 'ja' },
+  ]
+}
+
 const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
   const { t } = await useServerLocale(lang)
   return (
@@ -75,15 +100,11 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
   )
 }
 
-interface Props {
-  children: ReactNode
-  params: Promise<{ lang: I18nLangKeys }>
-}
-
 export default async function LangLayout({ children, params }: Props) {
-  const { lang } = await params
-  const pageMap = await getPageMap(lang)
+  const resolvedParams = await params
+  const lang = validateLang(resolvedParams.lang)
 
+  const pageMap = await getPageMap(lang)
   const { t } = await useServerLocale(lang)
 
   return (

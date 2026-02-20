@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import React from 'react'
+import * as React from 'react'
 
 interface Props {
   className?: string

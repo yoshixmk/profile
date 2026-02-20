@@ -1,16 +1,15 @@
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
-import { middleware as nextraMiddleware } from 'nextra/locales'
+import { proxy as nextraProxy } from 'nextra/locales'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // Block system/diagnostic paths (like .well-known or .DS_Store) from triggering localized layouts
   if (pathname.split('/').some(segment => segment.startsWith('.'))) {
     return new NextResponse('Not Found', { status: 404 })
   }
 
-  return nextraMiddleware(request)
+  return nextraProxy(request)
 }
 
 export const config = {
