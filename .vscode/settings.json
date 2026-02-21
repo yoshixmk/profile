@@ -1,3 +1,6 @@
 {
-  "kiroAgent.configureMCP": "Enabled"
+  "kiroAgent.configureMCP": "Enabled",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
