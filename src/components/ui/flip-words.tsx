@@ -2,8 +2,7 @@
 
 import type { TargetAndTransition } from 'framer-motion'
 import { AnimatePresence, motion } from 'framer-motion'
-import * as React from 'react'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { useBreakpoint } from '../../hooks'
 import { cn } from '../../lib/utils'
 

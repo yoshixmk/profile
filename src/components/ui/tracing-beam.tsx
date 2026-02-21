@@ -1,13 +1,12 @@
 'use client'
+import { cn } from '@/lib/utils'
 import {
   motion,
   useScroll,
   useSpring,
   useTransform,
 } from 'framer-motion'
-import * as React from 'react'
-import { useEffect, useRef, useState } from 'react'
-import { cn } from '@/lib/utils'
+import React, { useEffect, useRef, useState } from 'react'
 
 export const TracingBeam = ({
   children,

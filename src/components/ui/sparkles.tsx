@@ -1,12 +1,11 @@
 'use client'
 import type { Container } from '@tsparticles/engine'
+import { cn } from '@/lib/utils'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { motion, useAnimation } from 'framer-motion'
-import * as React from 'react'
-import { useEffect, useId, useState } from 'react'
-import { loadFull } from 'tsparticles'
+import React, { useEffect, useId, useState } from 'react'
 
-import { cn } from '@/lib/utils'
+import { loadFull } from 'tsparticles'
 
 interface ParticlesProps {
   id?: string

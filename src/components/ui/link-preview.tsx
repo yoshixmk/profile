@@ -9,7 +9,7 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import { encode } from 'qss'
-import * as React from 'react'
+import React from 'react'
 import { cn } from '../../lib/utils'
 
 type LinkPreviewProps = {

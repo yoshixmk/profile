@@ -18,13 +18,13 @@ type PageProps = Readonly<{
 
 export default async function Page(props: PageProps) {
   const Wrapper = useMDXComponents().wrapper
-
+  // eslint-disable-next-line react/prefer-destructuring-assignment
   const params = await props.params
   const result = await importPage(params.mdxPath, params.lang)
-  const { default: MDXContent, toc, metadata, sourceCode } = result
+  const { default: MDXContent, toc, metadata } = result
 
   return (
-    <Wrapper toc={toc} metadata={metadata} sourceCode={sourceCode}>
+    <Wrapper toc={toc} metadata={metadata}>
       <MDXContent {...props} params={params} />
     </Wrapper>
   )

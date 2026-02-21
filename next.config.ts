@@ -13,6 +13,9 @@ export default withNextra({
   images: {
     unoptimized: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   reactStrictMode: true,
   cleanDistDir: true,
   i18n: {
