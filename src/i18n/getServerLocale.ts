@@ -1,12 +1,12 @@
-import type { AllLocales, I18nLangKeys, LocaleKeys, PathValue } from '../i18n'
-import { getNestedValue, i18nConfig, interpolateString } from '../i18n'
+import type { AllLocales, I18nLangKeys, LocaleKeys, PathValue } from './index'
+import { getNestedValue, i18nConfig, interpolateString } from './index'
 
 // 型は、指定されたキーのローカライズされた値の型を取得します
 type LocalizedValue<T, K extends LocaleKeys> = PathValue<T, K> extends string
   ? string
   : PathValue<T, K>
 
-export async function useServerLocale(lang: I18nLangKeys) {
+export async function getServerLocale(lang: I18nLangKeys) {
   // パラメータから現在の言語を取得
   const currentLocale = lang
 

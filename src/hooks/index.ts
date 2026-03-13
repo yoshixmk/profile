@@ -1,3 +1,3 @@
 export * from './useBreakpoint'
 export * from './useLocale'
-export * from './useServerLocale'
+export * from '../i18n/getServerLocale'

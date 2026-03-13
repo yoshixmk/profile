@@ -2,7 +2,7 @@ import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 import { middleware as nextraMiddleware } from 'nextra/locales'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Block system/diagnostic paths (like .well-known or .DS_Store) from triggering localized layouts
