@@ -1,0 +1,6 @@
+[
+  {
+    "regexp": "^\\/profile(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|_next\\/static|_next\\/image|favicon.ico|img|_pagefind).*))(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/((?!api|_next/static|_next/image|favicon.ico|img|_pagefind).*)"
+  }
+]

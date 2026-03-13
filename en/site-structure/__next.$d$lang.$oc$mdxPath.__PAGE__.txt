@@ -1,0 +1,105 @@
+1:"$Sreact.fragment"
+2:I[83508,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"TOCProvider"]
+3:I[84184,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Sidebar"]
+4:I[56512,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ClientWrapper"]
+9:I[95862,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HeadingAnchor"]
+1e:I[91902,["/profile/_next/static/chunks/96146262d61a8bdc.js","/profile/_next/static/chunks/e91ed2331cdb2a66.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+21:I[43959,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"SiteConfig"]
+5:T102f,---
+title: "Site Structure"
+---
+
+import { Callout } from 'nextra/components'
+import { SiteConfig } from '@/components/HomepageHero/SiteConfig'
+
+# 🛠️ Site Structure
+
+We've completed significant core framework upgrades to bring you a better development experience!
+
+<Callout emoji={<span className='icon-[ri--alarm-warning-fill]'></span>} type="info">
+Note
+
+This is the latest release, and while it has been tested, there may still be some issues that have not been discovered. If you encounter any anomalies or instability, please provide [Feedback](https://github.com/pdsuwwz/nextjs-nextra-starter/issues), and I will fix them as soon as possible.
+</Callout>
+
+### Nextra v4 Updates
+
+Nextra v4 is now released with major improvements and new features:
+
+- 🚀 **App Router Support**: Fully transitioned to Next.js App Router, discontinuing Pages Router, and supporting the latest Metadata API.  
+- ⚡ **Faster Page Loading**: Optimized bundle size and performance for a more responsive website.  
+- 🔍 **New Search Engine**: Rust-powered Pagefind delivers faster and more accurate search results.  
+- 🏎️ **Turbopack Support**: Improved development experience, addressing long-standing community requests.  
+- 🌍 **RSC + i18n**: Enhanced internationalization, making multilingual website development easier.  
+- 🎨 **Optimized Theme Styles**: Improved UI design for better visual consistency.  
+- 📱 **Better Mobile Adaptation**: Optimized display and interaction for smaller screens.  
+- 📚 **More Powerful Page Collection**: The new "Page Map" now collects `md/mdx` pages and `jsx/tsx` pages from the `app/` directory.  
+- 🛠️ **Remote MDX Rendering**: Supports rendering MDX content from any source while generating proper sidebar navigation.  
+- ✨ **Enhanced Table of Contents (TOC)**: Displays Markdown headings accurately, supporting JSX, code blocks, math formulas, and more.  
+
+
+For more details, check out the [Nextra v4 Official Migration Guide](https://the-guild.dev/blog/nextra-4)
+
+
+### Tailwind CSS v4 Updates
+
+Tailwind CSS v4 has been officially released, introducing several significant improvements and new features:
+
+- 🚀 **New High-Performance Engine**: Full builds are up to 5x faster, and incremental builds are over 100x faster, measured in microseconds.
+- 💎 **Designed for the Modern Web**: Built on cutting-edge CSS features like cascade layers, registered custom properties with `@property`, and `color-mix()`.
+- 🎯 **Simplified Installation**: Fewer dependencies, zero configuration, and just a single line of code in your CSS file.
+- 📦 **First-Party Vite Plugin**: Tight integration for maximum performance and minimum configuration.
+- 🔍 **Automatic Content Detection**: All of your template files are discovered automatically, with no configuration required.
+- 📂 **Built-In Import Support**: No additional tooling necessary to bundle multiple CSS files.
+- 🛠️ **CSS-First Configuration**: A reimagined developer experience where you customize and extend the framework directly in CSS instead of a JavaScript configuration file.
+
+For more details, please refer to the [Tailwind CSS v4 Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide) and [Tailwind CSS Blog](https://tailwindcss.com/blog/tailwindcss-v4)
+
+
+### Migration Tips
+
+For a smooth upgrade process, we recommend:
+
+1. Test the upgrade in a development environment first
+2. Check custom component compatibility
+3. Monitor console for any warnings
+4. Follow the official migration guides step by step
+
+### Documentation & Support
+
+- 📘 [Nextra Documentation](https://nextra.site)
+- 🎨 [Tailwind CSS Documentation](https://tailwindcss.com)
+- 🐞 Found an issue? Open an [Issue](https://github.com/pdsuwwz/nextjs-nextra-starter/issues)
+
+### Roadmap
+
+We'll continue optimizing framework performance and plan to add more useful features. Stay tuned!
+
+If you find this project useful or like the work I’ve done, please consider clicking the [⭐️ Star](https://github.com/pdsuwwz/nextjs-nextra-starter) button to show your support! Each star motivates me to keep improving. Thank you! 😊
+
+<SiteConfig />0:{"buildId":"X0bsEV6wdgaUDQv6f95wE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"Nextra v4 Updates","id":"nextra-v4-updates","depth":3},{"value":"Tailwind CSS v4 Updates","id":"tailwind-css-v4-updates","depth":3},{"value":"Migration Tips","id":"migration-tips","depth":3},{"value":"Documentation & Support","id":"documentation--support","depth":3},{"value":"Roadmap","id":"roadmap","depth":3}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Site Structure","filePath":"src/content/en/site-structure.mdx","timestamp":1773410308000},"sourceCode":"$5","children":["$L6","$L7"]}]]}]}],null,"$L8"]}],"loading":null,"isPartial":false}
+6:["$","div",null,{"id":"nextra-skip-nav"}]
+7:["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["🛠️ Site Structure","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"We’ve completed significant core framework upgrades to bring you a better development experience!"}],"\n",["$","div",null,{"className":"nextra-callout x:overflow-x-auto x:not-first:mt-[1.25em] x:flex x:rounded-lg x:border x:py-[.5em] x:pe-[1em] x:contrast-more:border-current! x:bg-blue-100 x:dark:bg-blue-900/30 x:text-blue-700 x:dark:text-blue-400 x:border-blue-700 x:dark:border-blue-600","children":[["$","div",null,{"className":"x:select-none x:text-[1.25em] x:ps-[.6em] x:pe-[.4em]","style":{"fontFamily":"\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\""},"data-pagefind-ignore":"all","children":["$","span",null,{"className":"icon-[ri--alarm-warning-fill]"}]}],["$","div",null,{"className":"x:w-full x:min-w-0","children":[["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Note"}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["This is the latest release, and while it has been tested, there may still be some issues that have not been discovered. If you encounter any anomalies or instability, please provide ",["$","a",null,{"href":"https://github.com/pdsuwwz/nextjs-nextra-starter/issues","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Feedback",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],", and I will fix them as soon as possible."]}]]}]]}],"\n",["$","h3",null,{"id":"nextra-v4-updates","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Nextra v4 Updates",["$","$L9",null,{"id":"nextra-v4-updates"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Nextra v4 is now released with major improvements and new features:"}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["🚀 ",["$","strong",null,{"children":"App Router Support"}],": Fully transitioned to Next.js App Router, discontinuing Pages Router, and supporting the latest Metadata API."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["⚡ ",["$","strong",null,{"children":"Faster Page Loading"}],": Optimized bundle size and performance for a more responsive website."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🔍 ",["$","strong",null,{"children":"New Search Engine"}],": Rust-powered Pagefind delivers faster and more accurate search results."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🏎️ ",["$","strong",null,{"children":"Turbopack Support"}],": Improved development experience, addressing long-standing community requests."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🌍 ",["$","strong",null,{"children":"RSC + i18n"}],": Enhanced internationalization, making multilingual website development easier."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🎨 ",["$","strong",null,{"children":"Optimized Theme Styles"}],": Improved UI design for better visual consistency."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["📱 ",["$","strong",null,{"children":"Better Mobile Adaptation"}],": Optimized display and interaction for smaller screens."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["📚 ","$La",": The new “Page Map” now collects ","$Lb"," pages and ","$Lc"," pages from the ","$Ld"," directory."]}],"\n","$Le","\n","$Lf","\n"]}],"\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d"]}]
+8:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+a:["$","strong",null,{"children":"More Powerful Page Collection"}]
+b:["$","code",null,{"className":"nextra-code","dir":"ltr","children":"md/mdx"}]
+c:["$","code",null,{"className":"nextra-code","dir":"ltr","children":"jsx/tsx"}]
+d:["$","code",null,{"className":"nextra-code","dir":"ltr","children":"app/"}]
+e:["$","li",null,{"className":"x:my-[.5em]","children":["🛠️ ",["$","strong",null,{"children":"Remote MDX Rendering"}],": Supports rendering MDX content from any source while generating proper sidebar navigation."]}]
+f:["$","li",null,{"className":"x:my-[.5em]","children":["✨ ",["$","strong",null,{"children":"Enhanced Table of Contents (TOC)"}],": Displays Markdown headings accurately, supporting JSX, code blocks, math formulas, and more."]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["For more details, check out the ",["$","a",null,{"href":"https://the-guild.dev/blog/nextra-4","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Nextra v4 Official Migration Guide",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}]
+11:["$","h3",null,{"id":"tailwind-css-v4-updates","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Tailwind CSS v4 Updates",["$","$L9",null,{"id":"tailwind-css-v4-updates"}]]}]
+12:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Tailwind CSS v4 has been officially released, introducing several significant improvements and new features:"}]
+13:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["🚀 ",["$","strong",null,{"children":"New High-Performance Engine"}],": Full builds are up to 5x faster, and incremental builds are over 100x faster, measured in microseconds."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["💎 ",["$","strong",null,{"children":"Designed for the Modern Web"}],": Built on cutting-edge CSS features like cascade layers, registered custom properties with ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"@property"}],", and ",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"color-mix()"}],"."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🎯 ",["$","strong",null,{"children":"Simplified Installation"}],": Fewer dependencies, zero configuration, and just a single line of code in your CSS file."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["📦 ",["$","strong",null,{"children":"First-Party Vite Plugin"}],": Tight integration for maximum performance and minimum configuration."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🔍 ",["$","strong",null,{"children":"Automatic Content Detection"}],": All of your template files are discovered automatically, with no configuration required."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["📂 ",["$","strong",null,{"children":"Built-In Import Support"}],": No additional tooling necessary to bundle multiple CSS files."]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🛠️ ",["$","strong",null,{"children":"CSS-First Configuration"}],": A reimagined developer experience where you customize and extend the framework directly in CSS instead of a JavaScript configuration file."]}],"\n"]}]
+14:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["For more details, please refer to the ",["$","a",null,{"href":"https://tailwindcss.com/docs/upgrade-guide","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Tailwind CSS v4 Upgrade Guide",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," and ",["$","a",null,{"href":"https://tailwindcss.com/blog/tailwindcss-v4","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Tailwind CSS Blog",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}]
+15:["$","h3",null,{"id":"migration-tips","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Migration Tips",["$","$L9",null,{"id":"migration-tips"}]]}]
+16:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"For a smooth upgrade process, we recommend:"}]
+17:["$","ol",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-decimal x:ms-6","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Test the upgrade in a development environment first"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Check custom component compatibility"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Monitor console for any warnings"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Follow the official migration guides step by step"}],"\n"]}]
+18:["$","h3",null,{"id":"documentation--support","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Documentation & Support",["$","$L9",null,{"id":"documentation--support"}]]}]
+19:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":["📘 ",["$","a",null,{"href":"https://nextra.site","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Nextra Documentation",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🎨 ",["$","a",null,{"href":"https://tailwindcss.com","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Tailwind CSS Documentation",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["🐞 Found an issue? Open an ",["$","a",null,{"href":"https://github.com/pdsuwwz/nextjs-nextra-starter/issues","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Issue",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}],"\n"]}]
+1a:["$","h3",null,{"id":"roadmap","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["Roadmap",["$","$L9",null,{"id":"roadmap"}]]}]
+1b:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"We’ll continue optimizing framework performance and plan to add more useful features. Stay tuned!"}]
+1c:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["If you find this project useful or like the work I’ve done, please consider clicking the ",["$","a",null,{"href":"https://github.com/pdsuwwz/nextjs-nextra-starter","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["⭐️ Star",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," button to show your support! Each star motivates me to keep improving. Thank you! 😊"]}]
+1d:["$","$L21",null,{}]
+20:null

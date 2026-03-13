@@ -1,0 +1,75 @@
+1:"$Sreact.fragment"
+2:I[83508,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"TOCProvider"]
+3:I[84184,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Sidebar"]
+4:I[56512,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ClientWrapper"]
+6:I[48138,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ImageZoom"]
+7:I[95862,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HeadingAnchor"]
+18:I[58268,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],""]
+19:I[91902,["/profile/_next/static/chunks/96146262d61a8bdc.js","/profile/_next/static/chunks/e91ed2331cdb2a66.js"],"OutletBoundary"]
+1a:"$Sreact.suspense"
+5:Ta43,---
+title: "てげメンバーの部員紹介ページを作成し、リリースしました"
+author: "yoshixmk"
+published: "2020-09-20"
+---
+
+# てげメンバーの部員紹介ページを作成し、リリースしました
+
+![member page](/img/blog/member.png)
+
+## ドメインについて
+
+今回のリリースは、今まで最も大きなリリースです。
+**ドメイン移行までのマイルストーンは全て完了**し、てげぶのドメインの移行が完了していることを報告します <https://www.tegebu.com/> 。
+
+新サイトでは、私たちのテーブルゲームの紹介や、最新トレンドの動的更新、ページの整理整頓、外部リンクなどの見直しなど数えきれない変更を行ってきました。
+
+以前の記事でも紹介していますが、新テーマは明るく仕上がっています（真っ暗なテーマに、さよなら😁）
+
+これに伴い、[旧てげぶサイト](https://github.com/yoshixmk/tegebu)については、Archiveを行っています。およそ1年間使用していました。
+
+## てげ部の部員ページについて
+
+部員ページはいわゆる、メンバーページにあたります。
+今後も情報を部員更新する予定がありますので、お楽しみに！
+<https://www.tegebu.com/members/>
+
+## ホスティングの場所を変更
+
+開発では、[Netlify](https://tegebu.netlify.app/)を使用していましたが、Github Actionsを使うことで、今後の開発がさらに行いやすいであろうことから、GIthub Pagesに移行しました （※ 現在もNetlifyへのデプロイ自体は行っています。）
+
+## 開発について
+
+開発において、最も大きなニュースは、[Organization](https://github.com/tegebu)へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。
+
+![Github organization tegebu](/img/blog/organization_tegebu.png)
+
+開発に携わるのは、私（[@yoshixmk](https://github.com/yoshixmk)）と[@jamashita](https://github.com/jamashita)です。
+
+我々は、いつも遊び心を持って開発してます。
+
+今回のリリースでも、あの有名な[恐竜ゲーム](https://www.tegebu.com/dinosaur/)をひっそり含めてみました。
+
+また新しいニュースが届けられるように、今日もまたコミットを続けています。
+テーブルゲーム、ボードゲームと、エンジニアリングを掛け合わせることにご興味がある方は、ぜひご連絡ください。
+
+Mail: info@tegebu.com
+
+Twitter: https://twitter.com/tegebu0:{"buildId":"X0bsEV6wdgaUDQv6f95wE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"ドメインについて","id":"ドメインについて","depth":2},{"value":"てげ部の部員ページについて","id":"てげ部の部員ページについて","depth":2},{"value":"ホスティングの場所を変更","id":"ホスティングの場所を変更","depth":2},{"value":"開発について","id":"開発について","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"てげメンバーの部員紹介ページを作成し、リリースしました","author":"yoshixmk","published":"2020-09-20","filePath":"src/content/ja/blog/009-tege-domains-release.md","timestamp":1773410308000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["てげメンバーの部員紹介ページを作成し、リリースしました","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","$L6",null,{"alt":"member page","placeholder":"blur","src":{"src":"/profile/_next/static/media/member.5dab080e.png","width":2880,"height":1518,"blurWidth":8,"blurHeight":4,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAgElEQVR42g3JQQuCMABA4f3/S7+hi9DBQxCE0DEpCkLMECIiGBJsuRTdjEZ77fYen1jXFenpyOZ2JdltSfY5WX1htpiTHnJEa1pkI3HOUZQFZXVmeBuy1RL5uCO0UuiXpus6lNJYZ2P3tMbgvUfI5skwjEzTh9E6Qgj08b8RfwH+3up0LXg3TvgAAAAASUVORK5CYII="}}]}],"\n",["$","h2",null,{"id":"ドメインについて","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["ドメインについて",["$","$L7",null,{"id":"ドメインについて"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["今回のリリースは、今まで最も大きなリリースです。\n",["$","strong",null,{"children":"ドメイン移行までのマイルストーンは全て完了"}],"し、てげぶのドメインの移行が完了していることを報告します ",["$","a",null,{"href":"https://www.tegebu.com/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["https://www.tegebu.com/",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]," 。"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"新サイトでは、私たちのテーブルゲームの紹介や、最新トレンドの動的更新、ページの整理整頓、外部リンクなどの見直しなど数えきれない変更を行ってきました。"}],"\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16"]}]]}]]}]}],null,"$L17"]}],"loading":null,"isPartial":false}
+8:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"以前の記事でも紹介していますが、新テーマは明るく仕上がっています（真っ暗なテーマに、さよなら😁）"}]
+9:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["これに伴い、",["$","a",null,{"href":"https://github.com/yoshixmk/tegebu","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["旧てげぶサイト",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"については、Archiveを行っています。およそ1年間使用していました。"]}]
+a:["$","h2",null,{"id":"てげ部の部員ページについて","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["てげ部の部員ページについて",["$","$L7",null,{"id":"てげ部の部員ページについて"}]]}]
+b:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["部員ページはいわゆる、メンバーページにあたります。\n今後も情報を部員更新する予定がありますので、お楽しみに！\n",["$","a",null,{"href":"https://www.tegebu.com/members/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["https://www.tegebu.com/members/",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}]
+c:["$","h2",null,{"id":"ホスティングの場所を変更","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["ホスティングの場所を変更",["$","$L7",null,{"id":"ホスティングの場所を変更"}]]}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["開発では、",["$","a",null,{"href":"https://tegebu.netlify.app/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Netlify",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"を使用していましたが、Github Actionsを使うことで、今後の開発がさらに行いやすいであろうことから、GIthub Pagesに移行しました （※ 現在もNetlifyへのデプロイ自体は行っています。）"]}]
+e:["$","h2",null,{"id":"開発について","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["開発について",["$","$L7",null,{"id":"開発について"}]]}]
+f:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["開発において、最も大きなニュースは、",["$","a",null,{"href":"https://github.com/tegebu","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Organization",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"へ全面的に移行し、てげぶのリポジトリの集約に努めたことが挙げられます。"]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","$L6",null,{"alt":"Github organization tegebu","placeholder":"blur","src":{"src":"/profile/_next/static/media/organization_tegebu.94a721ea.png","width":2880,"height":1492,"blurWidth":8,"blurHeight":4,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAECAYAAACzzX7wAAAAXUlEQVR42h2LSQ7AIAwD+f+jeqnoqn6mW0ogTCGWHDnWOGz7wRBH4rwyrztxWjz7v2wEs8ojQlJFNfOl5D7lopgRKjQgNyBTimGtfOUjt9wV+nkludWhwn3dvu76AT14ePmPMAvxAAAAAElFTkSuQmCC"}}]}]
+11:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["開発に携わるのは、私（",["$","a",null,{"href":"https://github.com/yoshixmk","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["@yoshixmk",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"）と",["$","a",null,{"href":"https://github.com/jamashita","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["@jamashita",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"です。"]}]
+12:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"我々は、いつも遊び心を持って開発してます。"}]
+13:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["今回のリリースでも、あの有名な",["$","a",null,{"href":"https://www.tegebu.com/dinosaur/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["恐竜ゲーム",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"をひっそり含めてみました。"]}]
+14:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"また新しいニュースが届けられるように、今日もまたコミットを続けています。\nテーブルゲーム、ボードゲームと、エンジニアリングを掛け合わせることにご興味がある方は、ぜひご連絡ください。"}]
+15:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Mail: ",["$","$L18",null,{"href":"mailto:info@tegebu.com","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":"info@tegebu.com"}]]}]
+16:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Twitter: ",["$","a",null,{"href":"https://twitter.com/tegebu","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["https://twitter.com/tegebu",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]]}]
+17:["$","$L19",null,{"children":["$","$1a",null,{"name":"Next.MetadataOutlet","children":"$@1b"}]}]
+1b:null

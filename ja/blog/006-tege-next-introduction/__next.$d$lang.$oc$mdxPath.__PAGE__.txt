@@ -1,0 +1,100 @@
+1:"$Sreact.fragment"
+2:I[83508,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"TOCProvider"]
+3:I[84184,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Sidebar"]
+4:I[56512,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ClientWrapper"]
+6:I[95862,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HeadingAnchor"]
+19:I[32230,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ToggleWordWrapButton"]
+1a:I[32919,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"CopyToClipboard"]
+1b:I[48138,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ImageZoom"]
+1c:I[91902,["/profile/_next/static/chunks/96146262d61a8bdc.js","/profile/_next/static/chunks/e91ed2331cdb2a66.js"],"OutletBoundary"]
+1d:"$Sreact.suspense"
+5:Tda3,---
+title: "てげぶのサイトを新たに作成しました"
+author: "yoshixmk"
+published: "2020-08-02"
+---
+
+# てげぶのサイトを新たに作成しました
+
+## 概要
+
+新しいてげぶのサイトは、Tegebu nextというプロジェクトで進めており、テーブルゲームの団体（てげぶ）とテーブルゲームの紹介を中心にサイトを作成しました。
+URL: [https://tegebu.netlify.app/](https://tegebu.netlify.app/)
+以前、[tegebu.com](https://www.tegebu.com/tabletop-games/)というのを作成しており、これのサイトリニューアルです。
+今は、テーブルゲームの一覧の移行が完了しております。
+残っている内容も、移行が終わり次第、ドメインを書き換える想定です。
+
+## 技術要素
+
+- Gatsby
+- Typescript
+- Tailwind CSS
+- PostCSS
+  など
+
+## Tailwind CSSに関して
+
+[Tailwind](https://tailwindcss.com/)は、`Utility-First`(※詳しくは後述) のCSSフレームワークです。
+Tailwindは高度にカスタマイズ可能な低レベルなアーキテクチャであり、デザインを構築するために必要なすべてを提供します。
+個人的な感想としては、
+基本的にBootstrapなどとよく似ているのですが、より低レベルでカスタマイズ可能なフレームワークで、カスタムデザインの迅速な構築にむいていると感じました。Bootstrapより記述自体は量が必要ですが、自由度が高いと言えます。
+`Utility-First`というのがコアコンセプトにあり、これは、Tailwind自身がプリミティブなCSSクラスのアセットで、複雑なコンポーネントを（CSSファイルを一から直接書くことなく）構築できるという意味です。これによって下記のような効果が得られます
+
+- クラス名を考える労力が、必要ありません
+- CSSの肥大化が止まります
+- 安全に変更を加えることができます（生のCSSはグローバルなため、不安を完全に取り除くことはできない）
+  次の例は、通常時に「青色のテキスト」で、マウスホバーしたときには「アンダーラインありの、黄色のテキスト」という意味になります（簡単ですね！）。
+
+```html
+<a class="text-blue hover:text-yellow hover:underline">Link</a>
+```
+
+詳しくは[マニュアル](https://tailwindcss.com/docs/utility-first)を見てください。
+`Bootstrap 5`が間も無く出ますが、[Poll: Tailwind or Bootstrap?](https://dev.to/zolidev/poll-tailwind-or-bootstrap-1153)にもある通り、`Tailwind CSS`の人気は今後も上がっていくと思います。
+
+## Github
+
+[https://github.com/yoshixmk/tegebu-next](https://github.com/yoshixmk/tegebu-next)
+
+リポジトリをクローンをして、起動します。
+
+```Shell
+$ git clone https://github.com/yoshixmk/tegebu-next.git
+$ cd tegebu-next/
+$ yarn install
+$ gatsby develop
+```
+
+[http://localhost:8000](http://localhost:8000)で実行されます
+
+下記のような画面が見られるはずです（左はPCサイズ、右はスマホサイズ）。
+
+<div>
+  <p align="center">
+    <a href="https://tegebu.netlify.app/" >
+      <img alt="Tegebuプレビュー画像1" src="/img/blog/preview.png" width="67%"/>
+    </a>
+    <a href="https://tegebu.netlify.app/" >
+      <img alt="Tegebuプレビュー画像2" src="/img/blog/preview2.png" width="28%"/>
+    </a>
+  </p>
+</div>0:{"buildId":"X0bsEV6wdgaUDQv6f95wE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"概要","id":"概要","depth":2},{"value":"技術要素","id":"技術要素","depth":2},{"value":"Tailwind CSSに関して","id":"tailwind-cssに関して","depth":2},{"value":"Github","id":"github","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"てげぶのサイトを新たに作成しました","author":"yoshixmk","published":"2020-08-02","filePath":"src/content/ja/blog/006-tege-next-introduction.md","timestamp":1773410308000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["てげぶのサイトを新たに作成しました","$undefined"]}],"\n",["$","h2",null,{"id":"概要","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["概要",["$","$L6",null,{"id":"概要"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["新しいてげぶのサイトは、Tegebu nextというプロジェクトで進めており、テーブルゲームの団体（てげぶ）とテーブルゲームの紹介を中心にサイトを作成しました。\nURL: ",["$","a",null,{"href":"https://tegebu.netlify.app/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["https://tegebu.netlify.app/",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":["$L7","$L8"]}]]]}],"\n以前、","$L9","というのを作成しており、これのサイトリニューアルです。\n今は、テーブルゲームの一覧の移行が完了しております。\n残っている内容も、移行が終わり次第、ドメインを書き換える想定です。"]}],"\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17"]}]]}]]}]}],null,"$L18"]}],"loading":null,"isPartial":false}
+7:["$","path",null,{"d":"M7 17L17 7"}]
+8:["$","path",null,{"d":"M7 7h10v10"}]
+9:["$","a",null,{"href":"https://www.tegebu.com/tabletop-games/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["tegebu.com",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]
+a:["$","h2",null,{"id":"技術要素","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["技術要素",["$","$L6",null,{"id":"技術要素"}]]}]
+b:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Gatsby"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Typescript"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Tailwind CSS"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"PostCSS\nなど"}],"\n"]}]
+c:["$","h2",null,{"id":"tailwind-cssに関して","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Tailwind CSSに関して",["$","$L6",null,{"id":"tailwind-cssに関して"}]]}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":[["$","a",null,{"href":"https://tailwindcss.com/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Tailwind",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"は、",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Utility-First"}],"(※詳しくは後述) のCSSフレームワークです。\nTailwindは高度にカスタマイズ可能な低レベルなアーキテクチャであり、デザインを構築するために必要なすべてを提供します。\n個人的な感想としては、\n基本的にBootstrapなどとよく似ているのですが、より低レベルでカスタマイズ可能なフレームワークで、カスタムデザインの迅速な構築にむいていると感じました。Bootstrapより記述自体は量が必要ですが、自由度が高いと言えます。\n",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Utility-First"}],"というのがコアコンセプトにあり、これは、Tailwind自身がプリミティブなCSSクラスのアセットで、複雑なコンポーネントを（CSSファイルを一から直接書くことなく）構築できるという意味です。これによって下記のような効果が得られます"]}]
+e:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"クラス名を考える労力が、必要ありません"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"CSSの肥大化が止まります"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"安全に変更を加えることができます（生のCSSはグローバルなため、不安を完全に取り除くことはできない）\n次の例は、通常時に「青色のテキスト」で、マウスホバーしたときには「アンダーラインありの、黄色のテキスト」という意味になります（簡単ですね！）。"}],"\n"]}]
+f:["$","div",null,{"data-pagefind-ignore":"all","className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L19",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1a",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":["$","span",null,{"children":[["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"<"}],["$","span",null,{"style":{"--shiki-light":"#22863A","--shiki-dark":"#85E89D"},"children":"a"}],["$","span",null,{"style":{"--shiki-light":"#6F42C1","--shiki-dark":"#B392F0"},"children":" class"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":"="}],["$","span",null,{"style":{"--shiki-light":"#032F62","--shiki-dark":"#9ECBFF"},"children":"\"text-blue hover:text-yellow hover:underline\""}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":">Link</"}],["$","span",null,{"style":{"--shiki-light":"#22863A","--shiki-dark":"#85E89D"},"children":"a"}],["$","span",null,{"style":{"--shiki-light":"#24292E","--shiki-dark":"#E1E4E8"},"children":">"}]]}]}]]}]]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["詳しくは",["$","a",null,{"href":"https://tailwindcss.com/docs/utility-first","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["マニュアル",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"を見てください。\n",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Bootstrap 5"}],"が間も無く出ますが、",["$","a",null,{"href":"https://dev.to/zolidev/poll-tailwind-or-bootstrap-1153","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["Poll: Tailwind or Bootstrap?",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"にもある通り、",["$","code",null,{"className":"nextra-code","dir":"ltr","children":"Tailwind CSS"}],"の人気は今後も上がっていくと思います。"]}]
+11:["$","h2",null,{"id":"github","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["Github",["$","$L6",null,{"id":"github"}]]}]
+12:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","a",null,{"href":"https://github.com/yoshixmk/tegebu-next","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["https://github.com/yoshixmk/tegebu-next",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}]}]
+13:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"リポジトリをクローンをして、起動します。"}]
+14:["$","div",null,{"data-pagefind-ignore":"all","className":"nextra-code x:relative x:not-first:mt-[1.25em]","children":["$undefined",["$","pre",null,{"className":"x:group x:focus-visible:nextra-focus x:overflow-x-auto x:subpixel-antialiased x:text-[.9em] x:bg-white x:dark:bg-black x:py-4 x:ring-1 x:ring-inset x:ring-gray-300 x:dark:ring-neutral-700 x:contrast-more:ring-gray-900 x:contrast-more:dark:ring-gray-50 x:contrast-more:contrast-150 x:rounded-md not-prose","tabIndex":"0","children":[["$","div",null,{"className":"x:group-hover:opacity-100 x:group-focus:opacity-100 x:opacity-0 x:transition x:focus-within:opacity-100 x:flex x:gap-1 x:absolute x:right-4 x:top-2","children":[["$","$L19",null,{"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4 19h6v-2H4v2zM20 5H4v2h16V5zm-3 6H4v2h13.25c1.1 0 2 .9 2 2s-.9 2-2 2H15v-2l-3 3l3 3v-2h2c2.21 0 4-1.79 4-4s-1.79-4-4-4z"}]}]}],["$","$L1a",null,{"className":""}]]}],["$","code",null,{"className":"nextra-code","dir":"ltr","children":[["$","span",null,{"children":["$","span",null,{"children":"$$ git clone https://github.com/yoshixmk/tegebu-next.git"}]}],"\n",["$","span",null,{"children":["$","span",null,{"children":"$$ cd tegebu-next/"}]}],"\n",["$","span",null,{"children":["$","span",null,{"children":"$$ yarn install"}]}],"\n",["$","span",null,{"children":["$","span",null,{"children":"$$ gatsby develop"}]}]]}]]}]]}]
+15:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":[["$","a",null,{"href":"http://localhost:8000","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["http://localhost:8000",[" ",["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]]]}],"で実行されます"]}]
+16:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"下記のような画面が見られるはずです（左はPCサイズ、右はスマホサイズ）。"}]
+17:["$","div",null,{"children":["\n  ",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","align":"center","children":["\n    ",["$","a",null,{"href":"https://tegebu.netlify.app/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":[["\n      ",["$","$L1b",null,{"alt":"Tegebuプレビュー画像1","src":"/img/blog/preview.png","width":"67%"}],"\n    "],false]}],"\n    ",["$","a",null,{"href":"https://tegebu.netlify.app/","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":[["\n      ",["$","$L1b",null,{"alt":"Tegebuプレビュー画像2","src":"/img/blog/preview2.png","width":"28%"}],"\n    "],false]}],"\n  "]}],"\n"]}]
+18:["$","$L1c",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@1e"}]}]
+1e:null

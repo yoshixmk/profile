@@ -1,0 +1,101 @@
+1:"$Sreact.fragment"
+2:I[83508,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"TOCProvider"]
+3:I[84184,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Sidebar"]
+4:I[56512,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ClientWrapper"]
+6:I[95862,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HeadingAnchor"]
+16:I[29592,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Alert"]
+17:I[29592,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"AlertTitle"]
+18:I[29592,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"AlertDescription"]
+19:I[36589,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HoverCard"]
+1a:I[36589,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HoverCardTrigger"]
+1b:I[19455,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Button"]
+1c:I[36589,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HoverCardContent"]
+1d:I[91902,["/profile/_next/static/chunks/96146262d61a8bdc.js","/profile/_next/static/chunks/e91ed2331cdb2a66.js"],"OutletBoundary"]
+1e:"$Sreact.suspense"
+5:T973,---
+title: "経歴"
+---
+
+import { Button } from "@/components/ui/button"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card"
+
+# 簡単な紹介
+
+## 自己紹介
+
+モダンなWeb技術に精通し、スケーラブルで高性能なアプリケーションの構築に情熱を注ぐフルスタック開発者です。TypeScript、React、Next.js、クラウドインフラストラクチャの経験があります。
+
+## 技術スタック
+
+### フロントエンド
+- **フレームワーク**: Next.js 15、React、Vue 3
+- **スタイリング**: Tailwind CSS 4、SASS、PostCSS
+- **アニメーション**: Framer Motion、tsparticles
+- **UIライブラリ**: shadcn/ui、Radix UI
+
+### バックエンド & ランタイム
+- **ランタイム**: Node.js、Deno
+- **言語**: TypeScript、JavaScript、Rust（学習中）
+- **データベース**: Firestore、MongoDB、PostgreSQL
+
+### ツール & DevOps
+- **ビルドツール**: Vite、Webpack、pnpm
+- **テスト**: Jest、Playwright、Vitest
+- **CI/CD**: GitHub Actions、Netlify
+- **バージョン管理**: Git、GitHub
+
+## 現在の取り組み
+
+現在取り組んでいること:
+- Next.jsとNextraを使用したモダンなWebアプリケーションの構築
+- Denoエコシステムの探索とオープンソースプロジェクトへの貢献
+- インタラクティブなドキュメントとブログプラットフォームの開発
+- 堅牢なソフトウェアのためのプロパティベーステストの実装
+
+## オープンソース貢献
+
+以下を含む様々なオープンソースプロジェクトへの積極的な貢献者:
+- Denoサードパーティモジュール
+- 技術ドキュメントの日本語翻訳
+- Webフレームワークとツール
+
+<Alert>
+  <AlertTitle>お問い合わせ</AlertTitle>
+  <AlertDescription>
+    コラボレーションに興味がある、または質問がある場合は、GitHubまたはTwitterからお気軽にご連絡ください。
+  </AlertDescription>
+</Alert>
+
+---
+
+<HoverCard>
+  <HoverCardTrigger>
+    <Button>
+      😄 詳しく見る
+    </Button>
+  </HoverCardTrigger>
+  <HoverCardContent>
+    私のブログ投稿とプロジェクトをチェックして、私が取り組んでいることをご覧ください！
+  </HoverCardContent>
+</HoverCard>0:{"buildId":"X0bsEV6wdgaUDQv6f95wE","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"自己紹介","id":"自己紹介","depth":2},{"value":"技術スタック","id":"技術スタック","depth":2},{"value":"フロントエンド","id":"フロントエンド","depth":3},{"value":"バックエンド & ランタイム","id":"バックエンド--ランタイム","depth":3},{"value":"ツール & DevOps","id":"ツール--devops","depth":3},{"value":"現在の取り組み","id":"現在の取り組み","depth":2},{"value":"オープンソース貢献","id":"オープンソース貢献","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"経歴","filePath":"src/content/ja/introduction.mdx","timestamp":1773410308000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["簡単な紹介","$undefined"]}],"\n",["$","h2",null,{"id":"自己紹介","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["自己紹介",["$","$L6",null,{"id":"自己紹介"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"モダンなWeb技術に精通し、スケーラブルで高性能なアプリケーションの構築に情熱を注ぐフルスタック開発者です。TypeScript、React、Next.js、クラウドインフラストラクチャの経験があります。"}],"\n",["$","h2",null,{"id":"技術スタック","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["技術スタック",["$","$L6",null,{"id":"技術スタック"}]]}],"\n",["$","h3",null,{"id":"フロントエンド","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["フロントエンド",["$","$L6",null,{"id":"フロントエンド"}]]}],"\n",["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"フレームワーク"}],": Next.js 15、React、Vue 3"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"スタイリング"}],": Tailwind CSS 4、SASS、PostCSS"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"アニメーション"}],": Framer Motion、tsparticles"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":["$L7",": shadcn/ui、Radix UI"]}],"\n"]}],"\n","$L8","\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14"]}]]}]]}]}],null,"$L15"]}],"loading":null,"isPartial":false}
+7:["$","strong",null,{"children":"UIライブラリ"}]
+8:["$","h3",null,{"id":"バックエンド--ランタイム","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["バックエンド & ランタイム",["$","$L6",null,{"id":"バックエンド--ランタイム"}]]}]
+9:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"ランタイム"}],": Node.js、Deno"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"言語"}],": TypeScript、JavaScript、Rust（学習中）"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"データベース"}],": Firestore、MongoDB、PostgreSQL"]}],"\n"]}]
+a:["$","h3",null,{"id":"ツール--devops","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["ツール & DevOps",["$","$L6",null,{"id":"ツール--devops"}]]}]
+b:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"ビルドツール"}],": Vite、Webpack、pnpm"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"テスト"}],": Jest、Playwright、Vitest"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"CI/CD"}],": GitHub Actions、Netlify"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"バージョン管理"}],": Git、GitHub"]}],"\n"]}]
+c:["$","h2",null,{"id":"現在の取り組み","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["現在の取り組み",["$","$L6",null,{"id":"現在の取り組み"}]]}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"現在取り組んでいること:"}]
+e:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Next.jsとNextraを使用したモダンなWebアプリケーションの構築"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Denoエコシステムの探索とオープンソースプロジェクトへの貢献"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"インタラクティブなドキュメントとブログプラットフォームの開発"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"堅牢なソフトウェアのためのプロパティベーステストの実装"}],"\n"]}]
+f:["$","h2",null,{"id":"オープンソース貢献","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["オープンソース貢献",["$","$L6",null,{"id":"オープンソース貢献"}]]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"以下を含む様々なオープンソースプロジェクトへの積極的な貢献者:"}]
+11:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"Denoサードパーティモジュール"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"技術ドキュメントの日本語翻訳"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Webフレームワークとツール"}],"\n"]}]
+12:["$","$L16",null,{"children":[["$","$L17",null,{"children":"お問い合わせ"}],["$","$L18",null,{"children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"コラボレーションに興味がある、または質問がある場合は、GitHubまたはTwitterからお気軽にご連絡ください。"}]}]]}]
+13:["$","hr",null,{"className":"x:my-[2em] nextra-border"}]
+14:["$","$L19",null,{"children":[["$","$L1a",null,{"children":["$","$L1b",null,{"children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"😄 詳しく見る"}]}]}],["$","$L1c",null,{"children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"私のブログ投稿とプロジェクトをチェックして、私が取り組んでいることをご覧ください！"}]}]]}]
+15:["$","$L1d",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@1f"}]}]
+1f:null
