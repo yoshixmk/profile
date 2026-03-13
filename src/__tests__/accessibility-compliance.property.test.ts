@@ -37,7 +37,7 @@ describe('property 9: Accessibility Compliance', () => {
 
           // Test heading hierarchy logic (property: no level should jump more than 3)
           if (config.headings.length > 1) {
-            const sortedHeadings = [...config.headings].sort((a, b) => a.level - b.level)
+            const sortedHeadings = config.headings.toSorted((a, b) => a.level - b.level)
 
             // Property: heading levels should form a reasonable hierarchy
             for (let i = 0; i < sortedHeadings.length - 1; i++) {

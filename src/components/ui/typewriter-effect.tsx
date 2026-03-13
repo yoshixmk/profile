@@ -1,8 +1,8 @@
 'use client'
 
-import { cn } from '@/lib/utils'
 import { motion, stagger, useAnimate, useInView } from 'framer-motion'
 import { useEffect } from 'react'
+import { cn } from '@/lib/utils'
 
 export const TypewriterEffect = ({
   words,
@@ -92,7 +92,7 @@ export const TypewriterEffect = ({
           repeatType: 'reverse',
         }}
         className={cn(
-          'inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500',
+          'inline-block rounded-sm w-1 h-4 md:h-6 lg:h-10 bg-blue-500 align-text-bottom',
           cursorClassName,
         )}
       >

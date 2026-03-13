@@ -1,10 +1,10 @@
 'use client'
 
-import { Toggle } from '@/components/ui/toggle'
-import { useLocale } from '@/hooks'
 import clsx from 'clsx'
 import { usePathname, useRouter } from 'next/navigation'
 import { useCallback, useEffect } from 'react'
+import { Toggle } from '@/components/ui/toggle'
+import { useLocale } from '@/hooks'
 
 const ONE_YEAR = 365 * 24 * 60 * 60 * 1000
 
