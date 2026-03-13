@@ -27,9 +27,12 @@ export const TracingBeam = ({
   const [svgHeight, setSvgHeight] = useState(0)
 
   useEffect(() => {
-    if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight)
-    }
+    const timer = setTimeout(() => {
+      if (contentRef.current) {
+        setSvgHeight(contentRef.current.offsetHeight)
+      }
+    }, 0)
+    return () => clearTimeout(timer)
   }, [])
 
   const y1 = useTransform(scrollYProgressSpring, [0, 0.8], [50, svgHeight])

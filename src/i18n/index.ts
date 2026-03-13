@@ -45,9 +45,11 @@ export function getNestedValue<T extends DeepObject, K extends string>(obj: T, p
 }
 
 
+const INTERPOLATE_REGEX = /\{\{\s*(\w+(\.\w+)*)\s*\}\}/g
+
 // 値を挿入する式
 export function interpolateString(template: string, context: Record<string, any>): string {
-  return template.replace(/\{\{\s*(\w+(\.\w+)*)\s*\}\}/g, (_, path) => {
+  return template.replace(INTERPOLATE_REGEX, (_, path) => {
     const value = getNestedValue(context, path.trim())
     return value !== undefined ? value : `{{${path.trim()}}}`
   })

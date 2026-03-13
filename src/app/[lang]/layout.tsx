@@ -6,7 +6,7 @@ import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { CustomFooter } from '@/components/CustomFooter'
-import { useServerLocale } from '@/hooks'
+import { getServerLocale } from '@/i18n/getServerLocale'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
@@ -16,7 +16,7 @@ import './styles/index.css'
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
-  const { t } = await useServerLocale(lang)
+  const { t } = await getServerLocale(lang as I18nLangKeys)
 
   const title = t('systemTitle')
   const description = lang === 'ja'
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const repo = 'https://github.com/yoshixmk/profile'
 
 const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
-  const { t } = await useServerLocale(lang)
+  const { t } = await getServerLocale(lang)
   return (
     <Navbar
       logo={(
@@ -77,19 +77,20 @@ const CustomNavbar = async ({ lang }: I18nLangAsyncProps) => {
 
 interface Props {
   children: ReactNode
-  params: Promise<{ lang: I18nLangKeys }>
+  params: Promise<{ lang: string }>
 }
 
 export default async function LangLayout({ children, params }: Props) {
   const { lang } = await params
+  const langKey = lang as I18nLangKeys
   const pageMap = await getPageMap(lang)
 
-  const { t } = await useServerLocale(lang)
+  const { t } = await getServerLocale(langKey)
 
   return (
     <html
       lang={lang}
-      dir={getDirection(lang)}
+      dir={getDirection(langKey)}
       suppressHydrationWarning
     >
       <body suppressHydrationWarning>
@@ -102,7 +103,7 @@ export default async function LangLayout({ children, params }: Props) {
         >
           <Layout
             navbar={
-              <CustomNavbar lang={lang} />
+              <CustomNavbar lang={langKey} />
             }
             lastUpdated={(
               <LastUpdated>

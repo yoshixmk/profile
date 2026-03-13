@@ -53,12 +53,15 @@ export const LinkPreview = ({
     src = imageSrc
   }
 
-  const [isOpen, setOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false)
 
   const [isMounted, setIsMounted] = React.useState(false)
 
   React.useEffect(() => {
-    setIsMounted(true)
+    const timer = setTimeout(() => {
+      setIsMounted(true)
+    }, 0)
+    return () => clearTimeout(timer)
   }, [])
 
   const springConfig = { stiffness: 100, damping: 15 }
@@ -94,7 +97,7 @@ export const LinkPreview = ({
         openDelay={50}
         closeDelay={100}
         onOpenChange={(open) => {
-          setOpen(open)
+          setIsOpen(open)
         }}
       >
         <HoverCardPrimitive.Trigger
