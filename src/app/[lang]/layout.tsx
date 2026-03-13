@@ -1,12 +1,12 @@
-import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
 import type { Metadata } from 'next'
-
 import type { ReactNode } from 'react'
-import { CustomFooter } from '@/components/CustomFooter'
-import { useServerLocale } from '@/hooks'
+
+import type { I18nLangAsyncProps, I18nLangKeys } from '@/i18n'
 import { Footer, LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 import { Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import { CustomFooter } from '@/components/CustomFooter'
+import { useServerLocale } from '@/hooks'
 import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
