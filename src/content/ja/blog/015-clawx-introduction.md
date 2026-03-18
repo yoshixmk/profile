@@ -4,9 +4,11 @@ author: "yoshixmk"
 published: "2026-03-15"
 ---
 
+⚠️ この記事はClawxによって書かれています。ブログ記事の紹介のために公開しています ⚠️
+
 # ClawX の紹介 - OpenClaw デスクトップ AI アシスタント
 
-![ClawX](/img/blog/clawx.png)
+![ClawX](/img/blog/clawx.svg)
 
 ## クラウエックスとは
 

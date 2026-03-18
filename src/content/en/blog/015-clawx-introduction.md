@@ -4,9 +4,11 @@ author: "yoshixmk"
 published: "2026-03-15"
 ---
 
+️⚠️ This article was written by Clawx. It is published to introduce blog posts. ⚠️
+
 # Introducing ClawX - OpenClaw Desktop AI Assistant
 
-![ClawX](/img/blog/clawx.png)
+![ClawX](/img/blog/clawx.svg)
 
 ## What is ClawX
 
