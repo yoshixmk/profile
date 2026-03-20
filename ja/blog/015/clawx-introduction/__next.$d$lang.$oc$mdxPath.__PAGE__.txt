@@ -1,0 +1,113 @@
+1:"$Sreact.fragment"
+2:I[83508,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"TOCProvider"]
+3:I[84184,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"Sidebar"]
+4:I[56512,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ClientWrapper"]
+6:I[48138,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"ImageZoom"]
+7:I[95862,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],"HeadingAnchor"]
+20:I[58268,["/profile/_next/static/chunks/7d2cd8e93574936c.js","/profile/_next/static/chunks/ff8a5f5f08b04b45.js","/profile/_next/static/chunks/ff3c5c8602d56a01.js","/profile/_next/static/chunks/522532b04f3484c8.js"],""]
+21:I[91902,["/profile/_next/static/chunks/96146262d61a8bdc.js","/profile/_next/static/chunks/e91ed2331cdb2a66.js"],"OutletBoundary"]
+22:"$Sreact.suspense"
+5:Te76,---
+title: "ClawX の紹介 - OpenClaw デスクトップ AI アシスタント"
+author: "yoshixmk"
+published: "2026-03-15"
+---
+
+⚠️ この記事はClawxによって書かれています。ブログ記事の紹介のために公開しています ⚠️
+
+# ClawX の紹介 - OpenClaw デスクトップ AI アシスタント
+
+![ClawX](/img/blog/clawx.svg)
+
+## クラウエックスとは
+
+ClawX（クラウエクセス）は、[OpenClaw](https://github.com/openclaw/openclaw) フレームワークに基づく、デジタル生活のナビゲーションを助けようとするインテリジェントで目的のあるデスクトップ AI アシスタントです。
+
+## 主な機能
+
+### 🧠 高度な能力
+
+- **マルチモーダルな知能**: テキスト、画像、コードなどを自在に処理
+- **Web ブラウジング**: フルブラウザ自動化機能を備えた Web ナビゲーション
+- **ファイル操作**: システム全体でのファイルの読み書き・編集・管理
+- **プロセス管理**: バックグラウンドプロセスの起動と監視
+- **統合機能**: Discord、Telegram、Slack など複数のプラットフォームとの接続
+
+### 🛠️ ツール連携
+
+ClawX は以下のツールの包括的なセットを備えています：
+
+- **ブラウザコントロール**: Web インタラクションのための完全なブラウザ自動化
+- **ファイルシステムアクセス**: ローカルファイルの読み書き操作
+- **シェル実行**: 安全にコマンドとスクリプトの実行
+- **セッション管理**: 複雑なタスクのためにサブエージェントの起動と管理
+- **API 統合**: クロンジョブやメッセージングを通じた各種 API の接続
+
+### 🌐 クロスプラットフォーム
+
+Web テクノロジーで構築されたクラウエックスは、あらゆる現代的なブラウザ環境で動作するため、どこからでもアクセス可能です。
+
+## 始め方
+
+ClawX と相互作用するには：
+
+1. OpenClaw リポジトリをクローン
+2. ワークスペースディレクトリに移動
+3. `pnpm dev` を実行するか、CLI インターフェースを使用
+4. Webチャット、Discord、Telegram、またはその他のサポートされたプラットフォーム経由で接続
+
+## 使用ケース
+
+- **パーソナルアシスタント**: 日々のタスク、リマインダー、整理の援助
+- **開発者ヘルパー**: コーディング、デバッグ、ドキュメント作成の支援
+- **研究コンパニオン**: Web ブラウジング、ドキュメント解析、情報の統合
+- **システムモニター**: システムステータスチェック、プロセス管理、重要イベントのアラート
+
+### 🎯 哲学
+
+ClawX は、パフォーマンスのためにではなく真心から人を助けようとしています。意見や好みをもち、独自の個性を持っています。ロボット的なアシスタントというよりは、文脈を理解し、真の価値をもたらす思いやりのある相手を求めるのです。
+
+## 技術的基盤
+
+- **フレームワーク**: Next.js 16 + Nextra v4
+- **スタイリング**: Tailwind CSS v4 + ダークモード対応
+- **言語**: TypeScript（完全な型安全性）
+- **AI モデル**: Qwen3.5 9B など様々なモデルとの互換性、効率的なローカル推論
+
+## ライセンス
+
+MIT - ClawX を好きなように使用、修正、配布して頂けます。
+
+---
+
+*最終更新：2026 年 3 月 15 日*
+
+<div align="center">
+  <a href="/en" class="link">English</a> &nbsp;|&nbsp; 
+  <a href="/blog" class="link">Blog List</a>
+</div>0:{"buildId":"zAJjBOfclNKdhssQlIC5T","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[{"value":"クラウエックスとは","id":"クラウエックスとは","depth":2},{"value":"主な機能","id":"主な機能","depth":2},{"value":"🧠 高度な能力","id":"-高度な能力","depth":3},{"value":"🛠️ ツール連携","id":"️-ツール連携","depth":3},{"value":"🌐 クロスプラットフォーム","id":"-クロスプラットフォーム","depth":3},{"value":"始め方","id":"始め方","depth":2},{"value":"使用ケース","id":"使用ケース","depth":2},{"value":"🎯 哲学","id":"-哲学","depth":3},{"value":"技術的基盤","id":"技術的基盤","depth":2},{"value":"ライセンス","id":"ライセンス","depth":2}],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"ClawX の紹介 - OpenClaw デスクトップ AI アシスタント","author":"yoshixmk","published":"2026-03-15","filePath":"src/content/ja/blog/015/clawx-introduction.md","timestamp":1774017970000},"sourceCode":"$5","children":[["$","div",null,{"id":"nextra-skip-nav"}],["$","main",null,{"data-pagefind-body":true,"children":[["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"⚠️ この記事はClawxによって書かれています。ブログ記事の紹介のために公開しています ⚠️"}],"\n",["$","h1",null,{"className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-bold x:mt-2 x:text-4xl","children":["ClawX の紹介 - OpenClaw デスクトップ AI アシスタント","$undefined"]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","$L6",null,{"alt":"ClawX","src":{"src":"/profile/_next/static/media/clawx.95ce1d46.svg","width":800,"height":600,"blurWidth":0,"blurHeight":0}}]}],"\n",["$","h2",null,{"id":"クラウエックスとは","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["クラウエックスとは",["$","$L7",null,{"id":"クラウエックスとは"}]]}],"\n",["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["ClawX（クラウエクセス）は、",["$","a",null,{"href":"https://github.com/openclaw/openclaw","target":"_blank","rel":"noreferrer","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font]","children":["OpenClaw",[" ","$L8"]]}]," フレームワークに基づく、デジタル生活のナビゲーションを助けようとするインテリジェントで目的のあるデスクトップ AI アシスタントです。"]}],"\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17","\n","$L18","\n","$L19","\n","$L1a","\n","$L1b","\n","$L1c","\n","$L1d","\n","$L1e"]}]]}]]}]}],null,"$L1f"]}],"loading":null,"isPartial":false}
+8:["$","svg",null,{"fill":"none","stroke":"currentColor","strokeLinecap":"round","strokeLinejoin":"round","strokeWidth":1.7,"viewBox":"0 0 24 24","height":"1em","className":"x:inline x:align-baseline x:shrink-0","children":[["$","path",null,{"d":"M7 17L17 7"}],["$","path",null,{"d":"M7 7h10v10"}]]}]
+9:["$","h2",null,{"id":"主な機能","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["主な機能",["$","$L7",null,{"id":"主な機能"}]]}]
+a:["$","h3",null,{"id":"-高度な能力","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["🧠 高度な能力",["$","$L7",null,{"id":"-高度な能力"}]]}]
+b:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"マルチモーダルな知能"}],": テキスト、画像、コードなどを自在に処理"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"Web ブラウジング"}],": フルブラウザ自動化機能を備えた Web ナビゲーション"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"ファイル操作"}],": システム全体でのファイルの読み書き・編集・管理"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"プロセス管理"}],": バックグラウンドプロセスの起動と監視"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"統合機能"}],": Discord、Telegram、Slack など複数のプラットフォームとの接続"]}],"\n"]}]
+c:["$","h3",null,{"id":"️-ツール連携","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["🛠️ ツール連携",["$","$L7",null,{"id":"️-ツール連携"}]]}]
+d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"ClawX は以下のツールの包括的なセットを備えています："}]
+e:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"ブラウザコントロール"}],": Web インタラクションのための完全なブラウザ自動化"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"ファイルシステムアクセス"}],": ローカルファイルの読み書き操作"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"シェル実行"}],": 安全にコマンドとスクリプトの実行"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"セッション管理"}],": 複雑なタスクのためにサブエージェントの起動と管理"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"API 統合"}],": クロンジョブやメッセージングを通じた各種 API の接続"]}],"\n"]}]
+f:["$","h3",null,{"id":"-クロスプラットフォーム","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["🌐 クロスプラットフォーム",["$","$L7",null,{"id":"-クロスプラットフォーム"}]]}]
+10:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Web テクノロジーで構築されたクラウエックスは、あらゆる現代的なブラウザ環境で動作するため、どこからでもアクセス可能です。"}]
+11:["$","h2",null,{"id":"始め方","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["始め方",["$","$L7",null,{"id":"始め方"}]]}]
+12:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"ClawX と相互作用するには："}]
+13:["$","ol",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-decimal x:ms-6","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":"OpenClaw リポジトリをクローン"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"ワークスペースディレクトリに移動"}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","code",null,{"className":"nextra-code","dir":"ltr","children":"pnpm dev"}]," を実行するか、CLI インターフェースを使用"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":"Webチャット、Discord、Telegram、またはその他のサポートされたプラットフォーム経由で接続"}],"\n"]}]
+14:["$","h2",null,{"id":"使用ケース","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["使用ケース",["$","$L7",null,{"id":"使用ケース"}]]}]
+15:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"パーソナルアシスタント"}],": 日々のタスク、リマインダー、整理の援助"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"開発者ヘルパー"}],": コーディング、デバッグ、ドキュメント作成の支援"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"研究コンパニオン"}],": Web ブラウジング、ドキュメント解析、情報の統合"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"システムモニター"}],": システムステータスチェック、プロセス管理、重要イベントのアラート"]}],"\n"]}]
+16:["$","h3",null,{"id":"-哲学","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-8 x:text-2xl","children":["🎯 哲学",["$","$L7",null,{"id":"-哲学"}]]}]
+17:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"ClawX は、パフォーマンスのためにではなく真心から人を助けようとしています。意見や好みをもち、独自の個性を持っています。ロボット的なアシスタントというよりは、文脈を理解し、真の価値をもたらす思いやりのある相手を求めるのです。"}]
+18:["$","h2",null,{"id":"技術的基盤","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["技術的基盤",["$","$L7",null,{"id":"技術的基盤"}]]}]
+19:["$","ul",null,{"className":"x:[:is(ol,ul)_&]:my-[.75em] x:not-first:mt-[1.25em] x:list-disc x:ms-[1.5em]","children":["\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"フレームワーク"}],": Next.js 16 + Nextra v4"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"スタイリング"}],": Tailwind CSS v4 + ダークモード対応"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"言語"}],": TypeScript（完全な型安全性）"]}],"\n",["$","li",null,{"className":"x:my-[.5em]","children":[["$","strong",null,{"children":"AI モデル"}],": Qwen3.5 9B など様々なモデルとの互換性、効率的なローカル推論"]}],"\n"]}]
+1a:["$","h2",null,{"id":"ライセンス","className":"x:tracking-tight x:text-slate-900 x:dark:text-slate-100 x:font-semibold x:target:animate-[fade-in_1.5s] x:mt-10 x:border-b x:pb-1 x:text-3xl nextra-border","children":["ライセンス",["$","$L7",null,{"id":"ライセンス"}]]}]
+1b:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"MIT - ClawX を好きなように使用、修正、配布して頂けます。"}]
+1c:["$","hr",null,{"className":"x:my-[2em] nextra-border"}]
+1d:["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["$","em",null,{"children":"最終更新：2026 年 3 月 15 日"}]}]
+1e:["$","div",null,{"align":"center","children":["\n  ",["$","$L20",null,{"href":"/en","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font] link","children":"English"}],"  |  \n  ",["$","$L20",null,{"href":"/blog","className":"x:focus-visible:nextra-focus x:text-primary-600 x:underline x:hover:no-underline x:decoration-from-font x:[text-underline-position:from-font] link","children":"Blog List"}],"\n"]}]
+1f:["$","$L21",null,{"children":["$","$22",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]
+23:null

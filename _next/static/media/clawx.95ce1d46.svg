@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'>
+  <rect fill='#1a1a2e' width='800' height='600'/>
+  <text x='400' y='300' font-family='Arial, sans-serif' font-size='48' fill='#ffffff' text-anchor='middle'>ClawX</text>
+  <text x='400' y='350' font-family='Arial, sans-serif' font-size='24' fill='#a0a0a0' text-anchor='middle'>OpenAI Assistant</text>
+  <circle cx='600' cy='100' r='80' fill='none' stroke='#4ecca3' stroke-width='4'/>
+  <path d='M 520 100 L 600 180 L 680 100 L 600 260 L 520 180 Z' fill='none' stroke='#4ecca3' stroke-width='4'/>
+</svg>
