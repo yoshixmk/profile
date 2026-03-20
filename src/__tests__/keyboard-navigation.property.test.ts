@@ -117,7 +117,7 @@ describe('property 9: Accessibility Compliance - Keyboard Navigation', () => {
 
           if (focusableElements.length > 1) {
             // Sort by tab index
-            const sortedElements = [...focusableElements].sort((a, b) => a.tabIndex - b.tabIndex)
+            const sortedElements = focusableElements.toSorted((a, b) => a.tabIndex - b.tabIndex)
 
             // Verify tab order is maintained
             for (let i = 0; i < sortedElements.length - 1; i++) {

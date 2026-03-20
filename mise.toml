@@ -1,5 +1,5 @@
 [tools]
-node = "22"
+node = "24"
 
 [tasks.build]
 run = "pnpm build && pnpm pagefind && pnpm copy "

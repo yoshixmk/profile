@@ -1,12 +1,13 @@
 'use client'
-import { cn } from '@/lib/utils'
 import {
   motion,
   useScroll,
   useSpring,
   useTransform,
 } from 'framer-motion'
-import React, { useEffect, useRef, useState } from 'react'
+import * as React from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { cn } from '@/lib/utils'
 
 export const TracingBeam = ({
   children,
@@ -26,9 +27,12 @@ export const TracingBeam = ({
   const [svgHeight, setSvgHeight] = useState(0)
 
   useEffect(() => {
-    if (contentRef.current) {
-      setSvgHeight(contentRef.current.offsetHeight)
-    }
+    const timer = setTimeout(() => {
+      if (contentRef.current) {
+        setSvgHeight(contentRef.current.offsetHeight)
+      }
+    }, 0)
+    return () => clearTimeout(timer)
   }, [])
 
   const y1 = useTransform(scrollYProgressSpring, [0, 0.8], [50, svgHeight])
