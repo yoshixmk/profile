@@ -1,19 +1,12 @@
 'use client'
 
 import type { ISourceOptions } from '@tsparticles/engine'
-import Particles, { initParticlesEngine } from '@tsparticles/react'
+import Particles from '@tsparticles/react'
 import { useTheme } from 'nextra-theme-docs'
-import { useEffect, useMemo } from 'react'
-import { loadFull } from 'tsparticles'
+import { useMemo } from 'react'
 
 const PanelParticles = () => {
   const { resolvedTheme } = useTheme()
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine)
-    })
-  }, [])
 
 
   const options = useMemo<ISourceOptions>(

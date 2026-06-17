@@ -8,6 +8,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": [
+      "jest",
+      "node"
+    ],
     "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -16,6 +20,7 @@
         "./src/*"
       ]
     },
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
