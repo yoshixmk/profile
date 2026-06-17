@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,20146,e=>{"use strict";let t=new Map;e.s(["ShapeManager",0,class{addShapeGenerator(e,r){this.getShapeGenerator(e)||t.set(e,r)}getShapeGenerator(e){return t.get(e)}getSupportedShapeGenerators(){return t.keys()}}])}]);
