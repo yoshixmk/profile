@@ -11,6 +11,7 @@ import LocaleToggle from '../../widgets/locale-toggle'
 import ThemeToggle from '../../widgets/theme-toggle'
 import { getDirection } from '../_dictionaries/get-dictionary'
 
+import { ParticlesSetup } from './_components/ParticlesSetup'
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
 
@@ -101,32 +102,34 @@ export default async function LangLayout({ children, params }: Props) {
           storageKey="starter-theme-provider"
           disableTransitionOnChange
         >
-          <Layout
-            navbar={
-              <CustomNavbar lang={langKey} />
-            }
-            lastUpdated={(
-              <LastUpdated>
-                {t('lastUpdated')}
-              </LastUpdated>
-            )}
-            editLink={null}
-            docsRepositoryBase={repo}
-            footer={(
-              <Footer className="bg-background py-5!">
-                <CustomFooter />
-              </Footer>
-            )}
-            search={<Search />}
-            i18n={[
-              { locale: 'en', name: 'English' },
-              { locale: 'ja', name: '日本語' },
-            ]}
-            pageMap={pageMap}
-            feedback={{ content: '' }}
-          >
-            {children}
-          </Layout>
+          <ParticlesSetup>
+            <Layout
+              navbar={
+                <CustomNavbar lang={langKey} />
+              }
+              lastUpdated={(
+                <LastUpdated>
+                  {t('lastUpdated')}
+                </LastUpdated>
+              )}
+              editLink={null}
+              docsRepositoryBase={repo}
+              footer={(
+                <Footer className="bg-background py-5!">
+                  <CustomFooter />
+                </Footer>
+              )}
+              search={<Search />}
+              i18n={[
+                { locale: 'en', name: 'English' },
+                { locale: 'ja', name: '日本語' },
+              ]}
+              pageMap={pageMap}
+              feedback={{ content: '' }}
+            >
+              {children}
+            </Layout>
+          </ParticlesSetup>
         </ThemeProvider>
       </body>
     </html>

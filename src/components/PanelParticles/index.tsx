@@ -1,16 +1,11 @@
 'use client'
 
 import type { ISourceOptions } from '@tsparticles/engine'
-import Particles, { ParticlesProvider } from '@tsparticles/react'
+import Particles from '@tsparticles/react'
 import { useTheme } from 'nextra-theme-docs'
 import { useMemo } from 'react'
-import { loadFull } from 'tsparticles'
 
-const engineInit = async (engine: Parameters<typeof loadFull>[0]) => {
-  await loadFull(engine)
-}
-
-const PanelParticlesInner = () => {
+const PanelParticles = () => {
   const { resolvedTheme } = useTheme()
 
 
@@ -83,14 +78,6 @@ const PanelParticlesInner = () => {
       className="max-sm:hidden pointer-events-none"
       options={options}
     />
-  )
-}
-
-const PanelParticles = () => {
-  return (
-    <ParticlesProvider init={engineInit}>
-      <PanelParticlesInner />
-    </ParticlesProvider>
   )
 }
 

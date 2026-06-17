@@ -1,10 +1,9 @@
 'use client'
 import type { Container } from '@tsparticles/engine'
-import Particles, { ParticlesProvider } from '@tsparticles/react'
+import Particles from '@tsparticles/react'
 import { motion, useAnimation } from 'framer-motion'
 import * as React from 'react'
-import { useId, useState } from 'react'
-import { loadFull } from 'tsparticles'
+import { useId } from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -19,11 +18,7 @@ interface ParticlesProps {
   particleDensity?: number
 }
 
-const engineInit = async (engine: Parameters<typeof loadFull>[0]) => {
-  await loadFull(engine)
-}
-
-const SparklesCoreInner = (props: ParticlesProps) => {
+export const SparklesCore = (props: ParticlesProps) => {
   const {
     id,
     className,
@@ -243,13 +238,5 @@ const SparklesCoreInner = (props: ParticlesProps) => {
         }}
       />
     </motion.div>
-  )
-}
-
-export const SparklesCore = (props: ParticlesProps) => {
-  return (
-    <ParticlesProvider init={engineInit}>
-      <SparklesCoreInner {...props} />
-    </ParticlesProvider>
   )
 }
